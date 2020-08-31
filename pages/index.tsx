@@ -11,13 +11,18 @@ import cloud from '../public/3.png';
 import styled from "@emotion/styled";
 import {Header} from "../components/Header";
 import {ThemeProvider} from "emotion-theming";
+import SectionTitile from "../components/SectionTitle";
+import ProjectTitle from "../components/ProjectTitle";
+import {ProjectsGrid} from "../components/ProjectsGrid";
 
 export default function Home( props ) : JSX.Element {
 
     const [state, setState] = useState({
+        isDay: false,
+        isRain: false,
+        isWind: false,
         bgColor: ''
     })
-
     useEffect(() => {
         const temp = props.weather.main.temp - 273
         if( temp < 10) {
@@ -31,22 +36,39 @@ export default function Home( props ) : JSX.Element {
     },[])
     //todo add colors varibles
 
+
+
+
+
+
     const StyledHeader = styled.div`
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    min-height: 90vh;
+    height: 100%;
     justify-content: space-between;    
-    position: relative;
     background-color: ${state.bgColor};
+     @media (max-width:  700px) {
+                    min-height: 60vh;
+                  }
 
         .text__holder{
             margin-left: 100px;
             margin-top: 150px;
+            max-width: 100vw;
+            
+              @media (max-width:  700px) {
+                     margin-left: 10px;
+                    margin-top: 40px;
+                  }
             
                .welcome{
                  font-size: 8em;
                  font-weight: 800;
                  line-height: normal;
+                  @media (max-width:  700px) {
+                    font-size: 3em;
+                  }
                  }  
                  
                .welcome__caption {
@@ -56,12 +78,24 @@ export default function Home( props ) : JSX.Element {
                font-weight: 600;
                  color:white;
                -webkit-text-stroke: 2px black;
+               
+               @media (max-width:  700px) {
+                font-size: 1em;
+                 -webkit-text-stroke: 1px transparent;
+                 color: black;
+                 margin-top: 10px;
+              }
+               
                }
         }
            .weather__holder{
                justify-self: flex-end;
                margin-left: 100px;
-             
+               margin-bottom: 10px;
+              @media (max-width:  700px) {
+                     margin-left: 10px;
+                    margin-top: 40px;
+                  }
                }
                
            .sun{
@@ -89,25 +123,44 @@ export default function Home( props ) : JSX.Element {
                 <p>{props.weather.name} , {props.weather.main.temp.toFixed() - 273}°C</p>
             </div>
         </StyledHeader>
+        <SectionTitile title="PROJEKTY" bgColor={state.bgColor} />
+        <ProjectsGrid props={props.projects} bgColor={state.bgColor} styleVaribles={""} />
+        <SectionTitile title="POZNAJMY SIĘ" bgColor={state.bgColor} />
         </>
     )
 
 }
 
 
-
 function url(city : string) : string {
     return `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=fd7eb609b628174c76a482350679ebb2`
 }
-
+const client = require("contentful").createClient({
+    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+});
 
 export async function getServerSideProps() {
     const res = await fetch(url('warsaw'));
     const data = await res.json();
 
+   const prod = client.getEntries()
+        .then( (entries) =>  {
+            // log the title for all the entries that have it
+            entries.items.forEach( (entry) => {
+                if (entry.fields.productName) {
+                    return entry.fields.productName
+                }
+            })
+        })
+
+    const projInfo = await client.getEntries();
+    // const dat = await fetch('https://api.contentful.com/spaces/r50870bg4kry')
+    // const lets = await dat.json()
     return {
         props: {
-            weather: data
+            weather: data,
+            projects: prod
         }
     }
 }
