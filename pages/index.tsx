@@ -1,4 +1,5 @@
 import * as React from "react";
+// @ts-ignore
 import {getWeather} from "../services/client";
 import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
 import axios from 'axios'
@@ -9,45 +10,159 @@ import sun from '../public/sun.png';
 import cloud from '../public/3.png';
 
 import styled from "@emotion/styled";
+// @ts-ignore
 import {Header} from "../components/Header";
 import {ThemeProvider} from "emotion-theming";
+// @ts-ignore
 import SectionTitile from "../components/SectionTitle";
+// @ts-ignore
 import ProjectTitle from "../components/ProjectTitle";
+// @ts-ignore
 import {ProjectsGrid} from "../components/ProjectsGrid";
+// @ts-ignore
+import progresjaImg from "../public/prog.jpg";
+import { css, jsx } from '@emotion/core'
+import {log} from "util";
 
-export default function Home( props ) : JSX.Element {
+export default function Home(props:any) : JSX.Element {
+
+
+    interface ProjectsElements {
+        title: string,
+        img: string,
+        imgTwo: string,
+        imgThree: string,
+        alt: string,
+        color: string
+    }
 
     const [state, setState] = useState({
         isDay: false,
         isRain: false,
         isWind: false,
-        bgColor: ''
+        bgColor: '',
+        itemLimit: 6,
     })
-    useEffect(() => {
-        const temp = props.weather.main.temp - 273
-        if( temp < 10) {
-            setState(s => ({...s, bgColor: props => props.theme.colors.bgBlue}))
 
-        } else if (temp < 24 && temp > 10) {
-            setState(s => ({...s, bgColor: props => props.theme.colors.bgGray}))
-        } else if (temp > 25) {
-            setState(s => ({...s, bgColor: props => props.theme.colors.bgYellow}))
-        }
-    },[])
+    // useEffect(() => {
+    //     const temp = props.weather.main.temp - 273
+    //     if( temp < 10) {
+    //         setState(s => ({...s, bgColor: props => props.theme.colors.bgBlue}))
+    //
+    //     } else if (temp < 24 && temp > 10) {
+    //         setState(s => ({...s, bgColor: props => props.theme.colors.bgWhite}))
+    //     } else if (temp > 25) {
+    //         setState(s => ({...s, bgColor: props => props.theme.colors.bgYellow}))
+    //     }
+    // },[])
     //todo add colors varibles
 
+    //FUNCTIONS
+    function changeColors(color:string) : void{
+            setState(s => ({...s, bgColor: color}))
+    }
+    function isMoreVisible() {
+            if(projectsElements.length < state.itemLimit) {
+                return null
+            } else {
+                return (
+                    <StyledButton onClick={() =>
+                        setState(s => ({...s, itemLimit: s.itemLimit + 3}))}
+                    >Zobacz więcej</StyledButton>
+                )
+            }
+    }
 
+    //ELEMENTS
+    const projectsElements : ProjectsElements[] = [
+        {
+            title:' Progresja',
+            img: progresjaImg,
+            imgTwo: sun ,
+            imgThree: cloud,
+            alt:'',
+            color: "blue"
+        },
+        {
+            title:'Chiński Festiwal Światła',
+            img: progresjaImg,
+            imgTwo: progresjaImg,
+            imgThree: progresjaImg,
+            alt:'',
+            color: "red"
+        },
+        {
+            title:'GiGCity.Tv',
+            img: progresjaImg,
+            imgTwo: progresjaImg,
+            imgThree: progresjaImg,
+            alt:'',
+            color: "gray"
+        },
+        {
+            title:'Holofan3d',
+            img: progresjaImg,
+            imgTwo: progresjaImg,
+            imgThree: progresjaImg,
+            alt:'',
+            color: "black"
+        },
+        {
+            title:'Instacorner',
+            img: progresjaImg,
+            imgTwo: progresjaImg,
+            imgThree: progresjaImg,
+            alt:'',
+            color: "white"
+        },
+        {
+            title:'BeFriend',
+            img: progresjaImg,
+            imgTwo: progresjaImg,
+            imgThree: progresjaImg,
+            alt:'',
+            color: "purple"
+        },
+        {
+            title:'ProTip Marketing',
+            img: progresjaImg,
+            imgTwo: progresjaImg,
+            imgThree: progresjaImg,
+            alt:'',
+            color: "yellow"
+        },
+    ]
+    const myPhotos = [
+        {
+            title:'',
+            img: progresjaImg,
+            alt:''
+        },
+        {
+            title:'',
+            img: progresjaImg,
+            alt:''
+        },
+        {
+            title:'',
+            img: progresjaImg,
+            alt:''
+        },
+    ]
 
-
-
-
+    //STYLES
     const StyledHeader = styled.div`
     display: flex;
     flex-direction: column;
     min-height: 90vh;
     height: 100%;
+       
+   -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
     justify-content: space-between;    
-    background-color: ${state.bgColor};
      @media (max-width:  700px) {
                     min-height: 60vh;
                   }
@@ -107,12 +222,64 @@ export default function Home( props ) : JSX.Element {
                height: 300px;
                }
     `
+    const StyledGrid = styled.div`
+
+   .grid__container{
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+      margin: 0 auto;
+      justify-content: center;
+        @media(max-width: 700px) {
+        width: 100vw;
+        }
+        &--wide{
+         width: 100vw;
+        }
+   }
+   
+   .see__more__btn {
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+      font-weight: 700;
+         &-active{
+      cursor: pointer;
+
+   }
+   &-disable{
+   opacity: 0.4;
+   cursor: none;
+   }
+     
+   }
+`
+    const StyledMain = styled.div`
+      background-color: ${state.bgColor};
+      will-change: background-color;
+       transition: all 0.3s linear;
+}
+`
+
+    function imgs(e : any, item: ProjectsElements) : void {
+        setInterval(() => {(e : any) => (e.currentTarget.src = item.imgTwo)},300);
+        setInterval(() => {(e : any) => (e.currentTarget.src = item.imgThree)},300);
+        setInterval(() => {(e : any) => (e.currentTarget.src = item.img)},300);
+    }
+
+
+
     return(
         <>
+            <StyledMain>
+
             <Header bgColor={state.bgColor}/>
             <StyledHeader>
             <div className="text__holder">
-                <h1 className="welcome"> Cześć, jestem Hubert </h1>
+                <h1 className="welcome"> Siema, jestem Hubert </h1>
                 <h2 className="welcome__caption"> Zajmuję się tworzeniem stron internetowych, <br/> komunikacją marketingową i fotografią. </h2>
             </div>
 
@@ -123,9 +290,52 @@ export default function Home( props ) : JSX.Element {
                 <p>{props.weather.name} , {props.weather.main.temp.toFixed() - 273}°C</p>
             </div>
         </StyledHeader>
-        <SectionTitile title="PROJEKTY" bgColor={state.bgColor} />
-        <ProjectsGrid props={props.projects} bgColor={state.bgColor} styleVaribles={""} />
-        <SectionTitile title="POZNAJMY SIĘ" bgColor={state.bgColor} />
+
+        <SectionTitile title="PROJEKTY" bgColor={state.bgColor} styleVaribles={""}/>
+
+            <StyledGrid >
+                <div className="grid__container">
+                    {projectsElements.slice(0,state.itemLimit).map(item => {
+                        return (
+                            <StyledTile >
+                                <img className="client__image"
+                                     src={item.img}
+                                     alt={props.alt}
+                                     onMouseEnter={() => changeColors(item.color)}
+                                     onMouseOver={(e : any) => (e.currentTarget.src = item.imgTwo)}
+                                     onMouseLeave={() => {changeColors("white")} }/>
+                                <h3 className="client__name">{item.title}</h3>
+                            </StyledTile>
+                        )
+                    })}
+                </div>
+                {isMoreVisible()
+                }
+
+            </StyledGrid>
+
+                <SectionTitile title=" POZNAJMY SIĘ " bgColor={state.bgColor} styleVaribles={"margin-top: 100px"}/>
+
+                <StyledGrid>
+                    <div className="grid__container grid__container--wide">
+                        {myPhotos.slice(0,state.itemLimit).map(item => {
+                            return (
+                                <StyledTile >
+                                    <img className="client__image"
+                                         src={myPhotos[0].img}
+                                         alt={props.alt}
+                                         // onMouseEnter={() => changeColors(item.color)}
+                                         // onMouseLeave={() => changeColors("white")}
+                                    />
+                                    <h3 className="client__name">{item.title}</h3>
+                                </StyledTile>
+                            )
+                        })}
+                    </div>
+                </StyledGrid>
+
+            </StyledMain>
+
         </>
     )
 
@@ -135,33 +345,48 @@ export default function Home( props ) : JSX.Element {
 function url(city : string) : string {
     return `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=fd7eb609b628174c76a482350679ebb2`
 }
-const client = require("contentful").createClient({
-    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
-});
+
 
 export async function getServerSideProps() {
     const res = await fetch(url('warsaw'));
     const data = await res.json();
-
-   const prod = client.getEntries()
-        .then( (entries) =>  {
-            // log the title for all the entries that have it
-            entries.items.forEach( (entry) => {
-                if (entry.fields.productName) {
-                    return entry.fields.productName
-                }
-            })
-        })
-
-    const projInfo = await client.getEntries();
-    // const dat = await fetch('https://api.contentful.com/spaces/r50870bg4kry')
-    // const lets = await dat.json()
     return {
         props: {
             weather: data,
-            projects: prod
         }
     }
 }
 
+const StyledTile = styled.div`
+        width: fit-content;
+        margin: 4em;
+        &:hover{
+        
+        }
+         @media(max-width: 700px) {
+        margin: 1em;
+        }
+        
+        .client__name{
+        font-size: 20px;
+        margin-top: 5px;
+        }
+        
+        .client__image{
+        width: 20vw;
+        
+        @media(max-width: 700px) {
+        width: 90vw;
+        }
+        }
+    `
+const StyledButton = styled.button`
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+      font-weight: 700;
+      cursor: pointer;
+`

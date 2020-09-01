@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export default function SectionTitile(props:{title:string, bgColor: string}) {
+export default function SectionTitile(props:{title:string, bgColor: string, styleVaribles:string}) {
 
 
     const StyledTitle = styled.h2`
@@ -9,9 +9,10 @@ export default function SectionTitile(props:{title:string, bgColor: string}) {
   background-color: ${props.bgColor};
   text-align: center;
   padding:  1em;
+  ${props.styleVaribles};
   
    @media(max-width: 700px) {
-        font-size: 3em;
+        font-size: 2em;
         }
   
   `

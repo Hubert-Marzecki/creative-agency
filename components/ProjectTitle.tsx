@@ -4,7 +4,9 @@ export default function ProjectTitle(props: {title: string, img: string, alt:str
     const StyledTile = styled.div`
         width: fit-content;
         margin: 4em;
+        &:hover{
         
+        }
          @media(max-width: 700px) {
         margin: 1em;
         }
@@ -26,8 +28,8 @@ export default function ProjectTitle(props: {title: string, img: string, alt:str
 `
     return (
         <>
-        <StyledTile>
-                <img className="client__image" src={props.img} alt={props.alt}/>
+        <StyledTile >
+                <img className="client__image" src={props.img} alt={props.alt} />
                 <h3 className="client__name">{props.title}</h3>
         </StyledTile>
         </>

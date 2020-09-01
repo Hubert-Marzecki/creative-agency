@@ -3,16 +3,6 @@ import Link from "next/link";
 
 export function Header(props: {bgColor: string}) : JSX.Element {
 
-
-
-
-
-
-
-
-
-
-
     const StyledHeader = styled.header`
         .nav{
           max-width: 100vw;
@@ -32,7 +22,12 @@ export function Header(props: {bgColor: string}) : JSX.Element {
 
         <StyledHeader>
             <nav className="nav">
-                <Link href="" >
+                <Link href="/#">
+                    <li className="link">
+                        Honey
+                    </li>
+                </Link>
+                <Link href="/projekty" >
                     <li className="link">
                         Projekty
                     </li>
@@ -42,7 +37,7 @@ export function Header(props: {bgColor: string}) : JSX.Element {
                         Jak
                     </li>
                 </Link>
-                <Link href="" >
+                <Link href="/omnie" >
                     <li className="link">
                        O mnie
                     </li>
