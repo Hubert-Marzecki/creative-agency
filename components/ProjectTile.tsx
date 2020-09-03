@@ -24,6 +24,7 @@ export default function ProjectTile(props: {title: string, img: string, alt:stri
         word-break: break-all;
         
         
+        
         @media(max-width: 700px) {
         width: 90vw;
         max-width: 90vw;

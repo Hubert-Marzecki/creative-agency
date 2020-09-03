@@ -74,9 +74,9 @@ const StyledWorkflow = styled.div`
     font-size: 2em;
     font-weight: 800;
      width: 30%;
-  text-align: justify;
-  margin: 0em auto;
-  margin-top: 3em;
+    text-align: justify;
+     margin: 0em auto;
+     margin-top: 3em;
   
    @media ( max-width: 700px) {
     width: 100%;

@@ -25,6 +25,7 @@ position:absolute;
 left: 50%;
 transform: translate(-50%);
 text-align: center;
+margin-top: 10px;
 
  @media(max-width: 700px) {
         font-size: 3em;
@@ -39,6 +40,7 @@ z-index:0 ;
 margin: 8em auto;
 width: 85%;
 max-width: 95vw;
+
  @media(max-width: 700px) {
 width: 95vw;
 margin: 3em auto;

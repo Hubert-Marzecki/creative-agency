@@ -1,14 +1,14 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
 
-export function Header(props: {bgColor: string}) : JSX.Element {
+export function Header() : JSX.Element {
 
     const StyledHeader = styled.header`
+        background-color: transparent;
         .nav{
           max-width: 100vw;
           display: flex;
           justify-content: flex-end;
-          background-color: ${props.bgColor};
         }
         .link {
         display: inline-block;

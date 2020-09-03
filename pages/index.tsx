@@ -21,7 +21,7 @@ import ProjectTile from "../components/ProjectTile";
 import {ProjectsGrid} from "../components/ProjectsGrid";
 // @ts-ignore
 import progresjaImg from "../public/prog.jpg";
-import { css, jsx } from '@emotion/core'
+import {css, jsx, keyframes} from '@emotion/core'
 import {log} from "util";
 import Link from "next/link";
 
@@ -42,7 +42,8 @@ export default function Home(props:any) : JSX.Element {
         isDay: false,
         isRain: false,
         isWind: false,
-        bgColor: '',
+        bgColor: ' #FFFFE5  ',
+        bgColorNew: "red",
         itemLimit: 6,
     })
 
@@ -61,7 +62,8 @@ export default function Home(props:any) : JSX.Element {
 
     //FUNCTIONS
     function changeColors(color:string) : void{
-            setState(s => ({...s, bgColor: color}))
+            setState(s => ({...s, bgColorNew: color}));
+            // setInterval( setState(s => ({...s, bgColorNew: s.bgColor})),6000);
     }
     function isMoreVisible() : null | JSX.Element {
             if(projectsElements.length < state.itemLimit) {
@@ -83,7 +85,7 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: sun ,
             imgThree: cloud,
             alt:'',
-            color: "blue",
+            color: " #004182",
             link: '/clients/progresja'
         },
         {
@@ -92,7 +94,7 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "red",
+            color: " #8E0000",
             link: '/clients/progresja'
 
         },
@@ -102,7 +104,7 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "gray",
+            color: " #7B436A",
             link: '/clients/progresja',
         },
         {
@@ -111,7 +113,7 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "black",
+            color: " #612892",
             link: '/clients/progresja'
         },
         {
@@ -120,7 +122,7 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "white",
+            color: " #FF748C",
             link: '/clients/progresja'
         },
         {
@@ -129,7 +131,7 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "purple",
+            color: "  #289261",
             link: '/clients/progresja'
         },
         {
@@ -138,7 +140,7 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "yellow",
+            color: "#fff968",
             link: '/clients/progresja'
         },
     ]
@@ -166,12 +168,6 @@ export default function Home(props:any) : JSX.Element {
     flex-direction: column;
     min-height: 90vh;
     height: 100%;
-       
-   -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out;
-
     justify-content: space-between;    
      @media (max-width:  700px) {
                     min-height: 60vh;
@@ -181,7 +177,6 @@ export default function Home(props:any) : JSX.Element {
             margin-left: 100px;
             margin-top: 150px;
             max-width: 100vw;
-            
               @media (max-width:  700px) {
                      margin-left: 10px;
                     margin-top: 40px;
@@ -232,12 +227,25 @@ export default function Home(props:any) : JSX.Element {
                height: 300px;
                }
     `
-    const StyledMain = styled.div`
+    const bounce = keyframes`
+    from, 0%, to {
+    background-color: ${state.bgColor};
+    }
+      50% {
+       background-color: ${state.bgColorNew};
+      }
+       100% {
+       background-color: ${state.bgColor};
+      }
+`
+      const StyledMain = styled.div`
       background-color: ${state.bgColor};
       will-change: background-color;
-       transition: all 0.3s linear;
+      animation: ${bounce} 5s ease ;
 }
 `
+    console.log(event)
+
 
     function imgs(e : any, item: ProjectsElements) : void {
         setInterval(() => {(e : any) => (e.currentTarget.src = item.imgTwo)},300);
@@ -245,13 +253,10 @@ export default function Home(props:any) : JSX.Element {
         setInterval(() => {(e : any) => (e.currentTarget.src = item.img)},300);
     }
 
-
-
     return(
         <>
             <StyledMain>
-
-            <Header bgColor={state.bgColor}/>
+            <Header/>
             <StyledHeader>
             <div className="text__holder">
                 <h1 className="welcome"> Siema, jestem Hubert </h1>
@@ -266,7 +271,7 @@ export default function Home(props:any) : JSX.Element {
             </div>
         </StyledHeader>
 
-        <SectionTitile title="PROJEKTY" bgColor={state.bgColor} styleVaribles={""}/>
+        <SectionTitile title="PROJEKTY" styleVaribles={""}/>
 
             <StyledGrid >
                 <div className="grid__container">
@@ -274,13 +279,14 @@ export default function Home(props:any) : JSX.Element {
                         return (
 <Link  href={item.link} >
                             <StyledTile >
-                              <img className="client__image"
+                                <h3 className="client__name">{item.title}</h3>
+
+                                <img className="client__image"
                                      src={item.img}
                                      alt={props.alt}
                                      onMouseEnter={() => changeColors(item.color)}
                                      onMouseOver={(e : any) => (e.currentTarget.src = item.imgTwo)}
                                      onMouseLeave={() => {changeColors("white")} }/>
-                                <h3 className="client__name">{item.title}</h3>
                             </StyledTile>
 </Link>
                         )
@@ -291,7 +297,7 @@ export default function Home(props:any) : JSX.Element {
 
             </StyledGrid>
 
-                <SectionTitile title=" POZNAJMY SIĘ " bgColor={state.bgColor} styleVaribles={"margin-top: 100px"}/>
+                <SectionTitile title=" POZNAJMY SIĘ "  styleVaribles={"margin-top: 100px"}/>
 
                 <StyledGrid>
                     <div className="grid__container grid__container--wide">
@@ -345,13 +351,20 @@ const StyledTile = styled.div`
         margin: 1em;
         }
         
-        .client__name{
+        .client__name {
         font-size: 20px;
         margin-top: 5px;
+      
+   
         }
         
         .client__image{
         width: 20vw;
+        transform-origin: 0 0;
+         transition: transform .25s, visibility .25s ease-in;
+           &:hover{
+           transform: scale(1.1);
+      }
 
         @media(max-width: 700px) {
         width: 90vw;

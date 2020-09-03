@@ -93,7 +93,7 @@ export default function ProgresjaCase() {
         <>
                 <StyledClient>
 
-                <Header bgColor={""} />
+                <Header  />
                  <ClientHeader title={"Progresja"} img={progClientMain} alt={""} />
                 <ClientIntro market={"Koncerty / Imprezy"}  tasks={"Social Media, Fotografia"}
                              info={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +
@@ -153,7 +153,6 @@ const StyledClient = styled.div`
 `
 
 const StyledTile = styled.div`
-  
         width: fit-content;
         margin: 4em;
         &:hover{
@@ -170,6 +169,7 @@ const StyledTile = styled.div`
         
         .client__image{
         width: 20vw;
+        transform: scale(1, 3);
 
         @media(max-width: 700px) {
         width: 90vw;

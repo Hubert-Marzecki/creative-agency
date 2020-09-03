@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export default function SectionTitile(props:{title:string, bgColor: string, styleVaribles:string}) {
+export default function SectionTitile(props:{title:string,  styleVaribles:string}) {
 
 
     const StyledTitle = styled.h2`
