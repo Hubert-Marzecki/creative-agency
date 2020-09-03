@@ -3,7 +3,7 @@ import * as React from "react";
 import {getWeather} from "../services/client";
 import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
 import axios from 'axios'
-import {useEffect, useState} from "react";
+import {JSXElementConstructor, useEffect, useState} from "react";
 // @ts-ignore
 import sun from '../public/sun.png';
 // @ts-ignore
@@ -16,13 +16,14 @@ import {ThemeProvider} from "emotion-theming";
 // @ts-ignore
 import SectionTitile from "../components/SectionTitle";
 // @ts-ignore
-import ProjectTitle from "../components/ProjectTitle";
+import ProjectTile from "../components/ProjectTile";
 // @ts-ignore
 import {ProjectsGrid} from "../components/ProjectsGrid";
 // @ts-ignore
 import progresjaImg from "../public/prog.jpg";
 import { css, jsx } from '@emotion/core'
 import {log} from "util";
+import Link from "next/link";
 
 export default function Home(props:any) : JSX.Element {
 
@@ -33,7 +34,8 @@ export default function Home(props:any) : JSX.Element {
         imgTwo: string,
         imgThree: string,
         alt: string,
-        color: string
+        color: string,
+        link: string
     }
 
     const [state, setState] = useState({
@@ -61,7 +63,7 @@ export default function Home(props:any) : JSX.Element {
     function changeColors(color:string) : void{
             setState(s => ({...s, bgColor: color}))
     }
-    function isMoreVisible() {
+    function isMoreVisible() : null | JSX.Element {
             if(projectsElements.length < state.itemLimit) {
                 return null
             } else {
@@ -81,7 +83,8 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: sun ,
             imgThree: cloud,
             alt:'',
-            color: "blue"
+            color: "blue",
+            link: '/clients/progresja'
         },
         {
             title:'Chiński Festiwal Światła',
@@ -89,7 +92,9 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "red"
+            color: "red",
+            link: '/clients/progresja'
+
         },
         {
             title:'GiGCity.Tv',
@@ -97,7 +102,8 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "gray"
+            color: "gray",
+            link: '/clients/progresja',
         },
         {
             title:'Holofan3d',
@@ -105,7 +111,8 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "black"
+            color: "black",
+            link: '/clients/progresja'
         },
         {
             title:'Instacorner',
@@ -113,7 +120,8 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "white"
+            color: "white",
+            link: '/clients/progresja'
         },
         {
             title:'BeFriend',
@@ -121,7 +129,8 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "purple"
+            color: "purple",
+            link: '/clients/progresja'
         },
         {
             title:'ProTip Marketing',
@@ -129,7 +138,8 @@ export default function Home(props:any) : JSX.Element {
             imgTwo: progresjaImg,
             imgThree: progresjaImg,
             alt:'',
-            color: "yellow"
+            color: "yellow",
+            link: '/clients/progresja'
         },
     ]
     const myPhotos = [
@@ -222,41 +232,6 @@ export default function Home(props:any) : JSX.Element {
                height: 300px;
                }
     `
-    const StyledGrid = styled.div`
-
-   .grid__container{
-      display: flex;
-      flex-wrap: wrap;
-      width: 70%;
-      margin: 0 auto;
-      justify-content: center;
-        @media(max-width: 700px) {
-        width: 100vw;
-        }
-        &--wide{
-         width: 100vw;
-        }
-   }
-   
-   .see__more__btn {
-    display: block;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 20px;
-      border: none;
-      background-color: transparent;
-      font-weight: 700;
-         &-active{
-      cursor: pointer;
-
-   }
-   &-disable{
-   opacity: 0.4;
-   cursor: none;
-   }
-     
-   }
-`
     const StyledMain = styled.div`
       background-color: ${state.bgColor};
       will-change: background-color;
@@ -297,8 +272,9 @@ export default function Home(props:any) : JSX.Element {
                 <div className="grid__container">
                     {projectsElements.slice(0,state.itemLimit).map(item => {
                         return (
+<Link  href={item.link} >
                             <StyledTile >
-                                <img className="client__image"
+                              <img className="client__image"
                                      src={item.img}
                                      alt={props.alt}
                                      onMouseEnter={() => changeColors(item.color)}
@@ -306,6 +282,7 @@ export default function Home(props:any) : JSX.Element {
                                      onMouseLeave={() => {changeColors("white")} }/>
                                 <h3 className="client__name">{item.title}</h3>
                             </StyledTile>
+</Link>
                         )
                     })}
                 </div>
@@ -360,6 +337,7 @@ export async function getServerSideProps() {
 const StyledTile = styled.div`
         width: fit-content;
         margin: 4em;
+
         &:hover{
         
         }
@@ -374,7 +352,7 @@ const StyledTile = styled.div`
         
         .client__image{
         width: 20vw;
-        
+
         @media(max-width: 700px) {
         width: 90vw;
         }
@@ -389,4 +367,39 @@ const StyledButton = styled.button`
       background-color: transparent;
       font-weight: 700;
       cursor: pointer;
+`
+const StyledGrid = styled.div`
+
+   .grid__container{
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+      margin: 0 auto;
+      justify-content: center;
+        @media(max-width: 700px) {
+        width: 100vw;
+        }
+        &--wide{
+         width: 100vw;
+        }
+   }
+   
+   .see__more__btn {
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+      font-weight: 700;
+         &-active{
+      cursor: pointer;
+
+   }
+   &-disable{
+   opacity: 0.4;
+   cursor: none;
+   }
+     
+   }
 `

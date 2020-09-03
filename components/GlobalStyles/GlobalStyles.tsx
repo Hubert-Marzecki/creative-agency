@@ -6,6 +6,7 @@ export const GlobalStyles : any = () => {
     return (
         <>
             <Global styles={css`
+  cursor: url("https://www.mytalk1071.com/wp-content/uploads/2016/04/ThinkstockPhotos-491839347.jpg"), auto !important;
 
 
 
@@ -17,7 +18,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font:inherit;
   vertical-align:baseline;
   font-family: Segoe UI;
-  
+  cursor: url(https://picsum.photos/id/237/200/300), default;
 
 }
 

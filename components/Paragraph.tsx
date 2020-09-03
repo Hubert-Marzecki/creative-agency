@@ -32,7 +32,7 @@ export default function Paragraph() {
 }
 
 const StyledParagraph = styled.div`
-width: 50%;
+width: 30%;
 margin: 0 auto;
 text-align: justify;
    @media(max-width: 700px) {

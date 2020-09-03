@@ -32,9 +32,9 @@ export function Header(props: {bgColor: string}) : JSX.Element {
                         Projekty
                     </li>
                 </Link>
-                <Link href="" >
+                <Link href="/workflow" >
                     <li className="link">
-                        Jak
+                        WorkFlow
                     </li>
                 </Link>
                 <Link href="/omnie" >

@@ -1,14 +1,17 @@
 import styled from "@emotion/styled";
 
-export default function ProjectTitle(props: {title: string, img: string, alt:string}) :JSX.Element{
+export default function ProjectTile(props: {title: string, img: string, alt:string, styleVaribles:string}) :JSX.Element{
     const StyledTile = styled.div`
-        width: fit-content;
+        max-width: 30%;
+        //width: fit-content;
         margin: 4em;
         &:hover{
         
         }
          @media(max-width: 700px) {
-        margin: 1em;
+          min-width: 90vw;
+          max-width: 100vw;
+           margin: 1em;
         }
         
         .client__name{
@@ -17,10 +20,13 @@ export default function ProjectTitle(props: {title: string, img: string, alt:str
         }
         
         .client__image{
-        width: 20vw;
+        max-width: 20vw;
+        word-break: break-all;
+        
         
         @media(max-width: 700px) {
         width: 90vw;
+        max-width: 90vw;
         }
         
         
@@ -29,7 +35,7 @@ export default function ProjectTitle(props: {title: string, img: string, alt:str
     return (
         <>
         <StyledTile >
-                <img className="client__image" src={props.img} alt={props.alt} />
+                <img className="client__image" src={props.img}/>
                 <h3 className="client__name">{props.title}</h3>
         </StyledTile>
         </>

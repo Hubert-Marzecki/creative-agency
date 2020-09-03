@@ -1,6 +1,6 @@
-import ProjectTitle from "./ProjectTitle";
+import ProjectTile from "./ProjectTile";
 import * as React from "react";
-import {ProjectTile} from "../Model";
+import {ProjectTileModel} from "../Model";
 import styled from "@emotion/styled";
 import {useState} from "react";
 // @ts-ignore
@@ -11,17 +11,14 @@ import GigCityImg from '../public/vovo.jpg'
 import CFS from '../public/chinki.jpg'
 // @ts-ignore
 import holofanImg from '../public/holofanmain.jpg'
+import Link from "next/link";
 
 
 export function ProjectsGrid(props: {elements: all[], styleVaribles:string, showAll:boolean}) : JSX.Element {
 
     const [ state, setState] = useState({
-        offset: 0
+        offset: 10
     })
-    const LIMIT = 6;
-
-    console.log(props)
-
 
     const StyledGrid = styled.div`
    .grid__container{
@@ -50,7 +47,7 @@ export function ProjectsGrid(props: {elements: all[], styleVaribles:string, show
 
    }
    &-disable{
-   opacity: 0.4;
+   opacity: 0;
    cursor: none;
    }
      
@@ -61,16 +58,17 @@ export function ProjectsGrid(props: {elements: all[], styleVaribles:string, show
     return (
         <>
             <StyledGrid >
+
                 <div className="grid__container">
-                    {props.elements?.slice(0, state.offset + LIMIT).map(item => {
+                    {props.elements?.slice(0, state.offset).map(item => {
                         return   (
-                        <ProjectTitle title={item.title} img={item.img} alt="foto" />
+                                      <ProjectTile title={item.title} img={item.img} alt="foto" styleVaribles={props.styleVaribles} />
                         )
                     })}
                 </div>
-                { props.elements?.length < LIMIT || props.showAll === false ? null :
+                {  props.showAll === false ? null :
                     <button className={ state.offset < props.elements?.length ? "see__more__btn see__more__btn-active" : "see__more__btn see__more__btn-disable" }
-                                                                          onClick={() => setState( s => ({...s, offset: s.offset + LIMIT}))}
+                                                                          onClick={() => setState( s => ({...s, offset: s.offset + 3}))}
                 > Zobacz więcej </button>}
 
 
