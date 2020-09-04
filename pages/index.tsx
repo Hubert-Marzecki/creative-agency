@@ -21,6 +21,9 @@ import ProjectTile from "../components/ProjectTile";
 import {ProjectsGrid} from "../components/ProjectsGrid";
 // @ts-ignore
 import progresjaImg from "../public/prog.jpg";
+// @ts-ignore
+import band2 from "../public/band2.jpg";
+
 import {css, jsx, keyframes} from '@emotion/core'
 import {log} from "util";
 import Link from "next/link";
@@ -43,46 +46,17 @@ export default function Home(props:any) : JSX.Element {
         isRain: false,
         isWind: false,
         bgColor: ' #FFFFE5  ',
-        bgColorNew: "red",
+        bgColorNew: "#004182",
         itemLimit: 6,
     })
 
-    // useEffect(() => {
-    //     const temp = props.weather.main.temp - 273
-    //     if( temp < 10) {
-    //         setState(s => ({...s, bgColor: props => props.theme.colors.bgBlue}))
-    //
-    //     } else if (temp < 24 && temp > 10) {
-    //         setState(s => ({...s, bgColor: props => props.theme.colors.bgWhite}))
-    //     } else if (temp > 25) {
-    //         setState(s => ({...s, bgColor: props => props.theme.colors.bgYellow}))
-    //     }
-    // },[])
-    //todo add colors varibles
-
-    //FUNCTIONS
-    function changeColors(color:string) : void{
-            setState(s => ({...s, bgColorNew: color}));
-            // setInterval( setState(s => ({...s, bgColorNew: s.bgColor})),6000);
-    }
-    function isMoreVisible() : null | JSX.Element {
-            if(projectsElements.length < state.itemLimit) {
-                return null
-            } else {
-                return (
-                    <StyledButton onClick={() =>
-                        setState(s => ({...s, itemLimit: s.itemLimit + 3}))}
-                    >Zobacz więcej</StyledButton>
-                )
-            }
-    }
 
     //ELEMENTS
     const projectsElements : ProjectsElements[] = [
         {
             title:' Progresja',
             img: progresjaImg,
-            imgTwo: sun ,
+            imgTwo: band2 ,
             imgThree: cloud,
             alt:'',
             color: " #004182",
@@ -195,9 +169,9 @@ export default function Home(props:any) : JSX.Element {
                font-size: 3em;
                line-break: normal;
                line-height: normal;
-               font-weight: 600;
-                 color:white;
-               -webkit-text-stroke: 2px black;
+               font-weight: 300;
+                 //color:white;
+               //-webkit-text-stroke: 2px black;
                
                @media (max-width:  700px) {
                 font-size: 1em;
@@ -238,13 +212,39 @@ export default function Home(props:any) : JSX.Element {
        background-color: ${state.bgColor};
       }
 `
-      const StyledMain = styled.div`
+    const StyledMain = styled.div`
       background-color: ${state.bgColor};
       will-change: background-color;
       animation: ${bounce} 5s ease ;
 }
 `
-    console.log(event)
+
+    //FUNCTIONS
+    function changeColors(color:string) : void{
+            setState(s => ({...s, bgColorNew: color}));
+            // setInterval( setState(s => ({...s, bgColorNew: s.bgColor})),6000);
+    }
+    function isMoreVisible() : null | JSX.Element {
+            if(projectsElements.length < state.itemLimit) {
+                return null
+            } else {
+                return (
+                    <StyledButton onClick={() =>
+                        setState(s => ({...s, itemLimit: s.itemLimit + 3}))}
+                    >Zobacz więcej</StyledButton>
+                )
+            }
+    }
+
+    const imgProg = [progresjaImg, sun, cloud]
+
+  function replaceImg(e:any) {
+        let x= 0;
+    setInterval(e.currentTarget.src = imgProg[x+1])
+      x++;
+
+  }
+
 
 
     function imgs(e : any, item: ProjectsElements) : void {
@@ -281,12 +281,15 @@ export default function Home(props:any) : JSX.Element {
                             <StyledTile >
                                 <h3 className="client__name">{item.title}</h3>
 
-                                <img className="client__image"
+                                <img
+                                    className="client__image"
                                      src={item.img}
                                      alt={props.alt}
                                      onMouseEnter={() => changeColors(item.color)}
-                                     onMouseOver={(e : any) => (e.currentTarget.src = item.imgTwo)}
-                                     onMouseLeave={() => {changeColors("white")} }/>
+                                     onMouseOver={(e : any) => (replaceImg(e))}
+                                     onMouseLeave={() => {changeColors("white")} }
+
+                                />
                             </StyledTile>
 </Link>
                         )
