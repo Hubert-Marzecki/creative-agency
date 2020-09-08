@@ -5,9 +5,9 @@ import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
 import axios from 'axios'
 import {JSXElementConstructor, useEffect, useState} from "react";
 // @ts-ignore
-import sun from '../public/sun.png';
+import sun from '../public/vovo.jpg';
 // @ts-ignore
-import cloud from '../public/3.png';
+import cloud from '../public/band2.jpg';
 
 import styled from "@emotion/styled";
 // @ts-ignore
@@ -239,13 +239,8 @@ export default function Home(props:any) : JSX.Element {
     const imgProg = [progresjaImg, sun, cloud]
 
   function replaceImg(e:any) {
-        let x= 0;
-    setInterval(e.currentTarget.src = imgProg[x+1])
-      x++;
-
+        e.currentTarget.src = sun
   }
-
-
 
     function imgs(e : any, item: ProjectsElements) : void {
         setInterval(() => {(e : any) => (e.currentTarget.src = item.imgTwo)},300);
@@ -365,9 +360,9 @@ const StyledTile = styled.div`
         width: 20vw;
         transform-origin: 0 0;
          transition: transform .25s, visibility .25s ease-in;
-           &:hover{
+           /* &:hover{
            transform: scale(1.1);
-      }
+      } */
 
         @media(max-width: 700px) {
         width: 90vw;
