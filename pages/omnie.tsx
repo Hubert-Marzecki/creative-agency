@@ -1,5 +1,5 @@
 import {ProjectsGrid} from "../components/ProjectsGrid";
-import progresjaImg from "../public/prog.jpg";
+import jaOne from "../public/ja/ja1.jpg";
 import SectionTitile from "../components/SectionTitle";
 import {Header} from "../components/Header";
 import Paragraph from "../components/Paragraph";
@@ -7,22 +7,14 @@ import styled from "@emotion/styled";
 
 export default function oMnie() {
 
-    const myPhotos = [
-        {
-            title:'',
-            img: progresjaImg,
-            alt:''
-        },
-    ]
-
 
     return (
         <>
-            <Header bgColor={"bgBlue"}/>
-            <SectionTitile title={"O MNIE"} bgColor={"bgBlue"} styleVaribles={""} />
+            <Header />
+            <SectionTitile title={"O MNIE"} styleVaribles={""} />
             <StyledAbout>
                 <StyledTile >
-                    <img className="client__image" src={progresjaImg}/>
+                    <img className="client__image" src={jaOne}/>
                 </StyledTile>
             <Paragraph />
             </StyledAbout>
@@ -41,8 +33,6 @@ export default function oMnie() {
                 @media(max-width: 700px) {
         width: 90vw;
         }
-        
-            
             `
 
 const StyledTile = styled.div`

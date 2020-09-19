@@ -18,8 +18,8 @@ import progSmallTwo from '../public/progresja/prog-small2.jpg';
 import progSmallThree from '../public/progresja/prog-small4.jpg';
 
 import cfsSmallOne from '../public/cfs/cfs-small2.jpg';
-import cfsSmallTwo from '../public/cfs/cfs-small2.jpg';
-import cfsSmallThree from '../public/cfs/cfs-small3.jpg';
+import cfsSmallTwo from '../public/cfs/cfs-small3.jpg';
+import cfsSmallThree from '../public/cfs/cfs-small4.jpg';
 
 import gigSmallOne from '../public/gigcity/gig-small.jpg'
 import gigSmallTwo from '../public/gigcity/gig-small2.jpg'
@@ -34,8 +34,12 @@ import instaSmallTwo from '../public/instacorner/insta-small2.png';
 import instaSmallThree from '../public/instacorner/insta-small.png';
 
 import jaOne from '../public/ja/ja1.jpg'
-// import jaTwo from '../public/ja/ja2.jpg'
-// import jaThree from '../public/ja/ja3.jpg'
+import jaTwo from '../public/ja/ja2.png'
+import jaThree from '../public/ja/ja3.jpg'
+
+import bFriendOne from '../public/bfriend/brfiend-small.jpg'
+import bFriendTwo from '../public/bfriend/bfriend-small2.png'
+import bFriendThree from '../public/bfriend/bfriend-small3.jpg'
 
 export default function Home(props:any) : JSX.Element {
 
@@ -85,7 +89,7 @@ export default function Home(props:any) : JSX.Element {
             title:'GiGCity.Tv',
             img: gigSmallOne,
             imgTwo: gigSmallTwo,
-            imgThree: gigSmallTwo,
+            imgThree: gigSmallThree,
             alt:'',
             color: " #7B436A",
             link: '/clients/progresja',
@@ -102,17 +106,17 @@ export default function Home(props:any) : JSX.Element {
         {
             title:'Instacorner',
             img: instaSmallOne,
-            imgTwo: instaSmallTwo,
-            imgThree: instaSmallThree,
+            imgTwo: instaSmallOne,
+            imgThree: instaSmallOne,
             alt:'',
             color: " #FF748C",
-            link: '/clients/progresja'
+            link: '/clients/instacorner'
         },
         {
             title:'BeFriend',
-            img: progSmallOne,
-            imgTwo: progSmallTwo,
-            imgThree: progSmallThree,
+            img: bFriendOne,
+            imgTwo: bFriendTwo,
+            imgThree: bFriendThree,
             alt:'',
             color: "  #289261",
             link: '/clients/progresja'
@@ -135,12 +139,12 @@ export default function Home(props:any) : JSX.Element {
         },
         {
             title:'',
-            img: jaOne,
+            img: jaTwo,
             alt:''
         },
         {
             title:'',
-            img: jaOne,
+            img: jaThree,
             alt:''
         },
     ]
@@ -152,7 +156,6 @@ export default function Home(props:any) : JSX.Element {
     min-height: 90vh;
     height: 100%;
     justify-content: space-between;    
-    color: ${state.fontColor};
      @media (max-width:  700px) {
                     min-height: 60vh;
                   }
@@ -252,7 +255,8 @@ export default function Home(props:any) : JSX.Element {
         e.currentTarget.src = item.imgTwo
   }
   function moveToAnotherImage(e:any, item) {
-      e.currentTarget.src = item.imgThree
+      e.currentTarget.src = item.imgThree;
+    //   e.currentTarget.className
   }
 
     function imgs(e : any, item: ProjectsElements) : void {
@@ -312,11 +316,11 @@ export default function Home(props:any) : JSX.Element {
 
                 <StyledGrid>
                     <div className="grid__container grid__container--wide">
-                        {myPhotos.slice(0,state.itemLimit).map(item => {
+                        {myPhotos.slice(0,state.itemLimit).map((item, index) => {
                             return (
                                 <StyledTile >
                                     <img className="client__image"
-                                         src={myPhotos[0].img}
+                                         src={myPhotos[index].img}
                                          alt={props.alt}
                                          // onMouseEnter={() => changeColors(item.color)}
                                          // onMouseLeave={() => changeColors("white")}
@@ -356,6 +360,7 @@ export async function getServerSideProps() {
 const StyledTile = styled.div`
         width: fit-content;
         margin: 4em;
+        cursor: pointer;
         &:hover{
             h3{
                 font-weight: 600;
@@ -377,7 +382,7 @@ const StyledTile = styled.div`
         height: 40vh;
         transform-origin: 0 0;
          transition: transform .25s, visibility .25s ease-in;
-         
+         cursor: pointer;
            /* &:hover{
            transform: scale(1.1);
       } */

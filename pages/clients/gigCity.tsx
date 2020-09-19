@@ -1,31 +1,27 @@
-import {ProjectsGrid} from "../../components/ProjectsGrid";
-import * as React from "react";
+import styled from "@emotion/styled";
+import Link from "next/link";
+import React from "react";
+import BigCenterImg from "../../components/BigCenterImg";
 import ClientHeader from "../../components/ClientHeader";
 import ClientIntro from "../../components/ClientIntro";
-import {Header} from "../../components/Header";
-import BigCenterImg from "../../components/BigCenterImg";
-import styled from "@emotion/styled";
 import ClientText from "../../components/ClientText";
-import {useEffect} from "react";
-import TileWithText from "../../components/TileWithText";
-import Link from "next/link";
+import Footer from "../../components/Footer";
+import { Header } from "../../components/Header";
+import { ProjectsGrid } from "../../components/ProjectsGrid";
 import SectionTitile from "../../components/SectionTitle";
 
-
-import cfsSmallOne from '../../public/cfs/cfs-small2.jpg'
-import cfsSmallTwo from '../../public/cfs/cfs-small3.jpg'
-import cfsSmallThree from '../../public/cfs/cfs-small3.jpg'
-import cfsMainOne from '../../public/cfs/cfs-main.jpg'
+import gigSmallOne from '../../public/gigcity/gig-small.jpg'
+import gigSmallTwo from '../../public/gigcity/gig-small2.jpg'
+import gigSmallThree from '../../public/gigcity/gig-small3.jpg'
+import gigMain from '../../public/gigcity/gig-main.jpg'
+import gigMainTwo from '../../public/gigcity/gig-main2.jpg'
 
 import progSmallOne from '../../public/progresja/prog-small.jpg'
-import gigSmallOne  from '../../public/progresja/prog-small.jpg'
 import holoSmallOne  from '../../public/progresja/prog-small.jpg'
 import instaSmallOne  from '../../public/progresja/prog-small.jpg'
 
-
-export default  function CFSCase() {
-
-
+export default function gigCity() {
+  
     
     const projectsElements = [
         {
@@ -69,18 +65,18 @@ export default  function CFSCase() {
 
     const elementImg = [
         {
-            img: cfsSmallOne,
+            img: gigSmallOne,
             alt:''
         },
         {
-            img: cfsSmallTwo,
+            img: gigSmallTwo,
             alt:''
         }
     ]
     const tileWithText = [
         {
             title: "",
-            img: cfsSmallThree,
+            img: gigSmallThree,
             alt: "",
         },
         {
@@ -101,13 +97,14 @@ export default  function CFSCase() {
         <StyledClient>
 
         <Header  />
-         <ClientHeader title={"Chiński Festiwal Światła"} img={cfsMainOne} alt={""} />
+         <ClientHeader title={"GIG City"} img={gigMain} alt={""} />
+
         <ClientIntro market={"Eventy / Rozrywka familijna"}  tasks={"Social Media, Fotografia, Video"}
                      info={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +
                      "\n" +
                      "Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}/>
+        
          <ProjectsGrid elements={elementImg} styleVaribles={"margin-top:3em"} showAll={false}/>
-         <BigCenterImg img={cfsMainOne} alt={""}/>
          <ClientText text={"Check the render method of `ProjectsGrid`. See https://fb.me/react-warning-keys for more information.\n" +
          "    in ProjectTile (at ProjectsGrid.tsx:68)\n" +
          "    in ProjectsGrid (at omnie.tsx:32)\n" +
@@ -119,12 +116,15 @@ export default  function CFSCase() {
          "    in Container (created by AppContainer)\n" +
          "    in AppContainer\n" +
          "    in Root"} styleVaribles={""} />
+         <BigCenterImg img={gigMainTwo} alt={""}/>
+    
+
             {/*<TileWithText text={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +*/}
             {/*"\n" +*/}
             {/*"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}*/}
             {/*              img={progresjaImg} alt={""} />*/}
                           <ProjectsGrid elements={tileWithText} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />
-                          <SectionTitile title="INNE PROJEKTY" bgColor="" styleVaribles="" />
+                          <SectionTitile title="INNE PROJEKTY"  styleVaribles="" />
 
             <StyledGrid >
                 <div className="grid__container">

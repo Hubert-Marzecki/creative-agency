@@ -5,7 +5,8 @@ import styled, { CreateStyled } from '@emotion/styled'
 import * as React from "react";
 import { GlobalStyles } from '../components/GlobalStyles/GlobalStyles'
 import {Header} from "../components/Header";
-
+// import '../styles/tailwind.css';
+import Footer from '../components/Footer';
 
 const theme : any = {
   colors: {
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }) : JSX.Element {
         <GlobalStyles />
          <ThemeProvider theme={theme}>
          <Component {...pageProps} />
+         {/* <Footer /> */}
       </ThemeProvider>
     </>
     )

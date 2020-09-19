@@ -71,14 +71,14 @@ export default function ProgresjaCase() {
             alt:''
         },
         {
-            img: progresjaImg,
+            img: progSmall2,
             alt:''
         }
     ]
     const tileWithText = [
         {
             title: "",
-            img: progresjaImg,
+            img: progSmall3,
             alt: "",
         },
         {

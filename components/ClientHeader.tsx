@@ -40,6 +40,7 @@ z-index:0 ;
 margin: 8em auto;
 width: 65%;
 max-width: 95vw;
+min-width: 55vw;
 
  @media(max-width: 700px) {
 width: 95vw;

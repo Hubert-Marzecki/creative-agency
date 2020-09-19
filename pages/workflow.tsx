@@ -1,9 +1,9 @@
 import SectionTitile from "../components/SectionTitle";
 import ClientText from "../components/ClientText";
-// import flower from '../public/flower.png'
-// import pion from '../public/dasd.png'
-// import poziom from '../public/dasd-1.png'
-// import tri from '../public/tri.png'
+import pion from '../public/graf/blopOne.png'
+import poziom from '../public/graf/blopTwo.png'
+import tri from '../public/graf/blopThree.png'
+import flower from '../public/graf/blopOne.png'
 import styled from "@emotion/styled";
 import {Header} from "../components/Header";
 export default function WorkFlow() {
@@ -23,9 +23,9 @@ export default function WorkFlow() {
 
     return (
             <>
-                <Header bgColor={"black"}/>
+                <Header/>
                 <StyledWorkflow>
-                <SectionTitile title="WORKFLOW" bgColor={"black"} styleVaribles={""} />
+                <SectionTitile title="WORKFLOW"  styleVaribles={""} />
                     {/*{section("rozmowa", 'Poznamy się i porozmawiajmy o tym gdzie moglibyśmy pomóc.Jeśli dojdziemy do podobnych wniosków podpisujemy umowę na określiony okres', pion)}*/}
                     <h3>Rozmowa</h3>
                      <ClientText text="Poznamy się i porozmawiajmy o tym gdzie moglibyśmy pomóc. Jeśli dojdziemy do podobnych wniosków podpisujemy umowę na określiony okres. "
@@ -60,6 +60,8 @@ The videos are always converted in the highest available quality. Please note th
     )
 }
 const StyledWorkflow = styled.div`
+    color:white;
+    background-color: black;
     img{
     display:block;
     margin: 0 auto;
@@ -67,6 +69,7 @@ const StyledWorkflow = styled.div`
     @media ( max-width: 700px) {
     width: 80vw;
     height: fit-content;
+
     }
     }
     
