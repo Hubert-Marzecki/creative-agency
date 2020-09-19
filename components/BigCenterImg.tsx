@@ -21,11 +21,11 @@ justify-content: center;
 display: block;
 z-index:0 ;
 margin: 8em auto;
-width: 85%;
+width: 65%;
 max-width: 90vw;
  @media(max-width: 700px) {
-width: 95vw;
-margin: 2em auto;
+    width: 90vw;
+    margin: 2em auto;
         }
 }
 `

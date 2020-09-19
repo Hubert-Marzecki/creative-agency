@@ -1,10 +1,14 @@
 import {ProjectsGrid} from "../../components/ProjectsGrid";
-import sun from '../../public/sun.png'
 // @ts-ignore
-import cloud from '../public/sun.png';
+
 import * as React from "react";
-import progresjaImg from "../../public/prog.jpg";
-import progClientMain from '../../public/prog_client.png'
+import progClientMain from '../../public/progresja/prog-main.jpg'
+import progClientMain2 from '../../public/progresja/prog-main2.jpg'
+import progSmall from '../../public/progresja/prog-small.jpg'
+import progSmall2 from '../../public/progresja/prog-small2.jpg'
+import progSmall3 from '../../public/progresja/prog-small3.jpg'
+import progSmall4 from '../../public/progresja/prog-small4.jpg'
+
 
 import ClientHeader from "../../components/ClientHeader";
 import ClientIntro from "../../components/ClientIntro";
@@ -24,37 +28,37 @@ export default function ProgresjaCase() {
 
         {
             title:'Chiński Festiwal Światła',
-            img: progresjaImg,
+            img: progSmall,
             alt:'',
             link: '/clients/progresja'
         },
         {
             title:'GiGCity.Tv',
-            img: progresjaImg,
+            img: progSmall,
             alt:'',
             link: '/clients/progresja'
         },
         {
             title:'Holofan3d',
-            img: progresjaImg,
+            img: progSmall,
             alt:'',
             link: '/clients/progresja'
         },
         {
             title:'Instacorner',
-            img: progresjaImg,
+            img: progSmall,
             alt:'',
             link: '/clients/progresja'
         },
         {
             title:'BeFriend',
-            img: progresjaImg,
+            img: progSmall,
             alt:'',
             link: '/clients/progresja'
         },
         {
             title:'ProTip Marketing',
-            img: progresjaImg,
+            img: progSmall,
             alt:'',
             link: '/clients/progresja'
         },
@@ -63,7 +67,7 @@ export default function ProgresjaCase() {
 
     const elementImg = [
         {
-            img: progresjaImg,
+            img: progSmall,
             alt:''
         },
         {
@@ -99,7 +103,7 @@ export default function ProgresjaCase() {
                              info={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +
                              "\n" +
                              "Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}/>
-                 <BigCenterImg img={progClientMain} alt={""}/>
+                 <BigCenterImg img={progClientMain2} alt={""}/>
                  <ProjectsGrid elements={elementImg} styleVaribles={"margin-top:3em"} showAll={false}/>
                  <ClientText text={"Check the render method of `ProjectsGrid`. See https://fb.me/react-warning-keys for more information.\n" +
                  "    in ProjectTile (at ProjectsGrid.tsx:68)\n" +
@@ -169,7 +173,6 @@ const StyledTile = styled.div`
         
         .client__image{
         width: 20vw;
-        transform: scale(1, 3);
 
         @media(max-width: 700px) {
         width: 90vw;

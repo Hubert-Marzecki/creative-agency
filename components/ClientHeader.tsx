@@ -38,7 +38,7 @@ margin-top: 10px;
 display: block;
 z-index:0 ;
 margin: 8em auto;
-width: 85%;
+width: 65%;
 max-width: 95vw;
 
  @media(max-width: 700px) {

@@ -1,35 +1,43 @@
 import * as React from "react";
-// @ts-ignore
 import {getWeather} from "../services/client";
 import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
 import axios from 'axios'
 import {JSXElementConstructor, useEffect, useState} from "react";
-// @ts-ignore
-import sun from '../public/vovo.jpg';
-// @ts-ignore
-import cloud from '../public/band2.jpg';
-
 import styled from "@emotion/styled";
-// @ts-ignore
 import {Header} from "../components/Header";
 import {ThemeProvider} from "emotion-theming";
-// @ts-ignore
 import SectionTitile from "../components/SectionTitle";
-// @ts-ignore
 import ProjectTile from "../components/ProjectTile";
-// @ts-ignore
 import {ProjectsGrid} from "../components/ProjectsGrid";
-// @ts-ignore
-import progresjaImg from "../public/prog.jpg";
-// @ts-ignore
-import band2 from "../public/band2.jpg";
-
 import {css, jsx, keyframes} from '@emotion/core'
-import {log} from "util";
 import Link from "next/link";
 
-export default function Home(props:any) : JSX.Element {
 
+import progSmallOne from '../public/progresja/prog-small.jpg';
+import progSmallTwo from '../public/progresja/prog-small2.jpg';
+import progSmallThree from '../public/progresja/prog-small4.jpg';
+
+import cfsSmallOne from '../public/cfs/cfs-small2.jpg';
+import cfsSmallTwo from '../public/cfs/cfs-small2.jpg';
+import cfsSmallThree from '../public/cfs/cfs-small3.jpg';
+
+import gigSmallOne from '../public/gigcity/gig-small.jpg'
+import gigSmallTwo from '../public/gigcity/gig-small2.jpg'
+import gigSmallThree from '../public/gigcity/gig-small3.jpg'
+
+import holoSmallOne from '../public/holo/holo-small.jpg'
+import holoSmallTwo from '../public/holo/holo-small.jpg'
+import holoSmallThree from '../public/holo/holo-small.jpg'
+
+import instaSmallOne from '../public/instacorner/insta-small.png';
+import instaSmallTwo from '../public/instacorner/insta-small2.png';
+import instaSmallThree from '../public/instacorner/insta-small.png';
+
+import jaOne from '../public/ja/ja1.jpg'
+// import jaTwo from '../public/ja/ja2.jpg'
+// import jaThree from '../public/ja/ja3.jpg'
+
+export default function Home(props:any) : JSX.Element {
 
     interface ProjectsElements {
         title: string,
@@ -45,8 +53,9 @@ export default function Home(props:any) : JSX.Element {
         isDay: false,
         isRain: false,
         isWind: false,
-        bgColor: ' #FFFFE5  ',
-        bgColorNew: "#004182",
+        bgColor: ' black ',
+        fontColor: "white",
+        bgColorNew: "black",
         itemLimit: 6,
     })
 
@@ -55,64 +64,64 @@ export default function Home(props:any) : JSX.Element {
     const projectsElements : ProjectsElements[] = [
         {
             title:' Progresja',
-            img: progresjaImg,
-            imgTwo: band2 ,
-            imgThree: cloud,
+            img: progSmallOne,
+            imgTwo: progSmallTwo,
+            imgThree: progSmallThree,
             alt:'',
             color: " #004182",
             link: '/clients/progresja'
         },
         {
             title:'Chiński Festiwal Światła',
-            img: progresjaImg,
-            imgTwo: progresjaImg,
-            imgThree: progresjaImg,
+            img: cfsSmallOne,
+            imgTwo: cfsSmallTwo,
+            imgThree: cfsSmallThree,
             alt:'',
             color: " #8E0000",
-            link: '/clients/progresja'
+            link: '/clients/CFS'
 
         },
         {
             title:'GiGCity.Tv',
-            img: progresjaImg,
-            imgTwo: progresjaImg,
-            imgThree: progresjaImg,
+            img: gigSmallOne,
+            imgTwo: gigSmallTwo,
+            imgThree: gigSmallTwo,
             alt:'',
             color: " #7B436A",
             link: '/clients/progresja',
         },
         {
             title:'Holofan3d',
-            img: progresjaImg,
-            imgTwo: progresjaImg,
-            imgThree: progresjaImg,
+            img: holoSmallOne,
+            imgTwo: holoSmallTwo,
+            imgThree: holoSmallThree,
             alt:'',
             color: " #612892",
             link: '/clients/progresja'
         },
         {
             title:'Instacorner',
-            img: progresjaImg,
-            imgTwo: progresjaImg,
-            imgThree: progresjaImg,
+            img: instaSmallOne,
+            imgTwo: instaSmallTwo,
+            imgThree: instaSmallThree,
             alt:'',
             color: " #FF748C",
             link: '/clients/progresja'
         },
         {
             title:'BeFriend',
-            img: progresjaImg,
-            imgTwo: progresjaImg,
-            imgThree: progresjaImg,
+            img: progSmallOne,
+            imgTwo: progSmallTwo,
+            imgThree: progSmallThree,
             alt:'',
             color: "  #289261",
             link: '/clients/progresja'
         },
         {
             title:'ProTip Marketing',
-            img: progresjaImg,
-            imgTwo: progresjaImg,
-            imgThree: progresjaImg,
+            img: progSmallOne,
+            imgTwo: progSmallTwo,
+            imgThree: progSmallThree,
             alt:'',
             color: "#fff968",
             link: '/clients/progresja'
@@ -121,17 +130,17 @@ export default function Home(props:any) : JSX.Element {
     const myPhotos = [
         {
             title:'',
-            img: progresjaImg,
+            img: jaOne,
             alt:''
         },
         {
             title:'',
-            img: progresjaImg,
+            img: jaOne,
             alt:''
         },
         {
             title:'',
-            img: progresjaImg,
+            img: jaOne,
             alt:''
         },
     ]
@@ -143,6 +152,7 @@ export default function Home(props:any) : JSX.Element {
     min-height: 90vh;
     height: 100%;
     justify-content: space-between;    
+    color: ${state.fontColor};
      @media (max-width:  700px) {
                     min-height: 60vh;
                   }
@@ -202,10 +212,10 @@ export default function Home(props:any) : JSX.Element {
                }
     `
     const bounce = keyframes`
-    from, 0%, to {
-    background-color: ${state.bgColor};
+    from, 0% {
+    background-color: ${state.bgColorNew};
     }
-      50% {
+      1% {
        background-color: ${state.bgColorNew};
       }
        100% {
@@ -215,13 +225,14 @@ export default function Home(props:any) : JSX.Element {
     const StyledMain = styled.div`
       background-color: ${state.bgColor};
       will-change: background-color;
-      animation: ${bounce} 5s ease ;
-}
+      animation: ${bounce} 0.5s ease-in-out ;
+      animation-iteration-count: 1;
+      color: ${state.fontColor};
 `
 
     //FUNCTIONS
     function changeColors(color:string) : void{
-            setState(s => ({...s, bgColorNew: color}));
+            setState(s => ({...s, bgColor: color}));
             // setInterval( setState(s => ({...s, bgColorNew: s.bgColor})),6000);
     }
     function isMoreVisible() : null | JSX.Element {
@@ -236,10 +247,12 @@ export default function Home(props:any) : JSX.Element {
             }
     }
 
-    const imgProg = [progresjaImg, sun, cloud]
 
-  function replaceImg(e:any) {
-        e.currentTarget.src = sun
+  function replaceImg(e:any,item) {
+        e.currentTarget.src = item.imgTwo
+  }
+  function moveToAnotherImage(e:any, item) {
+      e.currentTarget.src = item.imgThree
   }
 
     function imgs(e : any, item: ProjectsElements) : void {
@@ -258,7 +271,7 @@ export default function Home(props:any) : JSX.Element {
                 <h2 className="welcome__caption"> Zajmuję się tworzeniem stron internetowych, <br/> komunikacją marketingową i fotografią. </h2>
             </div>
 
-            <img src={sun} className="sun" />
+            {/* <img src={sun} className="sun" /> */}
             {/*<img src={cloud} className="cloud" />*/}
 
             <div className="weather__holder">
@@ -274,17 +287,17 @@ export default function Home(props:any) : JSX.Element {
                         return (
 <Link  href={item.link} >
                             <StyledTile >
-                                <h3 className="client__name">{item.title}</h3>
 
                                 <img
                                     className="client__image"
                                      src={item.img}
                                      alt={props.alt}
-                                     onMouseEnter={() => changeColors(item.color)}
-                                     onMouseOver={(e : any) => (replaceImg(e))}
-                                     onMouseLeave={() => {changeColors("white")} }
-
+                                     /* onMouseEnter={() => changeColors(item.color)} */
+                                     onMouseOver={(e : any) => (replaceImg(e, item))}
+                                     onMouseLeave={(e) => moveToAnotherImage(e,item)}
                                 />
+                                <h3 className="client__name">{item.title}</h3>
+
                             </StyledTile>
 </Link>
                         )
@@ -314,7 +327,9 @@ export default function Home(props:any) : JSX.Element {
                         })}
                     </div>
                 </StyledGrid>
-
+                <StyledButton 
+                    > Poznajmy się </StyledButton>
+                    
             </StyledMain>
 
         </>
@@ -341,9 +356,10 @@ export async function getServerSideProps() {
 const StyledTile = styled.div`
         width: fit-content;
         margin: 4em;
-
         &:hover{
-        
+            h3{
+                font-weight: 600;
+            }
         }
          @media(max-width: 700px) {
         margin: 1em;
@@ -357,9 +373,11 @@ const StyledTile = styled.div`
         }
         
         .client__image{
-        width: 20vw;
+        /* width: 20vw; */
+        height: 40vh;
         transform-origin: 0 0;
          transition: transform .25s, visibility .25s ease-in;
+         
            /* &:hover{
            transform: scale(1.1);
       } */
@@ -378,6 +396,7 @@ const StyledButton = styled.button`
       background-color: transparent;
       font-weight: 700;
       cursor: pointer;
+      color: white;
 `
 const StyledGrid = styled.div`
 

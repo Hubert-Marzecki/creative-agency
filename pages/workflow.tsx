@@ -1,15 +1,15 @@
 import SectionTitile from "../components/SectionTitle";
 import ClientText from "../components/ClientText";
-import flower from '../public/flower.png'
-import pion from '../public/dasd.png'
-import poziom from '../public/dasd-1.png'
-import tri from '../public/tri.png'
+// import flower from '../public/flower.png'
+// import pion from '../public/dasd.png'
+// import poziom from '../public/dasd-1.png'
+// import tri from '../public/tri.png'
 import styled from "@emotion/styled";
 import {Header} from "../components/Header";
 export default function WorkFlow() {
 
 
-    function section(elem: {title: string, text:string, img:string}) : JSX.Element{
+    function Section(elem: {title: string, text:string, img:string}) : JSX.Element{
     return (
         <>
             <h3>{elem.title}</h3>
@@ -23,9 +23,9 @@ export default function WorkFlow() {
 
     return (
             <>
-                <Header bgColor={""}/>
+                <Header bgColor={"black"}/>
                 <StyledWorkflow>
-                <SectionTitile title="WORKFLOW" bgColor={""} styleVaribles={""} />
+                <SectionTitile title="WORKFLOW" bgColor={"black"} styleVaribles={""} />
                     {/*{section("rozmowa", 'Poznamy się i porozmawiajmy o tym gdzie moglibyśmy pomóc.Jeśli dojdziemy do podobnych wniosków podpisujemy umowę na określiony okres', pion)}*/}
                     <h3>Rozmowa</h3>
                      <ClientText text="Poznamy się i porozmawiajmy o tym gdzie moglibyśmy pomóc. Jeśli dojdziemy do podobnych wniosków podpisujemy umowę na określiony okres. "
