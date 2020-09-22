@@ -75,7 +75,7 @@ export default function Projekty() {
         },
         {
             title:'ProTip Marketing',
-            img: progresjaImg,
+            img: jaOne,
             alt:'',
             link: '/clients/progresja'
         },
@@ -85,6 +85,7 @@ export default function Projekty() {
 
     return(
         <>
+        <StyledProjects >
             <Header />
             <SectionTitile title={"PROJEKTY"}styleVaribles={""} />
             <StyledGrid >
@@ -105,10 +106,15 @@ export default function Projekty() {
                 </div>
 
             </StyledGrid>
+            </StyledProjects>
         </>
     )
 }
 
+const StyledProjects = styled.div`
+background-color: black;
+color: white;
+`
 const StyledTile = styled.div`
   
         width: fit-content;

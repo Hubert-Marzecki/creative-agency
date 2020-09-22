@@ -10,6 +10,8 @@ export default function oMnie() {
 
     return (
         <>
+        <StyledSection>
+
             <Header />
             <SectionTitile title={"O MNIE"} styleVaribles={""} />
             <StyledAbout>
@@ -18,10 +20,16 @@ export default function oMnie() {
                 </StyledTile>
             <Paragraph />
             </StyledAbout>
+        </StyledSection>
+
          </>
     )
 }
 
+const StyledSection = styled.div`
+background-color: black;
+color: white;
+`
         const StyledAbout = styled.div`
               display: flex;
               justify-content: center;

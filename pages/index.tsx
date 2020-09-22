@@ -101,7 +101,7 @@ export default function Home(props:any) : JSX.Element {
             imgThree: holoSmallThree,
             alt:'',
             color: " #612892",
-            link: '/clients/progresja'
+            link: '/clients/holofan3d'
         },
         {
             title:'Instacorner',
@@ -231,6 +231,7 @@ export default function Home(props:any) : JSX.Element {
       animation: ${bounce} 0.5s ease-in-out ;
       animation-iteration-count: 1;
       color: ${state.fontColor};
+      padding-bottom: 10em;
 `
 
     //FUNCTIONS
@@ -333,7 +334,9 @@ export default function Home(props:any) : JSX.Element {
                 </StyledGrid>
                 <StyledButton 
                     > Poznajmy się </StyledButton>
-                    
+
+        <SectionTitile title=" KONTAKT "  styleVaribles={"margin-top: 100px"}/>
+
             </StyledMain>
 
         </>

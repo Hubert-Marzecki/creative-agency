@@ -23,8 +23,9 @@ export default function WorkFlow() {
 
     return (
             <>
-                <Header/>
+               
                 <StyledWorkflow>
+                <Header />
                 <SectionTitile title="WORKFLOW"  styleVaribles={""} />
                     {/*{section("rozmowa", 'Poznamy się i porozmawiajmy o tym gdzie moglibyśmy pomóc.Jeśli dojdziemy do podobnych wniosków podpisujemy umowę na określiony okres', pion)}*/}
                     <h3>Rozmowa</h3>
