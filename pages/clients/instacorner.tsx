@@ -26,6 +26,11 @@ import instaSmallTwo from '../../public/instacorner/insta-small2.png'
 
 import instaMainOne from '../../public/instacorner/insta-main.jpg';
 
+import instaSQR from '../../public/instacorner/insta-sqr.jpeg'
+import instaSQRTwo from '../../public/instacorner/insta-sqr2.jpg'
+import instaSQRThree from '../../public/instacorner/insta-sqr3.jpg'
+import instaSQRFour from '../../public/instacorner/insta-sqr-5.jpg'
+
 export default function Insta() {
 
     const projectsElements = [
@@ -70,18 +75,33 @@ export default function Insta() {
 
     const elementImg = [
         {
-            img: instaSmallOne,
+            img: instaSQRTwo,
             alt:''
         },
         {
-            img: instaSmallTwo,
+            img: instaSQR,
             alt:''
         }
     ]
     const tileWithText = [
         {
             title: "",
-            img: instaSmallOne,
+            img: instaSQRThree,
+            alt: "",
+        },
+        {
+            title: "\"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\\n\" +\n" +
+                "                             \"\\n\" +\n" +
+                "                             \"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\\n\"",
+            img: "",
+            alt: "",
+        }
+
+    ]
+    const tileWithTextTwo = [
+        {
+            title: "",
+            img: instaSQRFour,
             alt: "",
         },
         {
@@ -97,11 +117,10 @@ export default function Insta() {
     return (
         <>
         <StyledClient>
-
         <Header  />
          <ClientHeader title={"Instacorner"} img={instaMainOne} alt={""} />
 
-        <ClientIntro market={"Eventy / Rozrywka familijna"}  tasks={"Social Media, Fotografia, Video"}
+        <ClientIntro market={"Eventy / PR"}  tasks={"WWW, Grafika"}
                      info={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +
                      "\n" +
                      "Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}/>
@@ -120,7 +139,7 @@ export default function Insta() {
          "    in Root"} styleVaribles={""} />
                           <ProjectsGrid elements={tileWithText} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />
 
-         <BigCenterImg img={gigMainTwo} alt={""}/>
+         {/* <BigCenterImg img={gigMainTwo} alt={""}/> */}
     
 
             {/* <TileWithText text={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +*/}
@@ -128,7 +147,7 @@ export default function Insta() {
             {/*"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}*/}
             {/*              img={progresjaImg} alt={""} /> */}
 
-                          <ProjectsGrid elements={tileWithText} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />
+                          <ProjectsGrid elements={tileWithTextTwo} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />
 
                           <SectionTitile title="INNE PROJEKTY"  styleVaribles="" />
 

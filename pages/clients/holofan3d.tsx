@@ -24,7 +24,9 @@ import gigMain from '../../public/gigcity/gig-main.jpg'
 import gigMainTwo from '../../public/gigcity/gig-main2.jpg'
 
 import holoMain from '../../public/holo/holo-main.jpg'
-import holoSmall from '../../public/holo/holo-small.jpg'
+import holoMainTwo from '../../public/holo/holo-main2.jpg'
+import holoSmall from '../../public/holo/holo-small2.jpg'
+import holoSmall2 from '../../public/holo/holo-small3.jpg'
 
 export default function Holodan3d (){
     
@@ -70,29 +72,47 @@ export default function Holodan3d (){
 
     const elementImg = [
         {
-            img: gigSmallOne,
+            img: holoSmall,
             alt:''
         },
         {
-            img: gigSmallTwo,
+            img: holoSmall2,
             alt:''
         }
     ]
     const tileWithText = [
         {
             title: "",
-            img: gigSmallThree,
+            img: holoSmall,
             alt: "",
         },
         {
             title: "\"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\\n\" +\n" +
-                "                             \"\\n\" +\n" +
-                "                             \"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\\n\"",
+            "                             \"\\n\" +\n" +
+            "                             \"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\\n\"",
+                
             img: "",
             alt: "",
         }
 
     ]
+    const tileWithTextTwo = [
+        {
+            title: "",
+            img: holoSmall2,
+            alt: "",
+        },
+        {
+            title: "\"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\\n\" +\n" +
+            "                             \"\\n\" +\n" +
+            "                             \"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\\n\"",
+                
+            img: "",
+            alt: "",
+        }
+
+    ]
+
 
 
 
@@ -109,7 +129,7 @@ export default function Holodan3d (){
                      "\n" +
                      "Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}/>
         
-         <ProjectsGrid elements={elementImg} styleVaribles={"margin-top:3em"} showAll={false}/>
+         {/* <ProjectsGrid elements={elementImg} styleVaribles={"margin-top:3em"} showAll={false}/> */}
          <ClientText text={"Check the render method of `ProjectsGrid`. See https://fb.me/react-warning-keys for more information.\n" +
          "    in ProjectTile (at ProjectsGrid.tsx:68)\n" +
          "    in ProjectsGrid (at omnie.tsx:32)\n" +
@@ -120,10 +140,23 @@ export default function Holodan3d (){
          "    in ReactDevOverlay (created by Container)\n" +
          "    in Container (created by AppContainer)\n" +
          "    in AppContainer\n" +
-         "    in Root"} styleVaribles={""} />
-                          <ProjectsGrid elements={tileWithText} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />
+         "    in Root"} styleVaribles={""} /> 
+{/* <ProjectsGrid elements={tileWithTextTwo} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} /> */}
+<BigCenterImg img={holoMainTwo} alt={""}/> 
 
-         <BigCenterImg img={gigMainTwo} alt={""}/>
+<ClientText text={"Check the render method of `ProjectsGrid`. See https://fb.me/react-warning-keys for more information.\n" +
+         "    in ProjectTile (at ProjectsGrid.tsx:68)\n" +
+         "    in ProjectsGrid (at omnie.tsx:32)\n" +
+         "    in oMnie (at _app.tsx:26)\n" +
+         "    in ThemeProvider (at _app.tsx:25)\n" +
+         "    in MyApp\n" +
+         "    in ErrorBoundary (created by ReactDevOverlay)\n" +
+         "    in ReactDevOverlay (created by Container)\n" +
+         "    in Container (created by AppContainer)\n" +
+         "    in AppContainer\n" +
+         "    in Root"} styleVaribles={""} /> 
+                          {/* <ProjectsGrid elements={tileWithText} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />*/}
+
     
 
             {/* <TileWithText text={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +*/}
@@ -131,7 +164,7 @@ export default function Holodan3d (){
             {/*"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}*/}
             {/*              img={progresjaImg} alt={""} /> */}
 
-                          <ProjectsGrid elements={tileWithText} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />
+                          {/* <ProjectsGrid elements={tileWithTextTwo} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} /> */}
 
                           <SectionTitile title="INNE PROJEKTY"  styleVaribles="" />
 
