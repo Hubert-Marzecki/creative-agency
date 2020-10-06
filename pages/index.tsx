@@ -25,14 +25,10 @@ import {myPhotos} from '../elements/myPhotos'
 
 export default function Home(props: any): JSX.Element {
 
-
   const [state, setState] = useState({
     isDay: false,
     isRain: false,
     isWind: false,
-    bgColor: " black ",
-    fontColor: "white",
-    bgColorNew: "black",
     itemLimit: 6,
   });
 
@@ -84,6 +80,7 @@ export default function Home(props: any): JSX.Element {
         }
       }
     }
+
     .weather__holder {
       justify-self: flex-end;
       margin-left: 100px;
