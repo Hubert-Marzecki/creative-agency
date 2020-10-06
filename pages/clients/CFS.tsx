@@ -2,7 +2,7 @@ import {ProjectsGrid} from "../../components/ProjectsGrid";
 import * as React from "react";
 import ClientHeader from "../../components/ClientHeader";
 import ClientIntro from "../../components/ClientIntro";
-import {Header} from "../../components/Header";
+import {Header} from "../../components/Header/Header";
 import BigCenterImg from "../../components/BigCenterImg";
 import styled from "@emotion/styled";
 import ClientText from "../../components/ClientText";

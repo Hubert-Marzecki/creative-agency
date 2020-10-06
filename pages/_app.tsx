@@ -4,9 +4,10 @@ import { AppProps } from 'next/app'
 import styled, { CreateStyled } from '@emotion/styled'
 import * as React from "react";
 import { GlobalStyles } from '../components/GlobalStyles/GlobalStyles'
-import {Header} from "../components/Header";
+import {Header} from "../components/Header/Header";
 // import '../styles/tailwind.css';
-import Footer from '../components/Footer';
+import Footer from '../components/Footer/Footer';
+import '../styles/tailwind.css/tailwind.css';
 
 const theme : any = {
   colors: {
@@ -25,7 +26,7 @@ function MyApp({ Component, pageProps }) : JSX.Element {
         <GlobalStyles />
          <ThemeProvider theme={theme}>
          <Component {...pageProps} />
-         {/* <Footer /> */}
+         <Footer />
       </ThemeProvider>
     </>
     )

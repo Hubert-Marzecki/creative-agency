@@ -1,4 +1,4 @@
-import ProjectTile from "./ProjectTile";
+import ProjectTile from "./ProjectTileGallery/ProjectTile";
 import * as React from "react";
 import {ProjectTileModel} from "../Model";
 import styled from "@emotion/styled";

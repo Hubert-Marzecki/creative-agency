@@ -12,7 +12,7 @@ import progSmall4 from '../../public/progresja/prog-small4.jpg'
 
 import ClientHeader from "../../components/ClientHeader";
 import ClientIntro from "../../components/ClientIntro";
-import {Header} from "../../components/Header";
+import {Header} from "../../components/Header/Header";
 import BigCenterImg from "../../components/BigCenterImg";
 import styled from "@emotion/styled";
 import ClientText from "../../components/ClientText";

@@ -1,19 +1,18 @@
+import React from "react"
+import styled from "@emotion/styled"
+import Link from "next/link"
+import BigCenterImg from "../../components/BigCenterImg"
+import ClientHeader from "../../components/ClientHeader"
+import ClientIntro from "../../components/ClientIntro"
+import ClientText from "../../components/ClientText"
+import { Header } from "../../components/Header/Header"
+import { ProjectsGrid } from "../../components/ProjectsGrid"
+import SectionTitile from "../../components/SectionTitle"
 
-import holoMain from '../../public/holo/holo-main.jpg'
-import holoSmall from '../../public/holo/holo-small.jpg'
-import React from 'react'
-import { Header } from '../../components/Header/Header'
-import ClientHeader from '../../components/ClientHeader'
-import ClientIntro from '../../components/ClientIntro'
-import { ProjectsGrid } from '../../components/ProjectsGrid'
-import ClientText from '../../components/ClientText'
-import BigCenterImg from '../../components/BigCenterImg'
-import SectionTitile from '../../components/SectionTitle'
-import Link from 'next/link'
-import styled from '@emotion/styled'
 
 import progSmallOne from '../../public/progresja/prog-small.jpg'
 import holoSmallOne  from '../../public/progresja/prog-small.jpg'
+import instaSmallOne  from '../../public/progresja/prog-small.jpg'
 
 import gigSmallOne from '../../public/gigcity/gig-small.jpg'
 import gigSmallTwo from '../../public/gigcity/gig-small2.jpg'
@@ -21,17 +20,13 @@ import gigSmallThree from '../../public/gigcity/gig-small3.jpg'
 import gigMain from '../../public/gigcity/gig-main.jpg'
 import gigMainTwo from '../../public/gigcity/gig-main2.jpg'
 
-import instaSmallOne from '../../public/instacorner/insta-small.png'
-import instaSmallTwo from '../../public/instacorner/insta-small2.png'
+import holoMain from '../../public/holo/holo-main.jpg'
+import holoMainTwo from '../../public/holo/holo-main2.jpg'
+import holoSmall from '../../public/holo/holo-small2.jpg'
+import holoSmall2 from '../../public/holo/holo-small3.jpg'
 
-import instaMainOne from '../../public/instacorner/insta-main.jpg';
+export default function Ibwp() {
 
-import instaSQR from '../../public/instacorner/insta-sqr.jpeg'
-import instaSQRTwo from '../../public/instacorner/insta-sqr2.jpg'
-import instaSQRThree from '../../public/instacorner/insta-sqr3.jpg'
-import instaSQRFour from '../../public/instacorner/insta-sqr-5.jpg'
-
-export default function Insta() {
 
     const projectsElements = [
         {
@@ -75,24 +70,25 @@ export default function Insta() {
 
     const elementImg = [
         {
-            img: instaSQRTwo,
+            img: holoSmall,
             alt:''
         },
         {
-            img: instaSQR,
+            img: holoSmall2,
             alt:''
         }
     ]
     const tileWithText = [
         {
             title: "",
-            img: instaSQRThree,
+            img: holoSmall,
             alt: "",
         },
         {
             title: "\"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\\n\" +\n" +
-                "                             \"\\n\" +\n" +
-                "                             \"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\\n\"",
+            "                             \"\\n\" +\n" +
+            "                             \"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\\n\"",
+                
             img: "",
             alt: "",
         }
@@ -101,31 +97,35 @@ export default function Insta() {
     const tileWithTextTwo = [
         {
             title: "",
-            img: instaSQRFour,
+            img: holoSmall2,
             alt: "",
         },
         {
             title: "\"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\\n\" +\n" +
-                "                             \"\\n\" +\n" +
-                "                             \"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\\n\"",
+            "                             \"\\n\" +\n" +
+            "                             \"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\\n\"",
+                
             img: "",
             alt: "",
         }
 
     ]
 
+
+
     return (
         <>
         <StyledClient>
-        <Header  />
-         <ClientHeader title={"Instacorner"} img={instaMainOne} alt={""} />
 
-        <ClientIntro market={"Eventy / PR"}  tasks={"WWW, Grafika"}
+        <Header  />
+         <ClientHeader title={"IBWP"} img={holoMain} alt={""} />
+
+        <ClientIntro market={"Usługi prawnicze"}  tasks={"Stworzenie strony internetowej"}
                      info={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +
                      "\n" +
                      "Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}/>
         
-         <ProjectsGrid elements={elementImg} styleVaribles={"margin-top:3em"} showAll={false}/>
+         {/* <ProjectsGrid elements={elementImg} styleVaribles={"margin-top:3em"} showAll={false}/> */}
          <ClientText text={"Check the render method of `ProjectsGrid`. See https://fb.me/react-warning-keys for more information.\n" +
          "    in ProjectTile (at ProjectsGrid.tsx:68)\n" +
          "    in ProjectsGrid (at omnie.tsx:32)\n" +
@@ -136,10 +136,23 @@ export default function Insta() {
          "    in ReactDevOverlay (created by Container)\n" +
          "    in Container (created by AppContainer)\n" +
          "    in AppContainer\n" +
-         "    in Root"} styleVaribles={""} />
-                          <ProjectsGrid elements={tileWithText} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />
+         "    in Root"} styleVaribles={""} /> 
+{/* <ProjectsGrid elements={tileWithTextTwo} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} /> */}
+<BigCenterImg img={holoMainTwo} alt={""}/> 
 
-         {/* <BigCenterImg img={gigMainTwo} alt={""}/> */}
+<ClientText text={"Check the render method of `ProjectsGrid`. See https://fb.me/react-warning-keys for more information.\n" +
+         "    in ProjectTile (at ProjectsGrid.tsx:68)\n" +
+         "    in ProjectsGrid (at omnie.tsx:32)\n" +
+         "    in oMnie (at _app.tsx:26)\n" +
+         "    in ThemeProvider (at _app.tsx:25)\n" +
+         "    in MyApp\n" +
+         "    in ErrorBoundary (created by ReactDevOverlay)\n" +
+         "    in ReactDevOverlay (created by Container)\n" +
+         "    in Container (created by AppContainer)\n" +
+         "    in AppContainer\n" +
+         "    in Root"} styleVaribles={""} /> 
+                          {/* <ProjectsGrid elements={tileWithText} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />*/}
+
     
 
             {/* <TileWithText text={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +*/}
@@ -147,7 +160,7 @@ export default function Insta() {
             {/*"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}*/}
             {/*              img={progresjaImg} alt={""} /> */}
 
-                          <ProjectsGrid elements={tileWithTextTwo} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />
+                          {/* <ProjectsGrid elements={tileWithTextTwo} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} /> */}
 
                           <SectionTitile title="INNE PROJEKTY"  styleVaribles="" />
 
@@ -169,6 +182,7 @@ export default function Insta() {
                 </div>
 
             </StyledGrid>
+
         </StyledClient>
 
 </>

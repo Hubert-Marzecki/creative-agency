@@ -1,7 +1,7 @@
 import {ProjectsGrid} from "../components/ProjectsGrid";
 import * as React from "react";
 import SectionTitile from "../components/SectionTitle";
-import {Header} from "../components/Header";
+import {Header} from "../components/Header/Header";
 import Link from "next/link";
 import styled from "@emotion/styled";
 

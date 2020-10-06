@@ -6,7 +6,7 @@ import ClientHeader from "../../components/ClientHeader";
 import ClientIntro from "../../components/ClientIntro";
 import ClientText from "../../components/ClientText";
 import Footer from "../../components/Footer";
-import { Header } from "../../components/Header";
+import { Header } from "../../components/Header/Header";
 import { ProjectsGrid } from "../../components/ProjectsGrid";
 import SectionTitile from "../../components/SectionTitle";
 

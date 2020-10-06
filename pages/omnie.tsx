@@ -1,7 +1,7 @@
 import {ProjectsGrid} from "../components/ProjectsGrid";
 import jaOne from "../public/ja/ja1.jpg";
 import SectionTitile from "../components/SectionTitle";
-import {Header} from "../components/Header";
+import {Header} from "../components/Header/Header";
 import Paragraph from "../components/Paragraph";
 import styled from "@emotion/styled";
 

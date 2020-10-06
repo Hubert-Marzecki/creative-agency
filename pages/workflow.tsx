@@ -5,7 +5,7 @@ import poziom from '../public/graf/blopTwo.png'
 import tri from '../public/graf/blopThree.png'
 import flower from '../public/graf/blopOne.png'
 import styled from "@emotion/styled";
-import {Header} from "../components/Header";
+import {Header} from "../components/Header/Header";
 export default function WorkFlow() {
 
 
