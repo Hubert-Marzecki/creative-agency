@@ -5,7 +5,8 @@ export default function ProjectTile (
     tile: ProjectsElementsInterface[] | ProjectTileModel[], 
     isButtonVisible: boolean,
     isCtaBellow: boolean,
-    ctaText: string
+    ctaText: string,
+    offset: number
   }
     ) {
 
@@ -13,14 +14,14 @@ export default function ProjectTile (
   function isButtonVisible() : JSX.Element | null {
     if(props.isButtonVisible) {
       return (
-        <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">{props.ctaText}</button>
+        <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-5 focus:outline-none hover:bg-yellow-500 rounded">{props.ctaText}</button>
         )
   }
   }
   function isCtaBellow() : JSX.Element | null{
     if(props.isCtaBellow) {
     return (
-      <button className="flex mx-auto  text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">{props.ctaText}</button>
+      <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg">{props.ctaText}</button>
     )
   }
   }
@@ -32,8 +33,8 @@ export default function ProjectTile (
   function createTiles() :JSX.Element {
     return (
       <>
-      {props.tile.map((item) => (
-        <div className="sm:w-1/2  mb-10 px-4  ">
+      {props.tile.slice(0,props.offset).map((item) => (
+        <div className="sm:w-1/2  mb-10 px-4 ">
         <div className=" h-auto overflow-hidden">
           <img alt="content" className="object-cover object-center h-full w-full" src={item.img} onMouseOver={(e) => replaceImg(e, item)}/>
         </div>

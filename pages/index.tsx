@@ -20,8 +20,8 @@ import {projectsElements} from '../elements/projectsElements'
 import {myPhotos} from '../elements/myPhotos'
 //  TODO - add IBWP Section
 //  TODO - add ProTip Section
-// 
-
+// color - yellow fcaf58
+import weirdYellow from '../public/weird-yellow.jpg'
 
 export default function Home(props: any): JSX.Element {
 
@@ -35,133 +35,60 @@ export default function Home(props: any): JSX.Element {
   //ELEMENTS
 
 
-  //STYLES
-  const StyledHeader = styled.div`
-    display: flex;
-    flex-direction: column;
-    min-height: 90vh;
-    height: 100%;
-    justify-content: space-between;
-    @media (max-width: 700px) {
-      min-height: 60vh;
-    }
-
-    .text__holder {
-      margin-left: 100px;
-      margin-top: 150px;
-      max-width: 100vw;
-      @media (max-width: 700px) {
-        margin-left: 10px;
-        margin-top: 40px;
-      }
-
-      .welcome {
-        font-size: 4em;
-        font-weight: 800;
-        line-height: normal;
-        @media (max-width: 700px) {
-          font-size: 3em;
-        }
-      }
-
-      .welcome__caption {
-        font-size: 3em;
-        line-break: normal;
-        line-height: normal;
-        font-weight: 300;
-        //color:white;
-        //-webkit-text-stroke: 2px black;
-
-        @media (max-width: 700px) {
-          font-size: 1em;
-          -webkit-text-stroke: 1px transparent;
-          color: black;
-          margin-top: 10px;
-        }
-      }
-    }
-
-    .weather__holder {
-      justify-self: flex-end;
-      margin-left: 100px;
-      margin-bottom: 10px;
-      @media (max-width: 700px) {
-        margin-left: 10px;
-        margin-top: 40px;
-      }
-    }
-
-    .sun {
-      position: fixed;
-      z-index: 0;
-      top: 20%;
-      left: 85%;
-      width: 300px;
-      height: 300px;
-    }
-  `;
- 
-
-  //FUNCTIONS
-  function changeColors(color: string): void {
-    setState((s) => ({ ...s, bgColor: color }));
-    // setInterval( setState(s => ({...s, bgColorNew: s.bgColor})),6000);
-  }
-  function isMoreVisible(): null | JSX.Element {
-    if (projectsElements.length < state.itemLimit) {
-      return null;
-    } else {
-      return (
-        <button
-          onClick={() =>
-            setState((s) => ({ ...s, itemLimit: s.itemLimit + 3 }))
-          }
-        >
-          Zobacz więcej
-        </button>
-      );
-    }
-  }
-
 
   return (
     <>
     <div className="bg-black">
 
-        <Header />
-        <StyledHeader>
-          <div className="text__holder text-white">
-            <h1 className="welcome"> Hej, jestem Hubert </h1>
-            <h2 className="welcome__caption">
-              {" "}
-              Zajmuję się tworzeniem stron internetowych, <br /> komunikacją
-              marketingową i fotografią.{" "}
-            </h2>
-          </div>
+      
+      
 
-          {/* <img src={sun} className="sun" /> */}
-          {/*<img src={cloud} className="cloud" />*/}
-
-          <div className="weather__holder text-white">
-            <p >
+        <section className="text-white body-font h-screen bg-black ">
+  <div className="container  mx-auto flex px-5 pt-40 md:flex-row flex-col items-center">
+    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 className="sm:text-6xl text-3xl mb-4 font-bold">Hej, jestem Hubert
+        {/* <br class="hidden lg:inline-block" />readymade gluten */}
+      </h1>
+      <p className="mb-8 sm:text-3xl text-3xl leading-relaxed"> Zajmuję się tworzeniem stron internetowych, komunikacją
+              marketingową i fotografią.</p>
+      <div className="flex justify-center">
+        {/* <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> */}
+        {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Button</button> */}
+      </div>
+    </div>
+    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img className="object-cover object-center rounded" alt="hero" src={weirdYellow}/>
+    </div>
+  </div>
+  <div className="container -mt-64 mx-auto flex px-5 pt-40 md:flex-row flex-col items-center">
+        <p >
               {props.weather.name} , {props.weather.main.temp.toFixed() - 273}°C
             </p>
-          </div>
-        </StyledHeader>
+    </div>
 
+  
+</section>
         <SectionTitile 
         title="PROJEKTY" 
         styleVaribles={"color:white"} 
         />
-      
         {/* Portfolio section */}
        <ProjectTile
        tile={projectsElements} 
-       isButtonVisible={true}
-       ctaText="Zobacz"
+       isButtonVisible={false}
+       ctaText="Zobacz Więciej"
        isCtaBellow={false}
+       offset={state.itemLimit}
        />
-
+    <button 
+    className={state.itemLimit < projectsElements.length ? 
+      "flex mx-auto mt-10 text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg"
+      :
+      "null"}
+    onClick={() => setState(s=> ({...s, itemLimit: s.itemLimit+10}))}
+    >
+      Zobacz więcej
+      </button>
 
         <SectionTitile
           title=" POZNAJMY SIĘ "
@@ -173,14 +100,14 @@ export default function Home(props: any): JSX.Element {
        isButtonVisible={false}
        ctaText="Poznajmy się"
        isCtaBellow={false}
+       offset={state.itemLimit}
        />
            <SectionTitile
           title=" KLIENCI O MNIE "
           styleVaribles={"margin-top: 50px;  margin-bottom: 0px; padding-bottom: 0px; color:white ; font-size: 3em"}
         />
     <ClientsTestimonials />
-    <button className="flex mx-auto  text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Poznajmy się</button>
-
+    <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg">Poznajmy się</button>
 
         <SectionTitile
           title=" KONTAKT "

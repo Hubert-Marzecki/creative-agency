@@ -13,13 +13,29 @@ export const myPhotos = [
   {
     title: "",
     img: jaTwo,
+    imgTwo: jaTwo,
     alt: "",
     link: ""
   },
   {
     title: "",
     img: jaThree,
+    imgTwo: jaOne,
     alt: "",
     link: ""
   },
+  // {
+  //   title: "",
+  //   img: jaThree,
+  //   imgTwo: jaOne,
+  //   alt: "",
+  //   link: ""
+  // },
+  // {
+  //   title: "",
+  //   img: jaThree,
+  //   imgTwo: jaOne,
+  //   alt: "",
+  //   link: ""
+  // },
 ];
