@@ -4,106 +4,491 @@ import SectionTitile from "../components/SectionTitle";
 import {Header} from "../components/Header/Header";
 import Paragraph from "../components/Paragraph";
 import styled from "@emotion/styled";
+import { useState } from "react";
+import TabContent from "../components/tabContent/TabContent";
 
-export default function oMnie() {
+export default function oMnie() : JSX.Element {
+
+const [openTab, setOpenTab] = useState<number>(1);
+
+
+function tabContent(tabOpen: number) {
+    switch (tabOpen) {
+        case 1 :
+            return (
+                    <>
+                    <TabContent 
+                    img={jaOne}
+                    title="PRAKTYKA > TEORIA"
+                    text="ŻYJ"
+                    />
+                    </>
+            )
+        break;
+        case 2 :
+            return (
+                    <>
+                    <TabContent 
+                    img={jaOne}
+                    title="GENERALNIE MOGĘ ROBIĆ RZECZY"
+                    text="ŻYJ"
+                    />
+                    </>
+            )
+            break;
+            case 3 :
+                return (
+                  <>
+                  <TabContent 
+                  img={jaOne}
+                  title="TEXTUJ"
+                  text="ŻYJ"
+                  />
+                  </>
+                )
+                break;
+                case 4 :
+                    return (
+                      <>
+                      <TabContent 
+                      img={jaOne}
+                      title="TEXTUJ"
+                      text="ŻYJ"
+                      />
+                      </>
+                    )
+        
+
+    }
+}
+
+
+function displayTab(tabOpen: number) {
+  switch (tabOpen) {
+    case 1 :
+      return (
+        <>
+    <p class="leading-relaxed text-gray-600 mb-4">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean.</p>
+        <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500">Studia </span>
+          <span class="ml-auto text-gray-600">Koźmiński - Marketing</span>
+        </div>
+
+        <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500">Przeprowadzone projekty</span>
+          <span class="ml-auto text-gray-700">30</span>
+        </div>
+
+        <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500">Szkolenia marketingowe</span>
+          <span class="ml-auto text-gray-700">4</span>
+        </div>
+
+        <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500">Szkolenia Front-end</span>
+          <span class="ml-auto text-gray-700">3</span>
+        </div>
+        
+      
+        <div class="flex border-t border-b mb-6 border-gray-300 py-2">
+          <span class="text-gray-500">Lat doświadczenia </span>
+          <span class="ml-auto text-gray-700">2+</span>
+        </div>
+      
+
+        {/* <div class="flex"> */}
+          {/* <span class="title-font font-medium text-2xl text-gray-900">$58.00</span> */}
+          {/* <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Zadzwoń</button> */}
+          {/* <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+            </svg>
+          </button> */}
+        {/* </div> */}
+
+        </>
+      )
+    break;
+
+    case 2 :
+      return (
+        <>
+
+    <p class="leading-relaxed text-gray-600 mb-4">
+    My mistake was that I was mixing and matching between es6 modules and commonjs:
+
+If something was exported, use import for getting it on the receiving end.
+If something was module.export=ed, use require() for getting it.
+
+      </p>
+
+      <p class="leading-relaxed text-gray-600 mb-4">
+    My mistake was that I was mixing and matching between es6 modules and commonjs:
+
+If something was exported, use import for getting it on the receiving end.
+If something was module.export=ed, use require() for getting it.
+
+      </p>
+        {/* <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500"> Studia </span>
+          <span class="ml-auto text-gray-600">Koźmiński - Marketing</span>
+        </div> */}
+{/* 
+        <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500">Przeprowadzone projekty</span>
+          <span class="ml-auto text-gray-700">30</span>
+        </div>
+
+        <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500">Szkolenia marketingowe</span>
+          <span class="ml-auto text-gray-700">4</span>
+        </div>
+
+        <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500">Szkolenia Front-end</span>
+          <span class="ml-auto text-gray-700">3</span>
+        </div>
+        
+      
+        <div class="flex border-t border-b mb-6 border-gray-300 py-2">
+          <span class="text-gray-500">Lat doświadczenia </span>
+          <span class="ml-auto text-gray-700">2+</span>
+        </div>
+       */}
+
+        {/* <div class="flex"> */}
+          {/* <span class="title-font font-medium text-2xl text-gray-900">$58.00</span> */}
+          {/* <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Zadzwoń</button> */}
+          {/* <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+            </svg>
+          </button> */}
+        {/* </div> */}
+
+        </>
+      )
+    break;
+
+    case 3 :
+      return (
+        <>
+    <p class="leading-relaxed text-gray-600 mb-4">
+      
+      LThe component which in turn uses CompanyHeaderPartWithoutStructure is connected. Even if I reduce this to the point of only importing React and CompanyHeaderPartWithoutStructure and returning CompanyHeaderPartWithoutStructure without connecting, the error is still there. 
+      
+      </p>
+        <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500"> Fotografia </span>
+          {/* <span class="ml-auto text-gray-600">Koźmiński - Marketing</span> */}
+        </div>
+
+        <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500"> Malarstwo </span>
+          {/* <span class="ml-auto text-gray-700">30</span> */}
+        </div>
+
+        <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500">Front-end</span>
+          {/* <span class="ml-auto text-gray-700">4</span> */}
+        </div>
+
+        <div class="flex border-t border-gray-300 py-2">
+          <span class="text-gray-500">Pozdróże autostopowe</span>
+          {/* <span class="ml-auto text-gray-700">3</span> */}
+        </div>
+        
+      
+        <div class="flex border-t border-b mb-6 border-gray-300 py-2">
+          <span class="text-gray-500"> Wspinaczka </span>
+          {/* <span class="ml-auto text-gray-700">2+</span> */}
+        </div>
+        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a className="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a className="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a className="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a className="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" className="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+
+        {/* <div class="flex"> */}
+          {/* <span class="title-font font-medium text-2xl text-gray-900">$58.00</span> */}
+          {/* <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Zadzwoń</button> */}
+          {/* <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+            </svg>
+          </button> */}
+        {/* </div> */}
+
+        </>
+      )
+    break;
+
+  }
+}
+
+
     return (
         <>
 <div className="bg-black">
 
     <SectionTitile 
-    title="Hubert Marzecki"  
+    title="O mnie"  
     styleVaribles="color:white; padding-bottom: 0; "
     />
 
-<section class=" body-font">
-  <div class="container mx-auto flex px-5 pt-24 pb-12 md:flex-row flex-col items-center">
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
-    </div>
-    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">Before they sold out
-        <br class="hidden lg:inline-block"/>readymade gluten
-      </h1>
-      <p class="mb-8 leading-relaxed text-gray-400">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-      <div class="flex justify-center">
-        {/* <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        <button class="ml-4 inline-flex text-gray-500 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Button</button> */}
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class=" body-font">
+<section class="text-gray-700 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto pl-">
+    <div class="lg:w-4/5 mx-auto flex flex-wrap ">
+      
+    <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded pr-8" src={jaOne}/>
 
-  <div class="container mx-auto flex px-5 pb-12 md:flex-row flex-col items-center">
-  <div class="lg:flex-grow md:w-1/2 pr-20 flex flex-col md:items-start md:text-left items-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">Before they sold out
-        <br class="hidden lg:inline-block"/>readymade gluten
-      </h1>
-      <p class="mb-8 leading-relaxed text-gray-400">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-      <div class="flex justify-center">
-        {/* <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        <button class="ml-4 inline-flex text-gray-500 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Button</button> */}
-      </div>
-    </div>
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
-    </div>
+      <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 mt-4">
+        <h2 class="text-sm  text-gray-700 tracking-widest font-bolder">FRONT-END | MARKETING </h2>
+        <h1 class="text-gray-200 mt-2 text-3xl title-font font-bold mb-4">Hubert Marzecki</h1>
+        <div class="flex mb-4 ">
+          <a 
+          onClick={() => setOpenTab(1)}
+          class={ openTab === 1 ? 
+            " cursor-pointer flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1"
+          :
+          "cursor-pointer flex-grow text-gray-300 border-b-2 border-yellow-500 py-2 text-lg px-1"
+
+          }>Wykształcenie</a>
+          <a 
+           onClick={() => setOpenTab(2)}
+           class={ openTab === 2 ? 
+            "cursor-pointer flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1"
+          :
+          "cursor-pointer flex-grow text-gray-300 border-b-2 border-yellow-500 py-2 text-lg px-1"
+
+          }>Misja</a>
+          <a 
+            onClick={() => setOpenTab(3)}
+            class={ openTab === 3 ? 
+              "cursor-pointer flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1"
+            :
+            "cursor-pointer  flex-grow text-gray-300 border-b-2 border-yellow-500 py-2 text-lg px-1"
   
-  </div>
-</section>
+            }>Hobby</a>
+        </div>
 
-<section class=" body-font">
-  <div class="container mx-auto flex px-5  pb-12 md:flex-row flex-col items-center">
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
-    </div>
-    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">Before they sold out
-        <br class="hidden lg:inline-block"/>readymade gluten
-      </h1>
-      <p class="mb-8 leading-relaxed text-gray-400">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-      <div class="flex justify-center">
-        {/* <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        <button class="ml-4 inline-flex text-gray-500 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Button</button> */}
+
+        {displayTab(openTab)}
+      
       </div>
     </div>
   </div>
 </section>
 
 
-        <section class="text-gray-700 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
-    <div class="flex w-full pb-6 flex-wrap text-white">
-      <h1 class="sm:text-3xl text-2xl  title-font  lg:w-1/3 lg:mb-0 mb-4 ">W prywatnym świecie <br/> </h1>
-      <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+{/*     
+<section className="text-gray-700 body-font">
+  <div className="container px-5 py-24 mx-auto flex flex-wrap flex-col">
+    <div className="flex mx-auto flex-wrap mb-20">
+
+      <a 
+      onClick={() => setOpenTab(1)}
+      className={openTab === 1 ? 
+        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider " 
+      :
+      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}
+      >        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        </svg> WYKSZTAŁCENIE
+      </a>
+      <a 
+       onClick={() => setOpenTab(2)}
+      className={openTab === 2 ? 
+        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider " 
+      :
+      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}
+      >
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">    
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+        </svg> MISJA
+      </a>
+      <a 
+       onClick={() => setOpenTab(3)}
+       className={openTab === 3 ? 
+        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider " 
+      :
+      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}
+      >        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">
+          <circle cx="12" cy="5" r="3"></circle>
+          <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+        </svg> CZEGO NIE LUBIĘ
+      </a>
+      <a 
+       onClick={() => setOpenTab(4)}
+       className={openTab === 4 ? 
+        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider " 
+      :
+      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}
+      >        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">
+          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>HOBBY
+      </a>
+    
     </div>
-    <div class="flex flex-wrap md:-m-2 -m-1">
-      <div class="flex flex-wrap w-1/2">
-        <div class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300"/>
-        </div>
-        <div class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301"/>
-        </div>
-        <div class="md:p-2 p-1 w-full">
-          <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360"/>
+    {tabContent(openTab)}
+  </div>
+</section> */}
+
+{/*  */}
+{/* <section className="text-gray-700 body-font">
+  <div className="container mx-auto flex px-5 pt-24 items-center justify-center flex-col">
+    <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
+    <div className="text-center lg:w-2/3 w-full">
+      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Microdosing synth tattooed vexillologist</h1>
+      <p className="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&amp;B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
+      <div className="flex justify-center">
+        <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <button className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Button</button>
+      </div>
+    </div>
+  </div>
+</section> */}
+{/* 
+
+<section className="text-white body-font">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="flex flex-col text-center w-full mb-20">
+      <h1 className="text-2xl  title-font mb-4 text-white font-bold tracking-widest">OUR TEAM</h1>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+    </div>
+    <div className="flex flex-wrap -m-4">
+      <div className="p-4 lg:w-1/2">
+        <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200"/>
+          <div className="flex-grow sm:pl-8">
+            <h2 className="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
+            <h3 className="text-gray-500 mb-3">UI Developer</h3>
+            <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+            <span className="inline-flex">
+              <a className="text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a className="ml-2 text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a className="ml-2 text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
         </div>
       </div>
-      <div class="flex flex-wrap w-1/2">
-        <div class="md:p-2 p-1 w-full">
-          <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/601x361"/>
+      <div className="p-4 lg:w-1/2">
+        <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201"/>
+          <div className="flex-grow sm:pl-8">
+            <h2 className="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
+            <h3 className="text-gray-500 mb-3">Designer</h3>
+            <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+            <span className="inline-flex">
+              <a className="text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a className="ml-2 text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a className="ml-2 text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
         </div>
-        <div class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/502x302"/>
+      </div>
+      <div className="p-4 lg:w-1/2">
+        <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204"/>
+          <div className="flex-grow sm:pl-8">
+            <h2 className="title-font font-medium text-lg text-gray-900">Atticus Finch</h2>
+            <h3 className="text-gray-500 mb-3">UI Developer</h3>
+            <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+            <span className="inline-flex">
+              <a className="text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a className="ml-2 text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a className="ml-2 text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
         </div>
-        <div class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/503x303"/>
+      </div>
+      <div className="p-4 lg:w-1/2">
+        <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206"/>
+          <div className="flex-grow sm:pl-8">
+            <h2 className="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
+            <h3 className="text-gray-500 mb-3">Designer</h3>
+            <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+            <span className="inline-flex">
+              <a className="text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a className="ml-2 text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a className="ml-2 text-gray-500">
+                <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
 {/* <SectionTitile 
     title="W prau słowach o mnie"  

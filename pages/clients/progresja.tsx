@@ -24,194 +24,150 @@ import SectionTitile from "../../components/SectionTitle";
 
 export default function ProgresjaCase() {
 
-    const projectsElements = [
-
-        {
-            title:'Chiński Festiwal Światła',
-            img: progSmall,
-            alt:'',
-            link: '/clients/progresja'
-        },
-        {
-            title:'GiGCity.Tv',
-            img: progSmall,
-            alt:'',
-            link: '/clients/progresja'
-        },
-        {
-            title:'Holofan3d',
-            img: progSmall,
-            alt:'',
-            link: '/clients/progresja'
-        },
-        {
-            title:'Instacorner',
-            img: progSmall,
-            alt:'',
-            link: '/clients/progresja'
-        },
-        {
-            title:'BeFriend',
-            img: progSmall,
-            alt:'',
-            link: '/clients/progresja'
-        },
-        {
-            title:'ProTip Marketing',
-            img: progSmall,
-            alt:'',
-            link: '/clients/progresja'
-        },
-
-    ]
-
-    const elementImg = [
-        {
-            img: progSmall,
-            alt:''
-        },
-        {
-            img: progSmall2,
-            alt:''
-        }
-    ]
-    const tileWithText = [
-        {
-            title: "",
-            img: progSmall3,
-            alt: "",
-        },
-        {
-            title: "\"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\\n\" +\n" +
-                "                             \"\\n\" +\n" +
-                "                             \"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\\n\"",
-            img: "",
-            alt: "",
-        }
-
-    ]
-
-
-
     return (
         <>
-                <StyledClient>
+        <div className="bg-black">
 
-                <Header  />
-                 <ClientHeader title={"Progresja"} img={progClientMain} alt={""} />
-                <ClientIntro market={"Koncerty / Imprezy"}  tasks={"Social Media, Fotografia"}
-                             info={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +
-                             "\n" +
-                             "Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}/>
-                 <BigCenterImg img={progClientMain2} alt={""}/>
-                 <ProjectsGrid elements={elementImg} styleVaribles={"margin-top:3em"} showAll={false}/>
-                 <ClientText text={"Check the render method of `ProjectsGrid`. See https://fb.me/react-warning-keys for more information.\n" +
-                 "    in ProjectTile (at ProjectsGrid.tsx:68)\n" +
-                 "    in ProjectsGrid (at omnie.tsx:32)\n" +
-                 "    in oMnie (at _app.tsx:26)\n" +
-                 "    in ThemeProvider (at _app.tsx:25)\n" +
-                 "    in MyApp\n" +
-                 "    in ErrorBoundary (created by ReactDevOverlay)\n" +
-                 "    in ReactDevOverlay (created by Container)\n" +
-                 "    in Container (created by AppContainer)\n" +
-                 "    in AppContainer\n" +
-                 "    in Root"} styleVaribles={""} />
-                    {/*<TileWithText text={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +*/}
-                    {/*"\n" +*/}
-                    {/*"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}*/}
-                    {/*              img={progresjaImg} alt={""} />*/}
-                                  <ProjectsGrid elements={tileWithText} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />
+            <ClientHeader title={"Progresja"} img={progClientMain} alt={""} />
+
+            <SectionTitile 
+        title="O PROJEKCIE" 
+        styleVaribles={"color:white; padding:0"} 
+        />
+
+            <section className="text-gray-700 body-font py-20">
+  <div className="container  mx-auto flex flex-col">
+    <div className="lg:w-5/6 mx-auto w-3/4">
+      {/* <div className="rounded-lg h-64 overflow-hidden">
+        <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1200x500"/>
+      </div> */}
+      <div className="flex flex-col sm:flex-row mt-10">
+        <div className="sm:w-1/3 text-base sm:pr-8 sm:py-8">
+          {/* <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div> */}
+          <div className="flex flex-col">
+            <h2 className="font-medium title-font mt-4 text-gray-100 text-lg font-bold">Branża</h2>
+            <div className="w-12 h-1 bg-yellow-500 rounded mt-2 mb-1"></div>
+            <p className="text-base text-gray-400 leading-relaxed ">Eventy / Koncerty</p>
+
+            <h2 className="font-medium title-font mt-4 text-gray-100 text-lg font-bold">Zakres działań</h2>
+            <div className="w-12 h-1 bg-yellow-500 rounded mt-2 mb-4"></div>
+            <p className="text-base text-gray-400 leading-relaxed ">Social Media</p>
+            <p className="text-base text-gray-400 leading-relaxed ">Fotografia</p>
+            <p className="text-base text-gray-400 leading-relaxed ">Video</p>
+          </div>
+        </div>
+        <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0  sm:text-left">
+          <p className="leading-relaxed text-lg mb-4">Fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
+          <a className="text-yellow-500 inline-flex items-center">Zobacz stonę
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<SectionTitile 
+        title="o KLIENCIE" 
+        styleVaribles={"color:white; padding-bottom:0"} 
+        />
 
 
-                                  <SectionTitile title="INNE PROJEKTY" bgColor="" styleVaribles="" />
+<section class="text-gray-700 body-font py-20">
+  <div class="container px-12 sm:px-24 py-24 mx-auto flex flex-wrap ">
+    <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-4/6 sm:w-2/3 content-start sm:pr-10">
+      <div class="w-full sm:p-4 mb-6">
+        <h1 class="title-font font-medium text-xl mb-2 text-gray-900">Moon hashtag pop-up try-hard offal truffaut</h1>
+        <div class="leading-relaxed">Pour-over craft beer pug drinking vinegar live-edge gastropub, keytar neutra sustainable fingerstache kickstarter.</div>
+      </div>
+      <div class="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
+        <p class="leading-relaxed">Users</p>
+      </div>
+      <div class="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-gray-900">1.8K</h2>
+        <p class="leading-relaxed">Subscribes</p>
+      </div>
+      <div class="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-gray-900">35</h2>
+        <p class="leading-relaxed">Downloads</p>
+      </div>
+      <div class="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-gray-900">4</h2>
+        <p class="leading-relaxed">Products</p>
+      </div>
+    </div>
+    <div class="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
+      <img class="object-cover object-center w-full h-full" src={progClientMain2} alt="stats"/>
+    </div>
+  </div>
+</section>
 
-                    <StyledGrid >
-                        <div className="grid__container">
-                            {projectsElements.map(item => {
-                                return (
-                                    <Link  href={item.link} >
-                                        <StyledTile >
-                                            <img className="client__image"
-                                                 src={item.img}
-                                                 alt={item.alt}
-                                            />
-                                            <h3 className="client__name">{item.title}</h3>
-                                        </StyledTile>
-                                    </Link>
-                                )
-                            })}
-                        </div>
 
-                    </StyledGrid>
+<SectionTitile 
+        title="GALERIA" 
+        styleVaribles={"color:white; padding:0"} 
+        />
 
-                </StyledClient>
+<section class="text-gray-700 body-font py-20">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/4 mb-10 px-4">
+        <div class="rounded-lg h-full overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src={progSmall}/>
+        </div>
+      </div>
+      <div class="sm:w-1/4 mb-10 px-4">
+        <div class="rounded-lg h-full overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src={progSmall2}/>
+        </div>
+      </div>
+      <div class="sm:w-1/4 mb-10 px-4">
+        <div class="rounded-lg h-full overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src={progSmall3}/>
+        </div>
+      </div>
+      <div class="sm:w-1/4 mb-10 px-4">
+        <div class="rounded-lg h-full overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src={progSmall4}/>
+        </div>
+      </div>
+
+      {/* <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1202x502"/>
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">The Catalyzer</h2>
+        <p class="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p>
+        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1202x502"/>
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">The Catalyzer</h2>
+        <p class="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p>
+        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+      </div> */}
+     
+    </div>
+  </div>
+</section>
+
+
+
+
+</div>
+
 
         </>
 
     )
 }
-
-const StyledClient = styled.div`
-    background-color: black;
-    color:white;
-`
-
-const StyledTile = styled.div`
-        width: fit-content;
-        margin: 4em;
-        &:hover{
-        
-        }
-         @media(max-width: 700px) {
-        margin: 1em;
-        }
-        
-        .client__name{
-        font-size: 20px;
-        margin-top: 5px;
-        }
-        
-        .client__image{
-        width: 20vw;
-
-        @media(max-width: 700px) {
-        width: 90vw;
-        }
-        }
-    `
-const StyledGrid = styled.div`
-
-   .grid__container{
-      display: flex;
-      flex-wrap: wrap;
-      width: 70%;
-      margin: 0 auto;
-      justify-content: center;
-        @media(max-width: 700px) {
-        width: 100vw;
-        }
-        &--wide{
-         width: 100vw;
-        }
-   }
-   
-   .see__more__btn {
-    display: block;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 20px;
-      border: none;
-      background-color: transparent;
-      
-      font-weight: 700;
-         &-active{
-      cursor: pointer;
-
-   }
-   &-disable{
-   opacity: 0.4;
-   cursor: none;
-   }
-     
-   }
-`

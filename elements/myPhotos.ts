@@ -24,13 +24,13 @@ export const myPhotos = [
     alt: "",
     link: ""
   },
-  // {
-  //   title: "",
-  //   img: jaThree,
-  //   imgTwo: jaOne,
-  //   alt: "",
-  //   link: ""
-  // },
+  {
+    title: "",
+    img: jaThree,
+    imgTwo: jaOne,
+    alt: "",
+    link: ""
+  },
   // {
   //   title: "",
   //   img: jaThree,

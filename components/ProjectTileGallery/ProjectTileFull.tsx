@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import React from 'react';
 import {ProjectsElementsInterface, ProjectTileModel} from '../../Model';
 
-export default function ProjectTile (
+export default function ProjectTileFull (
   props: {
     tile: ProjectsElementsInterface[] | ProjectTileModel[], 
     isButtonVisible: boolean,
@@ -35,10 +36,8 @@ export default function ProjectTile (
     return (
       <>
       {props.tile.slice(0,props.offset).map((item) => (
-     <>
-       <Link href={`${item.link}`}>
-        <div className="sm:w-1/2  mb-10 px-4 ">
-           
+          <Link href={`${item.link}`}>
+        <div className="sm:w-1/4  mb-10 px-4 ">
         <div className=" h-auto overflow-hidden">
           <img alt="content" className="object-cover object-center h-full w-full" src={item.img} onMouseOver={(e) => replaceImg(e, item)}/>
         </div>
@@ -48,9 +47,6 @@ export default function ProjectTile (
         {/* ROUTE HERE */}
       </div>
       </Link>
-
-   </>
-
       ))}
       </>
     )
@@ -61,7 +57,7 @@ export default function ProjectTile (
 
   <section className="text-gray-700 body-font">
         <div className="container px-5  mx-auto ">
-        <div className="flex flex-wrap  -mb-10 text-center justify-center lg:w-2/4 mx-auto ">
+        <div className="flex flex-wrap  -mb-10 text-center justify-center lg:w-4/4 mx-auto ">
           {props.tile === undefined ? null : createTiles()}
     </div>
     {isCtaBellow()}

@@ -8,20 +8,23 @@ import { Header } from "../components/Header/Header";
 import { ThemeProvider } from "emotion-theming";
 import SectionTitile from "../components/SectionTitle";
 import ProjectTile from "../components/ProjectTileGallery/ProjectTile";
+
 import { ProjectsGrid } from "../components/ProjectsGrid";
 import { css, jsx, keyframes } from "@emotion/core";
 import Link from "next/link";
-
 import ProjectTileHolder from "../components/ProjectTileGallery/ProjectTileHolder";
 import { ProjectsElementsInterface } from "../Model";
 import EmailForm from "../components/Form/EmailForm";
 import ClientsTestimonials from "../components/Testimonials/ClientsTestimonials";
 import {projectsElements} from '../elements/projectsElements'
 import {myPhotos} from '../elements/myPhotos'
+
+
 //  TODO - add IBWP Section
 //  TODO - add ProTip Section
 // color - yellow fcaf58
 import weirdYellow from '../public/weird-yellow.jpg'
+import ProjectTileFull from "../components/ProjectTileGallery/ProjectTileFull";
 
 export default function Home(props: any): JSX.Element {
 
@@ -38,10 +41,7 @@ export default function Home(props: any): JSX.Element {
 
   return (
     <>
-    <div className="bg-black">
-
-      
-      
+    <StyledPage>
 
         <section className="text-white body-font h-screen bg-black ">
   <div className="container  mx-auto flex px-5 pt-40 md:flex-row flex-col items-center">
@@ -82,7 +82,7 @@ export default function Home(props: any): JSX.Element {
        />
     <button 
     className={state.itemLimit < projectsElements.length ? 
-      "flex mx-auto mt-10 text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg"
+      "flex mx-auto mt-10 text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg"
       :
       "null"}
     onClick={() => setState(s=> ({...s, itemLimit: s.itemLimit+10}))}
@@ -95,7 +95,7 @@ export default function Home(props: any): JSX.Element {
           styleVaribles={"margin-top: 100px; color:white"}
         />
 
-      <ProjectTile
+      <ProjectTileFull
        tile={myPhotos} 
        isButtonVisible={false}
        ctaText="Poznajmy się"
@@ -111,10 +111,10 @@ export default function Home(props: any): JSX.Element {
 
         <SectionTitile
           title=" KONTAKT "
-          styleVaribles={"margin-top: 100px; color:white"}
+          styleVaribles={"margin-top: 100px; color:white; padding-bottom: 0px"}
         />
     <EmailForm/>
-    </div>
+    </StyledPage>
 
     </>
   );
@@ -133,3 +133,7 @@ export default function Home(props: any): JSX.Element {
     };
   }
 
+const StyledPage = styled.div`
+background-color: black;
+cursor: pointer;
+`

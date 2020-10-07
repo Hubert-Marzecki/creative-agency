@@ -27,3 +27,9 @@ export interface WorkflowStepModel {
         text: string,
         title: string
 }
+
+export interface TabContentModel {
+        img: string,
+        title: string,
+        text: string
+}

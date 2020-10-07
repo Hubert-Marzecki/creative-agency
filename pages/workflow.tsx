@@ -7,11 +7,12 @@ import flower from '../public/graf/blopOne.png'
 import styled from "@emotion/styled";
 import {Header} from "../components/Header/Header";
 import imgOne from '../public/work-1.jpg'
+import WorkFlowStep from "../components/workflowSteps/WorkFlowStep";
+import { workflowStep } from "../elements/workflowStep";
+import imageLong from '../public/work-long-1200x500.jpg'
 
 
 export default function WorkFlow() {
-
-
 
     return (
             <>
@@ -20,40 +21,15 @@ export default function WorkFlow() {
 
 <SectionTitile 
         title="JAK PRACUJE" 
-        styleVaribles={"color:white"} 
+        styleVaribles={"color:white; padding-bottom: 0; padding-top: 1em"} 
         />
 
+<WorkFlowStep items={workflowStep} />
 
-<section class="text-gray-200 body-font">
-  <div class="container px-5  mx-auto">
-    <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-    <img class="xl:w-2/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src={imgOne}/>
-      {/* <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
-        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-      </svg> */}
-      <p class="leading-relaxed text-lg text-justify"> Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
-      <span class="inline-block h-1 w-10 rounded bg-yellow-600 mt-8 mb-6 "></span>
-      <h2 class="text-gray-100 font-medium title-font tracking-wider text-sm font-bold">POZNAJEMY SIĘ</h2>
-      {/* <p class="text-gray-500">Senior Product Designer</p> */}
-    </div>
-  </div>
-</section>
-
-
-<section class="text-gray-200 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-      {/* <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
-        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-      </svg> */}
-      <p class="leading-relaxed text-lg text-justify">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
-      <span class="inline-block h-1 w-10 rounded bg-yellow-600 mt-8 mb-6 "></span>
-      <h2 class="text-gray-100 font-medium title-font tracking-wider text-sm font-bold">OCENIAMY POTENCJAŁ WSPÓŁPRACY</h2>
-      {/* <p class="text-gray-500">Senior Product Designer</p> */}
-    </div>
-  </div>
-</section>
-
+<SectionTitile 
+        title="W SKRÓCIE" 
+        styleVaribles={"color:white; padding-bottom: 0; margin-top: 1em"} 
+        />
 
 
 {/* SUMMARY */}
@@ -71,7 +47,7 @@ export default function WorkFlow() {
             </svg>
           </div>
           <div class="flex-grow pl-4">
-            <h2 class="font-medium title-font text-sm text-gray-200 mb-1 tracking-wider">WYKSZTAŁCENIE</h2>
+            <h2 class="font-medium title-font text-sm text-gray-200 mb-1 tracking-wider">OMAWIANIE CELÓW</h2>
             <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
           </div>
         </div>
@@ -85,7 +61,7 @@ export default function WorkFlow() {
             </svg>
           </div>
           <div class="flex-grow pl-4">
-            <h2 class="font-medium title-font text-sm text-gray-200 mb-1 tracking-wider">ZAJAWKI</h2>
+            <h2 class="font-medium title-font text-sm text-gray-200 mb-1 tracking-wider">PODPISANIE UMOWY</h2>
             <p class="leading-relaxed">Vice migas literally kitsch +1 pok pok. Truffaut hot chicken slow-carb health goth, vape typewriter.</p>
           </div>
         </div>
@@ -132,7 +108,8 @@ export default function WorkFlow() {
           </div>
         </div>
       </div>
-      <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://dummyimage.com/1200x500" alt="step" />
+      <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src={imageLong} alt="step" />
+      {/* "https://dummyimage.com/1200x500" */}
     </div>
   </div>
 </section>

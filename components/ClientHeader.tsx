@@ -15,6 +15,8 @@ return (
 }
 
 const StyledClinetHeader = styled.div`
+background-color: black;
+color: white;
 display: flex;
 justify-content: center;
 .title{
