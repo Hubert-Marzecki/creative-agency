@@ -3,216 +3,223 @@ import Link from "next/link";
 import React from "react";
 import BigCenterImg from "../../components/BigCenterImg";
 import ClientHeader from "../../components/ClientHeader";
-import ClientIntro from "../../components/ClientIntro";
 import ClientText from "../../components/ClientText";
 import Footer from "../../components/Footer";
 import { Header } from "../../components/Header/Header";
 import { ProjectsGrid } from "../../components/ProjectsGrid";
 import SectionTitile from "../../components/SectionTitle";
 
-import gigSmallOne from '../../public/gigcity/gig-small.jpg'
-import gigSmallTwo from '../../public/gigcity/gig-small2.jpg'
-import gigSmallThree from '../../public/gigcity/gig-small3.jpg'
-import gigMain from '../../public/gigcity/gig-main.jpg'
-import gigMainTwo from '../../public/gigcity/gig-main2.jpg'
+import gigSmallOne from "../../public/gigcity/gig-small.jpg";
+import gigSmallTwo from "../../public/gigcity/gig-small2.jpg";
+import gigSmallThree from "../../public/gigcity/gig-small3.jpg";
+import gigMain from "../../public/gigcity/gig-main.jpg";
+import gigMainTwo from "../../public/gigcity/gig-main2.jpg";
 
-import progSmallOne from '../../public/progresja/prog-small.jpg'
-import holoSmallOne  from '../../public/progresja/prog-small.jpg'
-import instaSmallOne  from '../../public/progresja/prog-small.jpg'
+import progSmallOne from "../../public/progresja/prog-small.jpg";
+import holoSmallOne from "../../public/progresja/prog-small.jpg";
+import instaSmallOne from "../../public/progresja/prog-small.jpg";
+import ClientIntro from '../../components/ClientIntro/ClientIntro'
+
 
 export default function gigCity() {
-  
-    
-    const projectsElements = [
-        {
-            title:'Progresja',
-            img: progSmallOne,
-            alt:'',
-            link: '/clients/progresja'
-        },
-        {
-            title:'GiGCity.Tv',
-            img: gigSmallOne,
-            alt:'',
-            link: '/clients/progresja'
-        },
-        {
-            title:'Holofan3d',
-            img: holoSmallOne,
-            alt:'',
-            link: '/clients/progresja'
-        },
-        {
-            title:'Instacorner',
-            img: instaSmallOne,
-            alt:'',
-            link: '/clients/progresja'
-        },
-        {
-            title:'BeFriend',
-            img: instaSmallOne,
-            alt:'',
-            link: '/clients/progresja'
-        },
-        {
-            title:'ProTip Marketing',
-            img: instaSmallOne,
-            alt:'',
-            link: '/clients/progresja'
-        },
+  return (
+    <>
+      <StyledClient>
+        <ClientHeader title={"GIG City"} img={gigMain} alt={""} />
+      
+      <ClientIntro 
+        market="Streaming Online"
+        taskOne="strategia promocji"
+        taskTwo= "inne"
+        taskThree="inne"
+        text= "By connecting your Git repository with Vercel, our Git Integrations will seamlessly deploy any pushes to your Git repositories. Leave the field empty to not use a Git Integration."
+        isUrl={false}
+        url="string"
+        />
+        <SectionTitile
+          title="O KLIENCIE"
+          styleVaribles={"color:white; padding-bottom:0"}
+        />
 
-    ]
-
-    const elementImg = [
-        {
-            img: gigSmallOne,
-            alt:''
-        },
-        {
-            img: gigSmallTwo,
-            alt:''
-        }
-    ]
-    const tileWithText = [
-        {
-            title: "",
-            img: gigSmallThree,
-            alt: "",
-        },
-        {
-            title: "\"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\\n\" +\n" +
-                "                             \"\\n\" +\n" +
-                "                             \"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\\n\"",
-            img: "",
-            alt: "",
-        }
-
-    ]
-
-
-
-
-    return (
-        <>
-        <StyledClient>
-
-        <Header  />
-         <ClientHeader title={"GIG City"} img={gigMain} alt={""} />
-
-        <ClientIntro market={"Eventy / Rozrywka familijna"}  tasks={"Social Media, Fotografia, Video"}
-                     info={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +
-                     "\n" +
-                     "Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}/>
-        
-         <ProjectsGrid elements={elementImg} styleVaribles={"margin-top:3em"} showAll={false}/>
-         <ClientText text={"Check the render method of `ProjectsGrid`. See https://fb.me/react-warning-keys for more information.\n" +
-         "    in ProjectTile (at ProjectsGrid.tsx:68)\n" +
-         "    in ProjectsGrid (at omnie.tsx:32)\n" +
-         "    in oMnie (at _app.tsx:26)\n" +
-         "    in ThemeProvider (at _app.tsx:25)\n" +
-         "    in MyApp\n" +
-         "    in ErrorBoundary (created by ReactDevOverlay)\n" +
-         "    in ReactDevOverlay (created by Container)\n" +
-         "    in Container (created by AppContainer)\n" +
-         "    in AppContainer\n" +
-         "    in Root"} styleVaribles={""} />
-         <BigCenterImg img={gigMainTwo} alt={""}/>
-    
-
-            {/*<TileWithText text={"Cake Film & Photography has a knack for producing all kinds of immersive imagery. From tv commercials and editorial shoots, to digital campaigns, this team of visual pioneers can do it all.\n" +*/}
-            {/*"\n" +*/}
-            {/*"Their portfolio consists of captivating and beautiful content. We at Bolden were tasked to create a website that visually exhibits these high quality productio\n"}*/}
-            {/*              img={progresjaImg} alt={""} />*/}
-                          <ProjectsGrid elements={tileWithText} styleVaribles={"h3{margin-top:10px; font-size:1em} ; line-height:2em"} showAll={true} />
-                          <SectionTitile title="INNE PROJEKTY"  styleVaribles="" />
-
-            <StyledGrid >
-                <div className="grid__container">
-                    {projectsElements.map(item => {
-                        return (
-                            <Link  href={item.link} >
-                                <StyledTile >
-                                    <img className="client__image"
-                                         src={item.img}
-                                         alt={item.alt}
-                                    />
-                                    <h3 className="client__name">{item.title}</h3>
-                                </StyledTile>
-                            </Link>
-                        )
-                    })}
+<section className="text-gray-300 body-font">
+          <div className="container px-16 sm:px-40 py-20 mx-auto flex flex-wrap ">
+            <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-4/6 sm:w-2/3 content-start sm:pr-10">
+              <div className="w-full sm:p-4 mb-6">
+                <h1 className="title-font font-medium text-xl mb-2 text-gray-100 font-bold">
+                  Moon hashtag pop-up try-hard offal truffaut
+                </h1>
+                <div className="leading-relaxed">
+                  Pour-over craft beer pug drinking vinegar live-edge gastropub,
+                  keytar neutra sustainable fingerstache kickstarter.
                 </div>
+              </div>
+              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
+                <h2 className="title-font font-medium text-3xl text-gray-100">
+                  2.7K
+                </h2>
+                <p className="leading-relaxed">Users</p>
+              </div>
+              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                <h2 className="title-font font-medium text-3xl text-gray-100">
+                  1.8K
+                </h2>
+                <p className="leading-relaxed">Subscribes</p>
+              </div>
+              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                <h2 className="title-font font-medium text-3xl text-gray-100">
+                  35
+                </h2>
+                <p className="leading-relaxed">Downloads</p>
+              </div>
+              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                <h2 className="title-font font-medium text-3xl text-gray-100">
+                  4
+                </h2>
+                <p className="leading-relaxed">Products</p>
+              </div>
+            </div>
+            <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
+              <img
+                className="object-cover object-center w-full h-full w-screen"
+                src={gigMainTwo}
+                alt="stats"
+              />
+            </div>
+          </div>
+        </section>
 
-            </StyledGrid>
+        <SectionTitile
+          title="ZADANIA"
+          styleVaribles={"color:white; padding-bottom:0"}
+        />
 
-        </StyledClient>
 
-</>
-    )
+        <section className="text-gray-300 body-font pb-32">
+  <div className="container  pt-10 mx-auto">
+    <div className="text-center mb-20">
+      {/* <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-200 mb-4">Zadania w ramach zlecenia</h1> */}
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+    </div>
+    <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Kontakt z partnerami</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Prowadzenie profilu Facebook</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Prowadzenie kampanii reklamowych</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Prowadzenie Instagrama</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Przygotowanie strategii promocji koncertów</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Fotografia koncertowa </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<SectionTitile
+          title="GALERIA"
+          styleVaribles={"color:white; padding-bottom:1em; padding-top:0"}
+        />
+
+<section className="text-gray-700 body-font ">
+          <div className="container px-20  mx-auto">
+            <div className="flex flex-wrap -mx-4 -mb-10 text-center">
+              <div className="sm:w-1/4 mb-10 px-4">
+                <div className="rounded-lg h-full overflow-hidden">
+                  <img
+                    alt="content"
+                    className="object-cover object-center h-full w-full"
+                    src={gigSmallOne}
+                  />
+                </div>
+              </div>
+              <div className="sm:w-1/4 mb-10 px-4">
+                <div className="rounded-lg h-full overflow-hidden">
+                  <img
+                    alt="content"
+                    className="object-cover object-center h-full w-full"
+                    src={gigSmallTwo}
+                  />
+                </div>
+              </div>
+              <div className="sm:w-1/4 mb-10 px-4">
+                <div className="rounded-lg h-full overflow-hidden">
+                  <img
+                    alt="content"
+                    className="object-cover object-center h-full w-full"
+                    src={gigSmallTwo}
+                  />
+                </div>
+              </div>
+              <div className="sm:w-1/4 mb-10 px-4">
+                <div className="rounded-lg h-full overflow-hidden">
+                  <img
+                    alt="content"
+                    className="object-cover object-center h-full w-full"
+                    src={gigSmallTwo}
+                  />
+                </div>
+              </div>
+            </div>
+            <p className="text-center pt-2">
+      
+              Więcej zdjęć na <a className="text-yellow-500 cursor-pointer"  href="#">Instagram</a>
+            </p>
+          </div>
+        </section>
+
+
+
+
+      </StyledClient>
+    </>
+  );
 }
 
 const StyledClient = styled.div`
-    background-color: black;
-    color:white;
-`
-
-const StyledTile = styled.div`
-        width: fit-content;
-        margin: 4em;
-        &:hover{
-        
-        }
-         @media(max-width: 700px) {
-        margin: 1em;
-        }
-        
-        .client__name{
-        font-size: 20px;
-        margin-top: 5px;
-        }
-        
-        .client__image{
-        width: 20vw;
-
-        @media(max-width: 800px) {
-        width: 90vw;
-        }
-        }
-    `
-const StyledGrid = styled.div`
-
-   .grid__container{
-      display: flex;
-      flex-wrap: wrap;
-      width: 70%;
-      margin: 0 auto;
-      justify-content: center;
-      
-        @media(max-width: 800px) {
-        width: 100vw;
-        }
-        &--wide{
-         width: 100vw;
-        }
-   }
-   
-   .see__more__btn {
-    display: block;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 20px;
-      border: none;
-      background-color: transparent;
-      
-      font-weight: 700;
-         &-active{
-      cursor: pointer;
-
-   }
-   &-disable{
-   opacity: 0.4;
-   cursor: none;
-   }
-     
-   }
-`
+  background-color: black;
+  color: white;
+`;

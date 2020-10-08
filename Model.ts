@@ -33,3 +33,13 @@ export interface TabContentModel {
         title: string,
         text: string
 }
+
+export interface ClientIntroModel {
+        market: string,
+        taskOne:string,
+        taskTwo:string,
+        taskThree:string,
+        text:string,
+        isUrl: boolean,
+        url: string
+}
