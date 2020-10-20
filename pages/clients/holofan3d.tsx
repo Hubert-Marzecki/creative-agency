@@ -3,7 +3,6 @@ import Link from "next/link"
 import React from "react"
 import BigCenterImg from "../../components/BigCenterImg"
 import ClientHeader from "../../components/ClientHeader"
-import ClientIntro from "../../components/ClientIntro"
 import ClientText from "../../components/ClientText"
 import { Header } from "../../components/Header/Header"
 import { ProjectsGrid } from "../../components/ProjectsGrid"
@@ -27,6 +26,7 @@ import holoMain from '../../public/holo/holo-main.jpg'
 import holoMainTwo from '../../public/holo/holo-main2.jpg'
 import holoSmall from '../../public/holo/holo-small2.jpg'
 import holoSmall2 from '../../public/holo/holo-small3.jpg'
+import ClientIntro from "../../components/clientIntro/ClientIntro"
 
 export default function Holodan3d (){
     

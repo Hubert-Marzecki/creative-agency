@@ -34,6 +34,10 @@ import proTipSmallOne from "../public/protip/protip-small2.jpg";
 import proTipSmallTwo from "../public/protip/protip-small2.jpg";
 import proTipSmallThree from "../public/protip/protip-small3.jpg";
 
+import columbus from "../public/columbus/columbus.jpg";
+import columbusTwo from "../public/columbus/columbus-1.jpg";
+import columbusThree from "../public/columbus/columbus-2.jpg";
+
 
 export const projectsElements: ProjectsElementsInterface[] = [
     {
@@ -106,6 +110,15 @@ export const projectsElements: ProjectsElementsInterface[] = [
       imgThree: proTipSmallThree,
       alt: "",
       color: "#fff968",
-      link: "/clients/progresja",
+      link: "/clients/protip",
+    },
+    {
+      title: "Columbus",
+      img: columbusTwo,
+      imgTwo: columbusTwo,
+      imgThree: columbusThree,
+      alt: "",
+      color: "#fff968",
+      link: "/clients/columbus",
     },
   ];

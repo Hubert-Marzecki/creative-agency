@@ -4,7 +4,6 @@ import holoSmall from '../../public/holo/holo-small.jpg'
 import React from 'react'
 import { Header } from '../../components/Header/Header'
 import ClientHeader from '../../components/ClientHeader'
-import ClientIntro from '../../components/ClientIntro'
 import { ProjectsGrid } from '../../components/ProjectsGrid'
 import ClientText from '../../components/ClientText'
 import BigCenterImg from '../../components/BigCenterImg'
@@ -30,6 +29,7 @@ import instaSQR from '../../public/instacorner/insta-sqr.jpeg'
 import instaSQRTwo from '../../public/instacorner/insta-sqr2.jpg'
 import instaSQRThree from '../../public/instacorner/insta-sqr3.jpg'
 import instaSQRFour from '../../public/instacorner/insta-sqr-5.jpg'
+import ClientIntro from '../../components/clientIntro/ClientIntro'
 
 export default function Insta() {
 

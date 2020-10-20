@@ -25,9 +25,7 @@ import holoSmall from '../../public/holo/holo-small2.jpg'
 import holoSmall2 from '../../public/holo/holo-small3.jpg'
 import ClientIntro from "../../components/clientIntro/ClientIntro"
 
-export default function BeFriend() {
-
-
+export default function ProTip() {
 
     return (
         <>
