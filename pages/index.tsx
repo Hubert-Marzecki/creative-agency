@@ -12,7 +12,7 @@ import ProjectTile from "../components/ProjectTileGallery/ProjectTile";
 import { ProjectsGrid } from "../components/ProjectsGrid";
 import { css, jsx, keyframes } from "@emotion/core";
 import Link from "next/link";
-import ProjectTileHolder from "../components/ProjectTileGallery/ProjectTileHolder";
+// import ProjectTileHolder from "../components/ProjectTileGallery/ProjectTileHolder";
 import { ProjectsElementsInterface } from "../Model";
 import EmailForm from "../components/Form/EmailForm";
 import ClientsTestimonials from "../components/Testimonials/ClientsTestimonials";
@@ -22,7 +22,7 @@ import { myPhotos } from "../elements/myPhotos";
 //  TODO - add IBWP Section
 //  TODO - add ProTip Section
 // color - yellow fcaf58
-import weirdYellow from "../public/weird-yellow.jpg";
+import weirdYellow from "../public/yellow-rose.png";
 import ProjectTileFull from "../components/ProjectTileGallery/ProjectTileFull";
 
 export default function Home(props: any): JSX.Element {
@@ -47,8 +47,7 @@ export default function Home(props: any): JSX.Element {
               </h1>
               <p className="mb-8 sm:text-3xl text-3xl leading-relaxed">
                 {" "}
-                Zajmuję się tworzeniem stron internetowych, komunikacją
-                marketingową i fotografią.
+                Zajmuję się tworzeniem stron internetowych, fotografią i komunikacją marketingową.
               </p>
               <div className="flex justify-center">
                 {/* <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> */}

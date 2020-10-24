@@ -41,9 +41,9 @@ export default function ProjectTileFull(props: {
               <div className=" h-auto overflow-hidden">
                 <img
                   alt="content"
-                  className="object-cover object-center h-full w-full"
+                  className="object-cover object-center h-full w-full cursor-pointer"
                   src={item.img}
-                  onMouseOver={(e) => replaceImg(e, item)}
+                  // onMouseOver={(e) => replaceImg(e, item)}
                 />
               </div>
               <h2 className="title-font text-2xl font-medium text-gray-500 mt-6 mb-3">

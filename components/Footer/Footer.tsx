@@ -1,4 +1,4 @@
-import logo from '../../public/my-logo-small.png';
+import logo from '../../public/smallrose.png';
 
 
 export default function Footer() {
@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="text-gray-700 body-font bg-black">
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          <img className="" src={logo} />
+          <img className="h-20" src={logo} />
           </a>
           <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Hubert Marzecki —
             <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@jamarzec</a>

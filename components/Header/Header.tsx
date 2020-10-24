@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
-import logo from '../../public/my-logo-small.png';
+import logo from '../../public/smallrose.png';
 import { useRouter } from 'next/router'
 export function Header() : JSX.Element {
   const router = useRouter()
@@ -15,7 +15,7 @@ export function Header() : JSX.Element {
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg> */}
               <Link href="/">
-            <img src={logo} alt="" className="cursor-pointer"/>
+            <img src={logo} alt="" className="cursor-pointer h-20"/>
             </Link>
           </a>
 

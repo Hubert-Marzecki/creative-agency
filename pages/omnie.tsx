@@ -52,11 +52,9 @@ export default function oMnie(): JSX.Element {
         return (
           <>
             <p className="leading-relaxed text-gray-600 mb-4">
-              Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-              sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo
-              juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
-              seitan poutine tumeric. Gastropub blue bottle austin listicle
-              pour-over, neutra jean.
+              Na studiach nauczyłem się racjonalnie przeprowadzać analizy klientów i działalności biznesowej. Na codzienń korzystam z tej wiedzy
+              i na jej podstawie dokonuje decyzji a nie podstawie aktualnego przecucia. Swoje umiejętności rozwijałem przy przeszło 20 projektach.
+              Programuje strony w nowoczesnych techologiach (Next.js, React), ale w razie potrzeby jestem w stanie szybko i skutecznie stworzyć stronę w WordPress.
             </p>
             <div className="flex border-t border-gray-300 py-2">
               <span className="text-gray-500">Studia </span>
@@ -102,17 +100,12 @@ export default function oMnie(): JSX.Element {
         return (
           <>
             <p className="leading-relaxed text-gray-600 mb-4">
-              My mistake was that I was mixing and matching between es6 modules
-              and commonjs: If something was exported, use import for getting it
-              on the receiving end. If something was module.export=ed, use
-              require() for getting it.
+             Lubię małą przedsiębiorczość i dużo bardziej odnajduję się w spieraniu takich projektów niż pracy korporacyjnej.
+             Preferuje omawianie działań bezpośrednio z osobami, którym zależy na swojej działalności tak jak mi na mojej a nie jest to dla nich po prostu praca. 
             </p>
 
             <p className="leading-relaxed text-gray-600 mb-4">
-              My mistake was that I was mixing and matching between es6 modules
-              and commonjs: If something was exported, use import for getting it
-              on the receiving end. If something was module.export=ed, use
-              require() for getting it.
+
             </p>
             {/* <div className="flex border-t border-gray-300 py-2">
           <span className="text-gray-500"> Studia </span>
@@ -158,12 +151,9 @@ export default function oMnie(): JSX.Element {
         return (
           <>
             <p className="leading-relaxed text-gray-600 mb-4">
-              LThe component which in turn uses
-              CompanyHeaderPartWithoutStructure is connected. Even if I reduce
-              this to the point of only importing React and
-              CompanyHeaderPartWithoutStructure and returning
-              CompanyHeaderPartWithoutStructure without connecting, the error is
-              still there.
+           Bez problemu mogę tu umieścić programowanie, fotografię i marketing. Staram się łączyć pasje z życiem zawodowym, dzięki czemu nie wypalam się zawodowo a wykazywanie 
+           inicjatywy jest prostrze niż kiedykolwiek. 
+           Kiedy nie pracuję maluje, trochę piszę i odkładam na campera. Wiele lat jeździłem autostopem i jestem szczerze zakochany w róznorodności jaką oferuję nam cały świat.
             </p>
             <div className="flex border-t border-gray-300 py-2">
               <span className="text-gray-500"> Fotografia </span>
