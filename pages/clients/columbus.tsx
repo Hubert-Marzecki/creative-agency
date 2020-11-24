@@ -44,9 +44,9 @@ export default function Columbus() {
           taskOne="Kompleksowa sejsa zdjęciowa"
           taskTwo=""
           taskThree=""
-          text="Sesja zdjęciowa została przeprowadzona dla lokalu nalerzącego do pokaźnej sieci Columbus Caffe"
+          text="Sesja zdjęciowa została przeprowadzona dla lokalu nalerzącego do pokaźnej sieci Columbus Caffe. Przez 4 godziny wraz z Tadeuszem Lesieckim fotogrofrafowaliśmy większość produktów oferowanych prze kawiarnię."
           isUrl={true}
-          url="https://progresja.com/en/"
+          url="https://www.columbuscoffee.pl/"
         />
 
         <SectionTitile
@@ -59,7 +59,7 @@ export default function Columbus() {
             <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-4/6 sm:w-2/3 content-start sm:pr-10">
               <div className="w-full sm:p-4 mb-6">
                 <h1 className="title-font font-medium text-xl mb-2 text-gray-100 font-bold">
-                  Moon hashtag pop-up try-hard offal truffaut
+Jedna z najbardziej popularnych kawiarni w Polsce
                 </h1>
                 <div className="leading-relaxed">
                   Pour-over craft beer pug drinking vinegar live-edge gastropub,
@@ -68,17 +68,17 @@ export default function Columbus() {
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
-                  2.7K
+                  45 
                 </h2>
-                <p className="leading-relaxed">Users</p>
+                <p className="leading-relaxed">Lokali</p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
-                  1.8K
+                  3
                 </h2>
-                <p className="leading-relaxed">Subscribes</p>
+                <p className="leading-relaxed">Nagrody</p>
               </div>
-              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+              {/* <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
                   35
                 </h2>
@@ -89,7 +89,7 @@ export default function Columbus() {
                   4
                 </h2>
                 <p className="leading-relaxed">Products</p>
-              </div>
+              </div> */}
             </div>
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img

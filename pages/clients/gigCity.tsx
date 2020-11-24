@@ -29,9 +29,9 @@ export default function gigCity() {
       
       <ClientIntro 
         market="Streaming Online"
-        taskOne="strategia promocji"
-        taskTwo= "inne"
-        taskThree="inne"
+        taskOne="Strategia promocji"
+        taskTwo= "Social Media"
+        taskThree="Fotografia"
         text= "By connecting your Git repository with Vercel, our Git Integrations will seamlessly deploy any pushes to your Git repositories. Leave the field empty to not use a Git Integration."
         isUrl={false}
         url="string"
@@ -46,7 +46,7 @@ export default function gigCity() {
             <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-4/6 sm:w-2/3 content-start sm:pr-10">
               <div className="w-full sm:p-4 mb-6">
                 <h1 className="title-font font-medium text-xl mb-2 text-gray-100 font-bold">
-                  Moon hashtag pop-up try-hard offal truffaut
+                  Nowoczesna platforma streamingowa, pozwalająca na zmianę widoku między kamerami.
                 </h1>
                 <div className="leading-relaxed">
                   Pour-over craft beer pug drinking vinegar live-edge gastropub,
@@ -55,27 +55,27 @@ export default function gigCity() {
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
-                  2.7K
+                  8
                 </h2>
-                <p className="leading-relaxed">Users</p>
+                <p className="leading-relaxed">Kamer do wyboru</p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
-                  1.8K
+                3
                 </h2>
-                <p className="leading-relaxed">Subscribes</p>
+                <p className="leading-relaxed">Realizowane koncerty</p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
                   35
                 </h2>
-                <p className="leading-relaxed">Downloads</p>
+                <p className="leading-relaxed">Specjalistó od stream</p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
                   4
                 </h2>
-                <p className="leading-relaxed">Products</p>
+                <p className="leading-relaxed">Profile w Social Media</p>
               </div>
             </div>
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
@@ -98,7 +98,7 @@ export default function gigCity() {
   <div className="container  pt-10 mx-auto">
     <div className="text-center mb-20">
       {/* <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-200 mb-4">Zadania w ramach zlecenia</h1> */}
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Podczas pracy nad promocją pierwszych interaktywncych streamingów zajmowałem się głownie poniższymi działaniami.</p>
     </div>
     <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
       <div className="p-2 sm:w-1/2 w-full">

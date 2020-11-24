@@ -32,7 +32,7 @@ export default function BeFriend() {
     return (
         <>
                <div className="bg-black text-white">
-        <ClientHeader title={"Progresja"} img={holoMain} alt={""} />
+        <ClientHeader title={"BeFriend"} img={holoMain} alt={""} />
 
         <SectionTitile
           title="O PROJEKCIE"
@@ -41,13 +41,13 @@ export default function BeFriend() {
 
 
   <ClientIntro 
-          market="Streaming Online"
-          taskOne="Kompleksowa obsług social media"
-          taskTwo= "Fotografia"
-          taskThree="Video"
-          text="By connecting your Git repository with Vercel, our Git Integrations will seamlessly deploy any pushes to your Git repositories. By connecting your Git repository with Vercel, our Git Integrations will seamlessly deploy any pushes to your Git repositories. Leave the field empty to not use a Git Integration."
+          market="Agencja Eventowa"
+          taskOne="Przygotowanie stron www dla projektów"
+          taskTwo= "Przygotowanie grafik"
+          taskThree="Organizacja sesji zdjęciowych"
+          text="Podczas współpracy z agencją miałem okazje dokładnie się zapoznać z metodyką przygotwanie stron internetowych pod potrzeby klientów z różnych branży. Do przygotowanie storn internetowych wielokreotnie wykorzysytwałem umiejętności obsługi Photoshope."
           isUrl={true}
-          url="https://progresja.com/en/"
+          url="http://www.bfriend.pl/"
           />
 
 
@@ -61,18 +61,17 @@ export default function BeFriend() {
             <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-4/6 sm:w-2/3 content-start sm:pr-10">
               <div className="w-full sm:p-4 mb-6">
                 <h1 className="title-font font-medium text-xl mb-2 text-gray-100 font-bold">
-                  Moon hashtag pop-up try-hard offal truffaut
+                  Agencja eventowa 
                 </h1>
                 <div className="leading-relaxed">
-                  Pour-over craft beer pug drinking vinegar live-edge gastropub,
-                  keytar neutra sustainable fingerstache kickstarter.
+                  Agnecja obsługuje między innymi jedne z największych centra handlowe w Polsce.
                 </div>
               </div>
-              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
+              {/* <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
-                  2.7K
+                  12 000 
                 </h2>
-                <p className="leading-relaxed">Users</p>
+                <p className="leading-relaxed">Uczestników przy projekcie "Drzewo Korzyści"</p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
@@ -91,7 +90,7 @@ export default function BeFriend() {
                   4
                 </h2>
                 <p className="leading-relaxed">Products</p>
-              </div>
+              </div> */}
             </div>
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img
@@ -103,7 +102,7 @@ export default function BeFriend() {
           </div>
         </section>
 
-        <section className="text-gray-700 body-font ">
+        {/* <section className="text-gray-700 body-font ">
           <div className="container px-20  mx-auto">
             <div className="flex flex-wrap -mx-4 -mb-10 text-center">
               <div className="sm:w-1/4 mb-10 px-4">
@@ -148,7 +147,7 @@ export default function BeFriend() {
               Wszystkie zdjęcia mojej produkcji{" "}
             </p>
           </div>
-        </section>
+        </section> */}
 
 
 

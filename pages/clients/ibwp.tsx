@@ -33,7 +33,7 @@ export default function Ibwp() {
     return (
         <>
            <div className="bg-black text-white">
-        <ClientHeader title={"Progresja"} img={instaSQR} alt={""} />
+        <ClientHeader title={"IBWP"} img={holoMain} alt={""} />
 
         <SectionTitile
           title="O PROJEKCIE"
@@ -42,13 +42,13 @@ export default function Ibwp() {
 
 
   <ClientIntro 
-          market="Streaming Online"
-          taskOne="Kompleksowa obsług social media"
-          taskTwo= "Fotografia"
-          taskThree="Video"
-          text="By connecting your Git repository with Vercel, our Git Integrations will seamlessly deploy any pushes to your Git repositories. By connecting your Git repository with Vercel, our Git Integrations will seamlessly deploy any pushes to your Git repositories. Leave the field empty to not use a Git Integration."
+          market="Przygotowanie projektu graficznego"
+          taskOne="Napisanie strony w nowoczesnej technologii Next.js"
+          taskTwo= ""
+          taskThree=""
+          text="Instytut powstał z myślą o połączeniu praktyki i nauki w zakresie szeroko pojętej wartości przedsiębiorstw. Instytut skupia specjalistów z dziedziny restrukturyzacji, wycen, prawa, zarządzania, ekonomii i finansów. Nasi współpracownicy posiadają wieloletnie doświadczenia jako biegli sądowy z zakresu organizacji i zarządzania, analizy i wycen przedsiębiorstw, biegli skarbowi z zakresu szacowania przedsiębiorstw i udziałów w podmiotach gospodarczych, doradcy restrukturyzacyjni. Pozwala to na wszechstronną ocenę stanu przedsiębiorstwa i opracowanie optymalnej strategii jego rozwoju lub wyjścia z kryzysu. Pomagamy przedsiębiorcom i osobom zarządzającym w prowadzonych z ich udziałem procesach sądowych lub negocjacyjnych. Dotyczy to wszelkich zagadnień ekonomicznych w postępowaniach gospodarczych, karnych, upadłościowych, restrukturyzacyjnych oraz o zakaz prowadzenia działalności gospodarczej. Dokonujemy wycen przedsiębiorstw, udziałów/ akcji w podmiotach gospodarczych, zorganizowanych części przedsiębiorstw."
           isUrl={true}
-          url="https://progresja.com/en/"
+          url="https://www.ibwp.pl"
           />
 
 
@@ -62,11 +62,10 @@ export default function Ibwp() {
             <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-4/6 sm:w-2/3 content-start sm:pr-10">
               <div className="w-full sm:p-4 mb-6">
                 <h1 className="title-font font-medium text-xl mb-2 text-gray-100 font-bold">
-                  Moon hashtag pop-up try-hard offal truffaut
+                Instytut Badań Wartości Przedsiębiorstw
                 </h1>
                 <div className="leading-relaxed">
-                  Pour-over craft beer pug drinking vinegar live-edge gastropub,
-                  keytar neutra sustainable fingerstache kickstarter.
+                Instytut powstał z myślą o połączeniu praktyki i nauki w zakresie szeroko pojętej wartości przedsiębiorstw. Instytut skupia specjalistów z dziedziny restrukturyzacji, wycen, prawa, zarządzania, ekonomii i finansów..
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
@@ -97,59 +96,14 @@ export default function Ibwp() {
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img
                 className="object-cover object-center w-full h-full"
-                src={instaSQR}
+                src={holoMain}
                 alt="stats"
               />
             </div>
           </div>
         </section>
 
-        <section className="text-gray-700 body-font ">
-          <div className="container px-20  mx-auto">
-            <div className="flex flex-wrap -mx-4 -mb-10 text-center">
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={instaSQR}
-                  />
-                </div>
-              </div>
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={instaSQR}
-                  />
-                </div>
-              </div>
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={instaSQR}
-                  />
-                </div>
-              </div>
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={instaSQR}
-                  />
-                </div>
-              </div>
-            </div>
-            <p className="text-center pt-2">
-              {" "}
-              Wszystkie zdjęcia mojej produkcji{" "}
-            </p>
-          </div>
-        </section>
+ 
 
 
 
