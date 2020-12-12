@@ -54,8 +54,7 @@ export default function ProgresjaCase() {
                   Największy klub koncertowy w Warszawie 
                 </h1>
                 <div className="leading-relaxed">
-                  Pour-over craft beer pug drinking vinegar live-edge gastropub,
-                  keytar neutra sustainable fingerstache kickstarter.
+                Podczas ponad 1.5 rocznej współpracy miałem szczęście opiekować się miejscem o mega klimacie. 
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
@@ -66,15 +65,15 @@ export default function ProgresjaCase() {
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
-                  5 500
+                  5000
                 </h2>
-                <p className="leading-relaxed">Followers IG</p>
+                <p className="leading-relaxed">Followers na IG </p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
-                  10 000
+                  5000 + 
                 </h2>
-                <p className="leading-relaxed"> Budżet  </p>
+                <p className="leading-relaxed"> Uczestików koncertów </p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">

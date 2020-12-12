@@ -62,8 +62,7 @@ export default function Columbus() {
 Jedna z najbardziej popularnych kawiarni w Polsce
                 </h1>
                 <div className="leading-relaxed">
-                  Pour-over craft beer pug drinking vinegar live-edge gastropub,
-                  keytar neutra sustainable fingerstache kickstarter.
+          
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
@@ -78,18 +77,18 @@ Jedna z najbardziej popularnych kawiarni w Polsce
                 </h2>
                 <p className="leading-relaxed">Nagrody</p>
               </div>
-              {/* <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
-                  35
+                  8
                 </h2>
-                <p className="leading-relaxed">Downloads</p>
+                <p className="leading-relaxed">Rodzajów kawy</p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
-                  4
+                  10
                 </h2>
-                <p className="leading-relaxed">Products</p>
-              </div> */}
+                <p className="leading-relaxed">Lat na rynku</p>
+              </div>
             </div>
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img

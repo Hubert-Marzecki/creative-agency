@@ -37,7 +37,7 @@ export default function Insta() {
     return (
         <>
           <div className="bg-black text-white">
-        <ClientHeader title={"Progresja"} img={instaSQR} alt={""} />
+        <ClientHeader title={"Instacorner"} img={instaSQR} alt={""} />
 
         <SectionTitile
           title="O PROJEKCIE"
@@ -45,15 +45,15 @@ export default function Insta() {
         />
 
 
-  <ClientIntro 
-          market="Streaming Online"
-          taskOne="Kompleksowa obsług social media"
-          taskTwo= "Fotografia"
-          taskThree="Video"
-          text="By connecting your Git repository with Vercel, our Git Integrations will seamlessly deploy any pushes to your Git repositories. By connecting your Git repository with Vercel, our Git Integrations will seamlessly deploy any pushes to your Git repositories. Leave the field empty to not use a Git Integration."
-          isUrl={true}
-          url="https://progresja.com/en/"
-          />
+<ClientIntro 
+        market="Wyposarzenie Eventowe"
+        taskOne="Stworzenie strony www"
+        taskTwo= "Obróbka grafik"
+        taskThree=""
+        text= "NIE POZWÓL, ABY OGRANICZAŁA CIĘ WYOBRAŹNIA. Instacorner to nieograniczone możliwości tworzenia wyjątkowych wspomnień z udziałem Twojej marki. Jednym słowem kwintesencja Brand expirience. Zainspirowaliśmy się najlepszymi światowymi instamuzeami — teraz chcemy, aby służyły Tobie i Twojej marce. Bez ograniczeń, bez sztampy — tak jak sobie wymarzysz.Spróbuj nowego podejścia do promocji — zaistniej dzięki milionom sharów na Insta czy Facebook swoich klientów."
+        isUrl={false}
+        url="string"
+        />
 
 
         <SectionTitile
@@ -66,26 +66,26 @@ export default function Insta() {
             <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-4/6 sm:w-2/3 content-start sm:pr-10">
               <div className="w-full sm:p-4 mb-6">
                 <h1 className="title-font font-medium text-xl mb-2 text-gray-100 font-bold">
-                  Moon hashtag pop-up try-hard offal truffaut
+                 Instacorner - nowoczesna przestrzeń eventowa.
                 </h1>
                 <div className="leading-relaxed">
-                  Pour-over craft beer pug drinking vinegar live-edge gastropub,
-                  keytar neutra sustainable fingerstache kickstarter.
+                Jest nie tylko zachwycający, ale prosty w montażu.
+                Konstrukcja składa się z kilku wytrzymałych paneli dzięki temu jest stabilna, prosta do złożenia i z łatwością będzie można ją przenieść. 
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
-                <h2 className="title-font font-medium text-3xl text-gray-100">
-                  2.7K
+                <h2 className="title-font font-bold text-3xl text-gray-100 ">
+                  4
                 </h2>
-                <p className="leading-relaxed">Users</p>
+                <p className="leading-relaxed">Pokoje tematyczne</p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                <h2 className="title-font font-medium text-3xl text-gray-100">
-                  1.8K
+                <h2 className="title-font font-bold text-3xl text-gray-100">
+                  3
                 </h2>
-                <p className="leading-relaxed">Subscribes</p>
+                <p className="leading-relaxed">Ściany</p>
               </div>
-              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+              {/* <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
                   35
                 </h2>
@@ -96,7 +96,7 @@ export default function Insta() {
                   4
                 </h2>
                 <p className="leading-relaxed">Products</p>
-              </div>
+              </div> */}
             </div>
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img

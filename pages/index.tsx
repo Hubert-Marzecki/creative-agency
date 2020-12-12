@@ -24,6 +24,8 @@ import { myPhotos } from "../elements/myPhotos";
 // color - yellow fcaf58
 import weirdYellow from "../public/yellow-rose.png";
 import ProjectTileFull from "../components/ProjectTileGallery/ProjectTileFull";
+import jaImg from '../public/ja/ja3.jpg';
+import { Router } from "next/router";
 
 export default function Home(props: any): JSX.Element {
   const [state, setState] = useState({
@@ -58,7 +60,7 @@ export default function Home(props: any): JSX.Element {
               <img
                 className="object-cover object-center rounded"
                 alt="hero"
-                src={weirdYellow}
+                src={jaImg}
               />
             </div>
           </div>
@@ -109,9 +111,11 @@ export default function Home(props: any): JSX.Element {
           }
         />
         <ClientsTestimonials />
+          <Link href="/omnie">
         <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg">
           Poznajmy się
         </button>
+        </Link>
 
         <SectionTitile
           title=" KONTAKT "

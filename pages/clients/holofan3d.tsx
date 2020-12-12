@@ -40,17 +40,17 @@ export default function Holodan3d (){
         
          <ClientIntro 
         market="Wyposarzenie Eventowe"
-        taskOne="Strona WWW"
-        taskTwo= ""
+        taskOne="Stworzenie strony www"
+        taskTwo= "Obróbka grafik"
         taskThree=""
-        text= "Podczas pracy przy stronie internetowej byłem odpowiedzialny za zaprojektowanie UI całej strony, odpowiedniego przygotowania grafik oraz zaprogramowania platformy z zachowaniem najwyższej starannoście kontekście SEO/ "
+        text= "Holofan3D umożliwia łączenie wielu urządzeń. Synchronizacja hologramów pozwala na tworzenie wielkoformatowych ścian. Elastyczna kombinacja złożona z Holofan3D tworzy spójną animacje z efektem WOW.",
         isUrl={false}
         url="string"
         />
 
 
         <SectionTitile
-          title="O KLIENCIE"
+          title="O PROJEKCIE"
           styleVaribles={"color:white; padding-bottom:0"}
         />
 
@@ -62,7 +62,7 @@ export default function Holodan3d (){
                  Sprzedaż wielkoformatowych hologramów
                 </h1>
                 <div className="leading-relaxed">
-                  Zaopatrzywanie przedstrzeni eventowych w profesjonalnyc sprzęt do tworzenia hologramów.
+                Podczas pracy przy stronie internetowej byłem odpowiedzialny za zaprojektowanie UI całej strony, odpowiedniego przygotowania grafik oraz zaprogramowania platformy z zachowaniem najwyższej starannoście kontekście optymalizacji  i SEO.
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
@@ -105,11 +105,10 @@ export default function Holodan3d (){
           styleVaribles={"color:white; padding-bottom:0"}
         />
 
-
-        {/* <section className="text-gray-300 body-font pb-32">
+ <section className="text-gray-300 body-font pb-32">
   <div className="container  pt-10 mx-auto">
     <div className="text-center mb-20">
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Przygotowanie strony zostało podzielone na 3 etapy - analiza istotnych informacji - przygotowanie szkicu strony - programowanie projektyu</p>
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Przygotowanie strony zostało podzielone na 3 etapy - analiza istotnych informacji - przygotowanie szkicu strony - programowanie projektu</p>
     </div>
     <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
       <div className="p-2 sm:w-1/2 w-full">
@@ -118,7 +117,7 @@ export default function Holodan3d (){
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
             <path d="M22 4L12 14.01l-3-3"></path>
           </svg>
-          <span className="title-font font-medium">Kontakt z partnerami</span>
+          <span className="title-font font-medium">Przygotowanie szkicu projektu</span>
         </div>
       </div>
       <div className="p-2 sm:w-1/2 w-full">
@@ -127,7 +126,7 @@ export default function Holodan3d (){
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
             <path d="M22 4L12 14.01l-3-3"></path>
           </svg>
-          <span className="title-font font-medium">Prowadzenie profilu Facebook</span>
+          <span className="title-font font-medium">Przygotowanie grafik</span>
         </div>
       </div>
       <div className="p-2 sm:w-1/2 w-full">
@@ -136,7 +135,7 @@ export default function Holodan3d (){
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
             <path d="M22 4L12 14.01l-3-3"></path>
           </svg>
-          <span className="title-font font-medium">Prowadzenie kampanii reklamowych</span>
+          <span className="title-font font-medium">Programowanie strony</span>
         </div>
       </div>
       <div className="p-2 sm:w-1/2 w-full">
@@ -145,7 +144,7 @@ export default function Holodan3d (){
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
             <path d="M22 4L12 14.01l-3-3"></path>
           </svg>
-          <span className="title-font font-medium">Prowadzenie Instagrama</span>
+          <span className="title-font font-medium">Optymalizacja</span>
         </div>
       </div>
       <div className="p-2 sm:w-1/2 w-full">
@@ -154,7 +153,7 @@ export default function Holodan3d (){
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
             <path d="M22 4L12 14.01l-3-3"></path>
           </svg>
-          <span className="title-font font-medium">Przygotowanie strategii promocji koncertów</span>
+          <span className="title-font font-medium">Analityka </span>
         </div>
       </div>
       <div className="p-2 sm:w-1/2 w-full">
@@ -163,19 +162,17 @@ export default function Holodan3d (){
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
             <path d="M22 4L12 14.01l-3-3"></path>
           </svg>
-          <span className="title-font font-medium">Fotografia koncertowa </span>
+          <span className="title-font font-medium"> Obróbka video </span>
         </div>
       </div>
     </div>
   </div>
-</section> */}
+</section> 
 
 <SectionTitile
           title="O WSPÓŁPRACY"
           styleVaribles={"color:white; padding-bottom:0"}
         />
-
-
 <section className="text-gray-300 body-font">
   <div className="container px-5 pb-24 pt-10 mx-auto">
     <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
@@ -189,7 +186,6 @@ export default function Holodan3d (){
     </div>
   </div>
 </section>
-
         </StyledClient>
 
 </>

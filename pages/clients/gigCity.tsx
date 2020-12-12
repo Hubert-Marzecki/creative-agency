@@ -32,7 +32,7 @@ export default function gigCity() {
         taskOne="Strategia promocji"
         taskTwo= "Social Media"
         taskThree="Fotografia"
-        text= "By connecting your Git repository with Vercel, our Git Integrations will seamlessly deploy any pushes to your Git repositories. Leave the field empty to not use a Git Integration."
+        text= "Nowoczesna platforma streamingowa, której podstawowym zadaniem było odświerzyć muzyczną scenę w dobie pandemii! Uzytkownik, miał do dostęp do streamingu, w którym mógł swobodnie zarządzać obrazem z aż 8 kamer. Odwiedzili nas tacy artyści jak Mazolweski Kwintent czy VoVo."
         isUrl={false}
         url="string"
         />
@@ -69,7 +69,7 @@ export default function gigCity() {
                 <h2 className="title-font font-medium text-3xl text-gray-100">
                   35
                 </h2>
-                <p className="leading-relaxed">Specjalistó od stream</p>
+                <p className="leading-relaxed">Specjalistów od stream</p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
@@ -203,6 +203,7 @@ export default function gigCity() {
                   />
                 </div>
               </div>
+              
             </div>
             <p className="text-center pt-2">
       

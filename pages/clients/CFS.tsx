@@ -44,7 +44,7 @@ export default  function CFSCase() {
 
 
         <SectionTitile
-          title="O KLIENCIE"
+          title="EFEKTY PROMOCJI"
           styleVaribles={"color:white; padding-bottom:0"}
         />
 
@@ -53,11 +53,10 @@ export default  function CFSCase() {
             <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-4/6 sm:w-2/3 content-start sm:pr-10">
               <div className="w-full sm:p-4 mb-6">
                 <h1 className="title-font font-medium text-xl mb-2 text-gray-100 font-bold">
-                  Prowadzenie Social Media
+                 Wystawca zagranicznych 
                 </h1>
                 <div className="leading-relaxed">
-                  Pour-over craft beer pug drinking vinegar live-edge gastropub,
-                  keytar neutra sustainable fingerstache kickstarter.
+                  Podczas pracy na terenie wydarzenia, regualrnie zapraszałem influencerów, robiłem zdjęcia terenu i nagrywałem występy na naszej scenie.
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
@@ -70,19 +69,19 @@ export default  function CFSCase() {
                 <h2 className="title-font font-medium text-3xl text-gray-100">
                   10+ 
                 </h2>
-                <p className="leading-relaxed">Nawiązanych kontaktów z Influencerami</p>
+                <p className="leading-relaxed">Kontaków z Influecerami</p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
-                  40 000 
+                  20+
                 </h2>
-                <p className="leading-relaxed">Gości</p>
+                <p className="leading-relaxed">Nagranych występów</p>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
                   2
                 </h2>
-                <p className="leading-relaxed">Miesiące aktywności</p>
+                <p className="leading-relaxed">Miesiące wystawy</p>
               </div>
             </div>
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
@@ -187,8 +186,6 @@ export default  function CFSCase() {
     </div>
   </div>
 </section>
-
-
         </StyledClient>
 
 </>

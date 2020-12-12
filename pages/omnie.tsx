@@ -261,11 +261,11 @@ export default function oMnie(): JSX.Element {
         />
 
         <section className="text-gray-700 body-font overflow-hidden">
-          <div className="container px-5 py-24 mx-auto pl-">
+          <div className="container px-5 md:py-24 py-3 mx-auto pl-">
             <div className="lg:w-4/5 mx-auto flex flex-wrap ">
               <img
                 alt="ecommerce"
-                className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded pr-8"
+                className="lg:w-1/2 w-full lg:h-auto lg:h-64 object-cover object-center rounded sm:pr-8"
                 src={jaOne}
               />
 

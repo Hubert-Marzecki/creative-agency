@@ -53,7 +53,7 @@ export function Header() : JSX.Element {
                 Jak pracuje</a>
             </Link>
           </nav>
-          <Link href="/">
+          <Link href="/kontakt">
           <button className="cursor-pointer inline-flex text-white items-center bg-yellow-600 border-0 py-2 pb-3 px-3 focus:outline-none hover:bg-yellow-500 rounded text-base mt-4 md:mt-0">Kontakt
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>

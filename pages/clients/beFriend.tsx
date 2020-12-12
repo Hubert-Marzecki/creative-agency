@@ -45,7 +45,8 @@ export default function BeFriend() {
           taskOne="Przygotowanie stron www dla projektów"
           taskTwo= "Przygotowanie grafik"
           taskThree="Organizacja sesji zdjęciowych"
-          text="Podczas współpracy z agencją miałem okazje dokładnie się zapoznać z metodyką przygotwanie stron internetowych pod potrzeby klientów z różnych branży. Do przygotowanie storn internetowych wielokreotnie wykorzysytwałem umiejętności obsługi Photoshope."
+          text=" Wspaniała agencja z biurem na Warszawskim Wawrzyszewie. Dostarcza najnowszych i najwyższej jakości rozwiązań, równocześnie optymalizujących koszty.
+          Dzięki ścisłej i stałej współpracy nasze szeregi zasilają najlepsi specjaliści z branży. Równocześnie nie ponosimy wysokich kosztów on house, a klient płaci tylko za zamówione usługi i produkty."
           isUrl={true}
           url="http://www.bfriend.pl/"
           />
@@ -64,7 +65,7 @@ export default function BeFriend() {
                   Agencja eventowa 
                 </h1>
                 <div className="leading-relaxed">
-                  Agnecja obsługuje między innymi jedne z największych centra handlowe w Polsce.
+                Za każdym razem nowe i zachwycające. Zapewnimy Ci nie tylko kreatywne rozwiązania, ale i zagwarantujemy wielkie WOW. Akcje, imprezy, konferencje, targi. Masz mniejszy budget - nie masz się czym przejmować. Damy radę!
                 </div>
               </div>
               {/* <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
@@ -150,6 +151,75 @@ export default function BeFriend() {
         </section> */}
 
 
+
+<SectionTitile
+          title="ZADANIA"
+          styleVaribles={"color:white; padding-bottom:0"}
+        />
+
+
+<section className="text-gray-300 body-font pb-32">
+  <div className="container  mx-auto">
+    <div className="text-center mb-20">
+    </div>
+    <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Przygotowanie ston internetowych</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Obróbka grafik</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Organizacja sesji zdjęciowych</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Optymalizacja stron www</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Wsparcie techniczne</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium"> Modyfikacja tekstów </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       
 <SectionTitile

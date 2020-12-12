@@ -27,15 +27,12 @@ export default function ClientIntro(props: ClientIntroModel) {
             return null
         }
       
-               
-              
-      
        
     }
 
     return (
         <section className="text-gray-100 body-font ">
-        <div className="container  px-20 mx-auto flex flex-col">
+        <div className="container  sm:px-20 mx-auto flex flex-col">
           <div className="lg:w-5/6 mx-auto w-3/4">
  
             <div className="flex flex-col sm:flex-row mt-10">

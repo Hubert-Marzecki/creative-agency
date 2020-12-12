@@ -68,7 +68,7 @@ export default function Ibwp() {
                 Instytut powstał z myślą o połączeniu praktyki i nauki w zakresie szeroko pojętej wartości przedsiębiorstw. Instytut skupia specjalistów z dziedziny restrukturyzacji, wycen, prawa, zarządzania, ekonomii i finansów..
                 </div>
               </div>
-              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
+              {/* <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
                   2.7K
                 </h2>
@@ -91,7 +91,7 @@ export default function Ibwp() {
                   4
                 </h2>
                 <p className="leading-relaxed">Products</p>
-              </div>
+              </div> */}
             </div>
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img
@@ -104,7 +104,74 @@ export default function Ibwp() {
         </section>
 
  
-
+      
+        <SectionTitile
+          title="ZADANIA "
+          styleVaribles={"color:white; padding-bottom:0"}
+        />
+        <section className="text-gray-300 body-font pb-32">
+  <div className="container  pt-10 mx-auto">
+    <div className="text-center mb-20">
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Przygotowanie strony zostało podzielone na 3 etapy - analiza istotnych informacji - przygotowanie szkicu strony - programowanie projektu</p>
+    </div>
+    <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Przygotowanie szkicu projektu</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Przygotowanie grafik</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Programowanie strony</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Optymalizacja</span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium">Analityka </span>
+        </div>
+      </div>
+      <div className="p-2 sm:w-1/2 w-full">
+        <div className="bg-gray-900 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-yellow-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span className="title-font font-medium"> Przygotowanie CMS </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
 
 
       
