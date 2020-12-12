@@ -38,7 +38,7 @@ export default function ProjectTileFull(props: {
       <>
         {props.tile.slice(0, props.offset).map((item) => (
           <Link href={`${item.link}`} key={uuidv4()}>
-            <div className="sm:w-1/4  mb-10 px-4 ">
+            <div className="sm:w-1/4  mb-10 px-4 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
               <div className=" h-auto overflow-hidden">
                 <img
                   alt="content"
@@ -47,7 +47,7 @@ export default function ProjectTileFull(props: {
                   // onMouseOver={(e) => replaceImg(e, item)}
                 />
               </div>
-              <h2 className="title-font text-2xl font-medium text-gray-500 mt-6 mb-3">
+              <h2 className="title-font text-2xl font-medium text-gray-200 mt-6 mb-3">
                 {item.title}
               </h2>
               {/* <p className="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p> */}

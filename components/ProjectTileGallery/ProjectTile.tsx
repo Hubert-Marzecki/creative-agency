@@ -11,7 +11,7 @@ export default function ProjectTile(props: {
   function isButtonVisible(): JSX.Element | null {
     if (props.isButtonVisible) {
       return (
-        <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-5 focus:outline-none hover:bg-yellow-500 rounded">
+        <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-5 focus:outline-none hover:bg-yellow-500 rounded transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
           {props.ctaText}
         </button>
       );
@@ -20,7 +20,7 @@ export default function ProjectTile(props: {
   function isCtaBellow(): JSX.Element | null {
     if (props.isCtaBellow) {
       return (
-        <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg">
+        <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
           {props.ctaText}
         </button>
       );
@@ -36,8 +36,8 @@ export default function ProjectTile(props: {
       <>
         {props.tile.slice(0, props.offset).map((item) => (
             <Link href={`${item.link}`} key={item.link}>
-              <div className="sm:w-1/2  mb-10 px-4 ">
-                <div className=" h-auto overflow-hidden">
+              <div className="sm:w-1/2  mb-10 px-4 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
+                <div className=" h-auto overflow-hidden ">
                   <img
                     alt="content"
                     className="object-cover object-center h-full w-full cursor-pointer"
@@ -45,7 +45,7 @@ export default function ProjectTile(props: {
                     // onMouseOver={(e) => replaceImg(e, item)}
                   />
                 </div>
-                <h2 className="title-font text-2xl font-medium text-gray-500 mt-6 mb-3">
+                <h2 className="title-font text-2xl font-medium text-gray-300 mt-6 mb-3 ">
                   {item.title}
                 </h2>
                 {/* <p className="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p> */}

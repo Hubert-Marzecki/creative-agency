@@ -32,7 +32,7 @@ export default function Home(props: any): JSX.Element {
       <StyledPage>
         <section className="text-white body-font h-screen bg-black ">
           <div className="container  mx-auto flex px-5 pt-40 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div className="  lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="sm:text-6xl text-3xl mb-4 font-bold">
                 Hej, jestem Hubert
                 {/* <br class="hidden lg:inline-block" />readymade gluten */}
@@ -46,7 +46,7 @@ export default function Home(props: any): JSX.Element {
                 {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Button</button> */}
               </div>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 w-full">
               <img
                 className="object-cover object-center rounded"
                 alt="hero"
@@ -55,11 +55,15 @@ export default function Home(props: any): JSX.Element {
             </div>
           </div>
           <div className="container -mt-64 mx-auto flex px-5 pt-40 md:flex-row flex-col items-center">
-            <p>
+            <p className="hidden md:block">
               {props.weather.name} , {props.weather.main.temp.toFixed() - 273}°C
             </p>
           </div>
         </section>
+        <div className="m-24 p-24 md:p-0">
+
+        </div>
+
         <SectionTitile title="PROJEKTY" styleVaribles={"color:white"} />
         {/* Portfolio section */}
         <ProjectTile
@@ -84,7 +88,7 @@ export default function Home(props: any): JSX.Element {
 
         <SectionTitile
           title=" POZNAJMY SIĘ "
-          styleVaribles={"margin-top: 100px; color:white"}
+          styleVaribles={"margin-top: 100px; color:white "}
         />
 
         <ProjectTileFull
@@ -102,7 +106,7 @@ export default function Home(props: any): JSX.Element {
         />
         <ClientsTestimonials />
           <Link href="/omnie">
-        <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg">
+        <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer ">
           Poznajmy się
         </button>
         </Link>

@@ -1,4 +1,4 @@
-import logo from '../../public/my-logo-small.png'
+import logo from '../../public/smallrose.png'
 
 
 export default function Footer() {

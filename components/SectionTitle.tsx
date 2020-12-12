@@ -9,7 +9,11 @@ export default function SectionTitile(props:{title:string,  styleVaribles:string
   background-color: black;
   text-align: center;
   padding:  1em;
+
+
   ${props.styleVaribles};
+  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+ 
   
    @media(max-width: 700px) {
         font-size: 2em;
