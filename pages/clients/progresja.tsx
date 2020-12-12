@@ -1,7 +1,7 @@
 
 import * as React from "react";
 import progClientMain from "../../public/progresja/prog-main.jpg";
-import progClientMain2 from "../../public/progresja/prog-main2.jpg";
+import progClientMain2 from "../../public/progresja/prog-main2.JPG";
 import progSmall from "../../public/progresja/prog-small.jpg";
 import progSmall2 from "../../public/progresja/prog-small2.jpg";
 import progSmall3 from "../../public/progresja/prog-small3.jpg";
