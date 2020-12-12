@@ -1,24 +1,14 @@
 import styled from "@emotion/styled";
-import Link from "next/link";
 import React from "react";
-import BigCenterImg from "../../components/BigCenterImg";
 import ClientHeader from "../../components/ClientHeader";
-import ClientText from "../../components/ClientText";
-import Footer from "../../components/Footer";
-import { Header } from "../../components/Header/Header";
-import { ProjectsGrid } from "../../components/ProjectsGrid";
 import SectionTitile from "../../components/SectionTitle";
 
 import gigSmallOne from "../../public/gigcity/gig-small.jpg";
 import gigSmallTwo from "../../public/gigcity/gig-small2.jpg";
-import gigSmallThree from "../../public/gigcity/gig-small3.jpg";
 import gigMain from "../../public/gigcity/gig-main.jpg";
 import gigMainTwo from "../../public/gigcity/gig-main2.jpg";
 
-import progSmallOne from "../../public/progresja/prog-small.jpg";
-import holoSmallOne from "../../public/progresja/prog-small.jpg";
-import instaSmallOne from "../../public/progresja/prog-small.jpg";
-import ClientIntro from '../../components/ClientIntro/ClientIntro'
+import ClientIntro from '../../components/clientIntro/ClientIntro'
 
 
 export default function gigCity() {

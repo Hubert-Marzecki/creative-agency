@@ -1,19 +1,11 @@
 import * as React from "react";
-import { getWeather } from "../services/client";
-import { GetStaticProps, GetStaticPaths, GetServerSideProps } from "next";
-import axios from "axios";
-import { JSXElementConstructor, useEffect, useState } from "react";
+import { useState } from "react";
 import styled from "@emotion/styled";
-import { Header } from "../components/Header/Header";
-import { ThemeProvider } from "emotion-theming";
 import SectionTitile from "../components/SectionTitle";
 import ProjectTile from "../components/ProjectTileGallery/ProjectTile";
 
-import { ProjectsGrid } from "../components/ProjectsGrid";
-import { css, jsx, keyframes } from "@emotion/core";
 import Link from "next/link";
 // import ProjectTileHolder from "../components/ProjectTileGallery/ProjectTileHolder";
-import { ProjectsElementsInterface } from "../Model";
 import EmailForm from "../components/Form/EmailForm";
 import ClientsTestimonials from "../components/Testimonials/ClientsTestimonials";
 import { projectsElements } from "../elements/projectsElements";
@@ -22,10 +14,8 @@ import { myPhotos } from "../elements/myPhotos";
 //  TODO - add IBWP Section
 //  TODO - add ProTip Section
 // color - yellow fcaf58
-import weirdYellow from "../public/yellow-rose.png";
 import ProjectTileFull from "../components/ProjectTileGallery/ProjectTileFull";
 import jaImg from '../public/ja/ja3.jpg';
-import { Router } from "next/router";
 
 export default function Home(props: any): JSX.Element {
   const [state, setState] = useState({

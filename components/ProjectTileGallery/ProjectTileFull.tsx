@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { ProjectsElementsInterface, ProjectTileModel } from "../../Model";
+const { v4: uuidv4 } = require('uuid');
 
 export default function ProjectTileFull(props: {
   tile: ProjectsElementsInterface[] | ProjectTileModel[];
@@ -36,7 +37,7 @@ export default function ProjectTileFull(props: {
     return (
       <>
         {props.tile.slice(0, props.offset).map((item) => (
-          <Link href={`${item.link}`}>
+          <Link href={`${item.link}`} key={uuidv4()}>
             <div className="sm:w-1/4  mb-10 px-4 ">
               <div className=" h-auto overflow-hidden">
                 <img

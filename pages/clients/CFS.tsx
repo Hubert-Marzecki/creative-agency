@@ -1,26 +1,12 @@
-import {ProjectsGrid} from "../../components/ProjectsGrid";
 import * as React from "react";
 import ClientHeader from "../../components/ClientHeader";
-import {Header} from "../../components/Header/Header";
-import BigCenterImg from "../../components/BigCenterImg";
 import styled from "@emotion/styled";
-import ClientText from "../../components/ClientText";
-import {useEffect} from "react";
-import TileWithText from "../../components/TileWithText";
-import Link from "next/link";
 import SectionTitile from "../../components/SectionTitle";
 
 
-import cfsSmallOne from '../../public/cfs/cfs-small2.jpg'
-import cfsSmallTwo from '../../public/cfs/cfs-small3.jpg'
-import cfsSmallThree from '../../public/cfs/cfs-small3.jpg'
 import cfsMainOne from '../../public/cfs/cfs-main.jpg'
 
-import progSmallOne from '../../public/progresja/prog-small.jpg'
-import gigSmallOne  from '../../public/progresja/prog-small.jpg'
-import holoSmallOne  from '../../public/progresja/prog-small.jpg'
-import instaSmallOne  from '../../public/progresja/prog-small.jpg'
-import ClientIntro from "../../components/ClientIntro/ClientIntro";
+import ClientIntro from "../../components/clientIntro/ClientIntro";
 
 
 export default  function CFSCase() {

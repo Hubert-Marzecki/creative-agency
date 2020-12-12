@@ -1,28 +1,12 @@
 import React from "react"
 import styled from "@emotion/styled"
-import Link from "next/link"
-import BigCenterImg from "../../components/BigCenterImg"
 import ClientHeader from "../../components/ClientHeader"
-import ClientText from "../../components/ClientText"
-import { Header } from "../../components/Header/Header"
-import { ProjectsGrid } from "../../components/ProjectsGrid"
 import SectionTitile from "../../components/SectionTitle"
 
 
-import progSmallOne from '../../public/progresja/prog-small.jpg'
-import holoSmallOne  from '../../public/progresja/prog-small.jpg'
-import instaSmallOne  from '../../public/progresja/prog-small.jpg'
 
-import gigSmallOne from '../../public/gigcity/gig-small.jpg'
-import gigSmallTwo from '../../public/gigcity/gig-small2.jpg'
-import gigSmallThree from '../../public/gigcity/gig-small3.jpg'
-import gigMain from '../../public/gigcity/gig-main.jpg'
-import gigMainTwo from '../../public/gigcity/gig-main2.jpg'
 
 import holoMain from '../../public/holo/holo-main.jpg'
-import holoMainTwo from '../../public/holo/holo-main2.jpg'
-import holoSmall from '../../public/holo/holo-small2.jpg'
-import holoSmall2 from '../../public/holo/holo-small3.jpg'
 import ClientIntro from "../../components/clientIntro/ClientIntro"
 
 export default function BeFriend() {
@@ -247,8 +231,4 @@ export default function BeFriend() {
     )
 }
 
-const StyledClient = styled.div`
-    background-color: black;
-    color:white;
-`
 

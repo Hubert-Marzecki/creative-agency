@@ -1,34 +1,11 @@
 
-import holoMain from '../../public/holo/holo-main.jpg'
-import holoSmall from '../../public/holo/holo-small.jpg'
 import React from 'react'
-import { Header } from '../../components/Header/Header'
 import ClientHeader from '../../components/ClientHeader'
-import { ProjectsGrid } from '../../components/ProjectsGrid'
-import ClientText from '../../components/ClientText'
-import BigCenterImg from '../../components/BigCenterImg'
 import SectionTitile from '../../components/SectionTitle'
-import Link from 'next/link'
 import styled from '@emotion/styled'
 
-import progSmallOne from '../../public/progresja/prog-small.jpg'
-import holoSmallOne  from '../../public/progresja/prog-small.jpg'
-
-import gigSmallOne from '../../public/gigcity/gig-small.jpg'
-import gigSmallTwo from '../../public/gigcity/gig-small2.jpg'
-import gigSmallThree from '../../public/gigcity/gig-small3.jpg'
-import gigMain from '../../public/gigcity/gig-main.jpg'
-import gigMainTwo from '../../public/gigcity/gig-main2.jpg'
-
-import instaSmallOne from '../../public/instacorner/insta-small.png'
-import instaSmallTwo from '../../public/instacorner/insta-small2.png'
-
-import instaMainOne from '../../public/instacorner/insta-main.jpg';
 
 import instaSQR from '../../public/instacorner/insta-sqr.jpeg'
-import instaSQRTwo from '../../public/instacorner/insta-sqr2.jpg'
-import instaSQRThree from '../../public/instacorner/insta-sqr3.jpg'
-import instaSQRFour from '../../public/instacorner/insta-sqr-5.jpg'
 import ClientIntro from '../../components/clientIntro/ClientIntro'
 
 export default function Insta() {
@@ -187,8 +164,4 @@ export default function Insta() {
     )
 }
 
-const StyledClient = styled.div`
-    background-color: black;
-    color:white;
-`
 

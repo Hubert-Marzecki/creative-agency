@@ -1,50 +1,11 @@
-import { ProjectsGrid } from "../components/ProjectsGrid";
 import jaOne from "../public/ja/ja1.jpg";
 import SectionTitile from "../components/SectionTitle";
-import { Header } from "../components/Header/Header";
-import Paragraph from "../components/Paragraph";
-import styled from "@emotion/styled";
 import { useState } from "react";
 import TabContent from "../components/tabContent/TabContent";
 
 export default function oMnie(): JSX.Element {
   const [openTab, setOpenTab] = useState<number>(1);
 
-  function tabContent(tabOpen: number) {
-    switch (tabOpen) {
-      case 1:
-        return (
-          <>
-            <TabContent img={jaOne} title="PRAKTYKA > TEORIA" text="ŻYJ" />
-          </>
-        );
-        break;
-      case 2:
-        return (
-          <>
-            <TabContent
-              img={jaOne}
-              title="GENERALNIE MOGĘ ROBIĆ RZECZY"
-              text="ŻYJ"
-            />
-          </>
-        );
-        break;
-      case 3:
-        return (
-          <>
-            <TabContent img={jaOne} title="TEXTUJ" text="ŻYJ" />
-          </>
-        );
-        break;
-      case 4:
-        return (
-          <>
-            <TabContent img={jaOne} title="TEXTUJ" text="ŻYJ" />
-          </>
-        );
-    }
-  }
 
   function displayTab(tabOpen: number) {
     switch (tabOpen) {

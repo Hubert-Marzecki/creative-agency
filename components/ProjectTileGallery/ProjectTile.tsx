@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ProjectsElementsInterface, ProjectTileModel } from "../../Model";
 
 export default function ProjectTile(props: {
-  tile: ProjectsElementsInterface[] | ProjectTileModel[];
+  tile: any[];
   isButtonVisible: boolean;
   isCtaBellow: boolean;
   ctaText: string;
@@ -35,8 +35,7 @@ export default function ProjectTile(props: {
     return (
       <>
         {props.tile.slice(0, props.offset).map((item) => (
-          <>
-            <Link href={`${item.link}`}>
+            <Link href={`${item.link}`} key={item.link}>
               <div className="sm:w-1/2  mb-10 px-4 ">
                 <div className=" h-auto overflow-hidden">
                   <img
@@ -54,7 +53,6 @@ export default function ProjectTile(props: {
                 {/* ROUTE HERE */}
               </div>
             </Link>
-          </>
         ))}
       </>
     );

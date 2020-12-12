@@ -1,7 +1,4 @@
 import SectionTitile from "../components/SectionTitle";
-import ClientText from "../components/ClientText";
-import styled from "@emotion/styled";
-import {Header} from "../components/Header/Header";
 import WorkFlowStep from "../components/workflowSteps/WorkFlowStep";
 import { workflowStep } from "../elements/workflowStep";
 import progSmallOne from '../public/progresja/prog-small.jpg';

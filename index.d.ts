@@ -3,4 +3,6 @@ export interface LabeledValue {
     size: number;
   }
 
-  declare module '*.png'
+  declare module '*.png';
+  declare module '*.jpg';
+  declare module '*.svg'
