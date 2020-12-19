@@ -9,11 +9,19 @@ import gigMain from "../../public/gigcity/gig-main.jpg";
 import gigMainTwo from "../../public/gigcity/gig-main2.jpg";
 
 import ClientIntro from '../../components/clientIntro/ClientIntro'
+import {css, keyframes} from "@emotion/core";
+import Slider from "../../components/Slider/Slider";
+
 
 
 export default function gigCity() {
+  const  imgs  = [gigSmallOne, gigMainTwo, gigMainTwo]
   return (
     <>
+<StyledGunwo>
+  AAAAAAAAAAAAAA
+</StyledGunwo>
+
       <StyledClient>
         <ClientHeader title={"GIG City"} img={gigMain} alt={""} />
       
@@ -155,51 +163,11 @@ export default function gigCity() {
         />
 
 <section className="text-gray-700 body-font ">
-          <div className="container px-20  mx-auto">
-            <div className="flex flex-wrap -mx-4 -mb-10 text-center">
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={gigSmallOne}
-                  />
-                </div>
-              </div>
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={gigSmallTwo}
-                  />
-                </div>
-              </div>
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={gigSmallTwo}
-                  />
-                </div>
-              </div>
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={gigSmallTwo}
-                  />
-                </div>
-              </div>
-              
-            </div>
+<Slider carouselItems={imgs}/>
             <p className="text-center pt-2">
       
               Więcej zdjęć na <a className="text-yellow-500 cursor-pointer"  href="#">Instagram</a>
             </p>
-          </div>
         </section>
 
 
@@ -214,3 +182,26 @@ const StyledClient = styled.div`
   background-color: black;
   color: white;
 `;
+const move = keyframes`
+  from, 0%, to {
+    top: 0%;
+    z-index: 10;
+  }
+  100% {
+    top: 100%
+  }
+`
+const StyledGunwo = styled.div`
+  background-color: black;
+  position: absolute;
+  //border-radius: 100%;
+  height: 150vh;
+  //top:-50%;
+  width: 150vw;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -10;
+  animation: ${move} 0.5s ease;
+;
+`
+

@@ -36,11 +36,11 @@ export default function ProjectTile(props: {
       <>
         {props.tile.slice(0, props.offset).map((item) => (
             <Link href={`${item.link}`} key={item.link}>
-              <div className="sm:w-1/2  mb-10 px-4 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
+              <div className="sm:w-6/12  mb-10 px-4 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
                 <div className=" h-auto overflow-hidden ">
                   <img
                     alt="content"
-                    className="object-cover object-center h-full w-full cursor-pointer"
+                    className="object-cover  object-center h-full w-full cursor-pointer"
                     src={item.img}
                     // onMouseOver={(e) => replaceImg(e, item)}
                   />

@@ -38,7 +38,7 @@ export default function ProjectTileFull(props: {
       <>
         {props.tile.slice(0, props.offset).map((item) => (
           <Link href={`${item.link}`} key={uuidv4()}>
-            <div className="sm:w-1/4  mb-10 px-4 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
+            <div className="sm:w-2/6 lg:w-1/4 mb-10 px-4 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
               <div className=" h-auto overflow-hidden">
                 <img
                   alt="content"

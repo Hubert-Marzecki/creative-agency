@@ -3,7 +3,7 @@ import { useState } from "react";
 import styled from "@emotion/styled";
 import SectionTitile from "../components/SectionTitle";
 import ProjectTile from "../components/ProjectTileGallery/ProjectTile";
-
+import Page from 'react-page-loading'
 import Link from "next/link";
 // import ProjectTileHolder from "../components/ProjectTileGallery/ProjectTileHolder";
 import EmailForm from "../components/Form/EmailForm";
@@ -54,11 +54,11 @@ export default function Home(props: any): JSX.Element {
               />
             </div>
           </div>
-          <div className="container -mt-64 mx-auto flex px-5 pt-40 md:flex-row flex-col items-center">
-            <p className="hidden md:block">
-              {props.weather.name} , {props.weather.main.temp.toFixed() - 273}°C
-            </p>
-          </div>
+          {/*<div className="container -mt-64 mx-auto flex px-5 pt-40 md:flex-row flex-col items-center">*/}
+          {/*  <p className="hidden md:block">*/}
+          {/*    {props.weather.name} , {props.weather.main.temp.toFixed() - 273}°C*/}
+          {/*  </p>*/}
+          {/*</div>*/}
         </section>
         <div className="m-24 p-24 md:p-0">
 
@@ -76,7 +76,7 @@ export default function Home(props: any): JSX.Element {
         <button
           className={
             state.itemLimit < projectsElements.length
-              ? "flex mx-auto mt-10 text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg"
+              ? "flex mx-auto mt-10 text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg"
               : "null"
           }
           onClick={() =>
@@ -98,6 +98,14 @@ export default function Home(props: any): JSX.Element {
           isCtaBellow={false}
           offset={state.itemLimit}
         />
+
+        <Link href="/omnie">
+          <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer ">
+            Poznajmy się
+          </button>
+        </Link>
+
+
         <SectionTitile
           title=" KLIENCI O MNIE "
           styleVaribles={
@@ -105,11 +113,7 @@ export default function Home(props: any): JSX.Element {
           }
         />
         <ClientsTestimonials />
-          <Link href="/omnie">
-        <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer ">
-          Poznajmy się
-        </button>
-        </Link>
+
 
         <SectionTitile
           title=" KONTAKT "
