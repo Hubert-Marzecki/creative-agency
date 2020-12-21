@@ -37,15 +37,15 @@ import columbus from "../public/columbus/columbus.jpg";
 import columbusTwo from "../public/columbus/columbus-1.jpg";
 import columbusThree from "../public/columbus/columbus-2.jpg";
 
-import bfriend from '../public/bfriend/small.png';
-import cfs from '../public/cfs/small.png';
-import colu from '../public/columbus/small.png';
-import gig from '../public/gigcity/small.png';
-import holo from '../public/holo/small.png';
-import ibwp from '../public/ibwp/small.png';
-import insta from '../public/instacorner/small.png';
-import prog from '../public/progresja/small.png';
-import pro from '../public/protip/small.png';
+import bfriend from '../public/bfriend/small-min.png';
+import cfs from '../public/cfs/small-min.png';
+import colu from '../public/columbus/small-min.png';
+import gig from '../public/gigcity/small-min.png';
+import holo from '../public/holo/small-min.png';
+import ibwp from '../public/ibwp/small-min.png';
+import insta from '../public/instacorner/small-min.png';
+import prog from '../public/progresja/small-min.png';
+import pro from '../public/protip/small-min.png';
 
 import krea from '../public/kreatywnet/small.png';
 import lomax from '../public/lomax/main.png';

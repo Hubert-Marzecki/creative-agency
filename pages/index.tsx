@@ -56,12 +56,12 @@ export default function Home(props: any): JSX.Element {
               <Link href={`${item.link}`} key={item.link}
               >
                 <div
-                    className="proj__tile sm:w-6/12  mb-10 px-4 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
+                    className="proj__tile sm:w-6/12  mb-10 px-4 transition duration-500 ease-in-out delay-150 transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
                   <div className=" h-auto overflow-hidden ">
                     <img
                         onMouseEnter={(e) => { changeBgColor(item.color)} }
                         onMouseLeave={(e) => { e.preventDefault() ,  setState(s =>  ({...s, bgColor: "black", isTileHovered: false}))}}
-                        onMouseOver={(e) => changeImage(e, item)}
+                         // onMouseOver={(e) => changeImage(e, item)}
 
                         alt="content"
                         className="object-cover  object-center h-full w-full cursor-pointer"
