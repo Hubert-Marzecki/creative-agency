@@ -2,12 +2,18 @@ import styled from "@emotion/styled";
 import Link from "next/link";
 import logo from '../../public/smallrose.png';
 import { useRouter } from 'next/router'
-export function Header() : JSX.Element {
+export function Header(props: {bgColor: string}) : JSX.Element {
   const router = useRouter()
+  const HeaderStyle = styled.header`
+  background-color: ${props.bgColor};
+
+a{
+}
+`
 
 
     return (
-        <HeaderStyle className="text-gray-500 bg-black pt-6">
+        <HeaderStyle className="text-gray-200 pt-6">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       
           <a className="cursor-pointer flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 mt-0 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110">
@@ -64,10 +70,3 @@ export function Header() : JSX.Element {
       </HeaderStyle>
     )
 }
-const HeaderStyle = styled.header`
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Questrial&display=swap';
-
-a{
-  font-family: 'Pacifico', cursive !important;
-}
-`

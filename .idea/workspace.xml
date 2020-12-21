@@ -2,15 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1c4c928-452d-4634-8837-b27ba7fb0eab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Slider/Slider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTileFull.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTileFull.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bfriend/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bfriend/nums.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bfriend/small-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bfriend/small-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bfriend/small-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bfriend/small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cfs/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cfs/nums.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cfs/small-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cfs/small-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cfs/small-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cfs/small-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cfs/small-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cfs/small-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cfs/small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/columbus/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/columbus/nums.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/columbus/small-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/columbus/small-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/columbus/small-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/columbus/small-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/columbus/small-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/columbus/small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gigcity/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gigcity/nums.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gigcity/small-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gigcity/small-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gigcity/small-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gigcity/small-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gigcity/small-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gigcity/small-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gigcity/small-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gigcity/small-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gigcity/small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/holo/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/holo/nums.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/holo/small-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/holo/small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ibwp/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ibwp/nums.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ibwp/small-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ibwp/small-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ibwp/small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/instacorner/main-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/instacorner/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/instacorner/nums-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/instacorner/nums.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/instacorner/small-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/instacorner/small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/progresja/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/progresja/nums.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/progresja/small-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/progresja/small-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/progresja/small-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/progresja/small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/protip/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/protip/nums.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/protip/small-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/protip/small.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SectionTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SectionTitle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/projectsElements.ts" beforeDir="false" afterPath="$PROJECT_DIR$/elements/projectsElements.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/clients/gigCity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/gigCity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/CFS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/CFS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/beFriend.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/beFriend.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projekty.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projekty.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +89,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/columbus" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\columbus" />
+      <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\protip" />
+      <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\ibwp" />
+      <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\instacorner" />
+      <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\holo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\progresja" />
+      <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public" />
+      <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\cfs" />
+      <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\bfriend" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -42,7 +117,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608369066581</updated>
-      <workItem from="1608369097042" duration="8860000" />
+      <workItem from="1608369097042" duration="10967000" />
+      <workItem from="1608546095249" duration="12000" />
+      <workItem from="1608551516306" duration="6830000" />
     </task>
     <servers />
   </component>
@@ -59,5 +136,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

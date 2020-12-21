@@ -20,7 +20,6 @@ import instaSmallOne from "../public/instacorner/insta-small.png";
 import instaSmallTwo from "../public/instacorner/insta-small2.png";
 import instaSmallThree from "../public/instacorner/insta-small.png";
 
-
 import bFriendOne from "../public/bfriend/brfiend-small.jpg";
 import bFriendTwo from "../public/bfriend/bfriend-small2.png.jpg";
 import bFriendThree from "../public/bfriend/bfriend-small3.jpg";
@@ -38,11 +37,24 @@ import columbus from "../public/columbus/columbus.jpg";
 import columbusTwo from "../public/columbus/columbus-1.jpg";
 import columbusThree from "../public/columbus/columbus-2.jpg";
 
+import bfriend from '../public/bfriend/small.png';
+import cfs from '../public/cfs/small.png';
+import colu from '../public/columbus/small.png';
+import gig from '../public/gigcity/small.png';
+import holo from '../public/holo/small.png';
+import ibwp from '../public/ibwp/small.png';
+import insta from '../public/instacorner/small.png';
+import prog from '../public/progresja/small.png';
+import pro from '../public/protip/small.png';
+
+import krea from '../public/kreatywnet/small.png';
+import lomax from '../public/lomax/main.png';
+
 
 export const projectsElements: ProjectsElementsInterface[] = [
     {
       title: " Progresja",
-      img: progSmallOne,
+      img: prog,
       imgTwo: progSmallTwo,
       imgThree: progSmallThree,
       alt: "",
@@ -51,7 +63,7 @@ export const projectsElements: ProjectsElementsInterface[] = [
     },
     {
       title: "Chiński Festiwal Światła",
-      img: cfsSmallOne,
+      img: cfs,
       imgTwo: cfsSmallTwo,
       imgThree: cfsSmallThree,
       alt: "",
@@ -60,7 +72,7 @@ export const projectsElements: ProjectsElementsInterface[] = [
     },
     {
       title: "GiGCity.Tv",
-      img: gigSmallOne,
+      img: gig,
       imgTwo: gigSmallTwo,
       imgThree: gigSmallThree,
       alt: "",
@@ -69,7 +81,7 @@ export const projectsElements: ProjectsElementsInterface[] = [
     },
     {
       title: "Holofan3d",
-      img: holoSmallOne,
+      img: holo,
       imgTwo: holoSmallTwo,
       imgThree: holoSmallThree,
       alt: "ss",
@@ -78,7 +90,7 @@ export const projectsElements: ProjectsElementsInterface[] = [
     },
     {
       title: "Instacorner",
-      img: instaSmallOne,
+      img: insta,
       imgTwo: instaSmallOne,
       imgThree: instaSmallOne,
       alt: "",
@@ -87,7 +99,7 @@ export const projectsElements: ProjectsElementsInterface[] = [
     },
     {
       title: "BeFriend",
-      img: bFriendThree,
+      img: bfriend,
       imgTwo: bFriendTwo,
       imgThree: bFriendOne,
       alt: "",
@@ -96,7 +108,7 @@ export const projectsElements: ProjectsElementsInterface[] = [
     },
     {
         title: "IBWP",
-        img: ibwpSmallOne,
+        img: ibwp,
         imgTwo: ibwpSmallTwo,
         imgThree: ibwpSmallThree,
         alt: "",
@@ -105,7 +117,7 @@ export const projectsElements: ProjectsElementsInterface[] = [
       },
     {
       title: "ProTip Marketing",
-      img: proTipSmallOne,
+      img: pro,
       imgTwo: proTipSmallTwo,
       imgThree: proTipSmallThree,
       alt: "",
@@ -114,11 +126,29 @@ export const projectsElements: ProjectsElementsInterface[] = [
     },
     {
       title: "Columbus",
-      img: columbusTwo,
+      img: colu,
       imgTwo: columbusTwo,
       imgThree: columbusThree,
       alt: "",
       color: "#fff968",
       link: "/clients/columbus",
+    },
+    {
+        title: "Kreatywnet",
+        img: krea,
+        imgTwo: krea,
+        imgThree: krea,
+        alt: "",
+        color: "#fff968",
+        link: "/clients/columbus",
+    },
+    {
+        title: "Lomax",
+        img: lomax,
+        imgTwo: lomax,
+        imgThree: lomax,
+        alt: "",
+        color: "#fff968",
+        link: "/clients/columbus",
     },
   ];

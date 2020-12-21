@@ -2,12 +2,11 @@ import React from "react"
 import styled from "@emotion/styled"
 import ClientHeader from "../../components/ClientHeader"
 import SectionTitile from "../../components/SectionTitle"
-
-
-
-
 import holoMain from '../../public/holo/holo-main.jpg'
 import ClientIntro from "../../components/clientIntro/ClientIntro"
+
+import main from '../../public/bfriend/main.png'
+import nums from '../../public/bfriend/nums.png'
 
 export default function BeFriend() {
 
@@ -16,7 +15,7 @@ export default function BeFriend() {
     return (
         <>
                <div className="bg-black text-white">
-        <ClientHeader title={"BeFriend"} img={holoMain} alt={""} />
+        <ClientHeader title={"BeFriend"} img={main} alt={""} />
 
         <SectionTitile
           title="O PROJEKCIE"
@@ -80,7 +79,7 @@ export default function BeFriend() {
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img
                 className="object-cover object-center w-full h-full"
-                src={holoMain}
+                src={nums}
                 alt="stats"
               />
             </div>

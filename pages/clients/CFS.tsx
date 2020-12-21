@@ -5,17 +5,30 @@ import SectionTitile from "../../components/SectionTitle";
 
 
 import cfsMainOne from '../../public/cfs/cfs-main.jpg'
+import main from '../../public/cfs/main.png'
+import nums from '../../public/cfs/nums.png'
+
+import small1 from '../../public/cfs/small.png';
+import small2 from '../../public/cfs/small-2.png';
+import small3 from '../../public/cfs/small-3.png';
+import small4 from '../../public/cfs/small-4.png';
+import small5 from '../../public/cfs/small-5.png';
+import small6 from '../../public/cfs/small-6.png';
+import small7 from '../../public/cfs/small-7.png';
 
 import ClientIntro from "../../components/clientIntro/ClientIntro";
+import Slider from "../../components/Slider/Slider";
 
 
 export default  function CFSCase() {
+
+  const sliderItems = [small1, small2, small3, small4, small5, small6, small7];
 
     return (
         <>
         <StyledClient>
 
-         <ClientHeader title={"CFS"} img={cfsMainOne} alt={""} />
+         <ClientHeader title={"CFS"} img={main} alt={""} />
 
 
          <ClientIntro 
@@ -73,7 +86,7 @@ export default  function CFSCase() {
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img
                 className="object-cover object-center w-full h-full w-screen"
-                src={cfsMainOne}
+                src={nums}
                 alt="stats"
               />
             </div>
@@ -151,14 +164,10 @@ export default  function CFSCase() {
   </div>
 </section>
 
-
-
 <SectionTitile
           title="O WSPÓŁPRACY"
           styleVaribles={"color:white; padding-bottom:0"}
         />
-
-
 <section className="text-gray-300 body-font">
   <div className="container px-5 pb-24 pt-10 mx-auto">
     <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">

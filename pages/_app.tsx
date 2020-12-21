@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) : JSX.Element {
     <>
         <GlobalStyles />
          <ThemeProvider theme={theme}>
-         <Header />
+
          <Component {...pageProps} />
          <Footer />
       </ThemeProvider>

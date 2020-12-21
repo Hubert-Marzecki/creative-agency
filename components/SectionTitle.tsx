@@ -6,7 +6,6 @@ export default function SectionTitile(props:{title:string,  styleVaribles:string
     const StyledTitle = styled.h2`
   font-size: 5em;
   font-weight: 800;
-  background-color: black;
   text-align: center;
   padding:  1em;
 
