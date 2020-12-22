@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1c4c928-452d-4634-8837-b27ba7fb0eab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/clients/kreatywnet.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/clients/lomax.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ClientHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ClientHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Testimonials/ClientsTestimonials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Testimonials/ClientsTestimonials.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elements/projectsElements.ts" beforeDir="false" afterPath="$PROJECT_DIR$/elements/projectsElements.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/testimonials.ts" beforeDir="false" afterPath="$PROJECT_DIR$/elements/testimonials.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/beFriend.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/beFriend.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/columbus.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/columbus.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/gigCity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/gigCity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/holofan3d.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/holofan3d.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/ibwp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/ibwp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/instacorner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/instacorner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/progresja.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/progresja.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/protip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/protip.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/kontakt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/kontakt.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/omnie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/omnie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projekty.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projekty.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/workflow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/workflow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +71,8 @@
       <updated>1608369066581</updated>
       <workItem from="1608369097042" duration="10967000" />
       <workItem from="1608546095249" duration="12000" />
-      <workItem from="1608551516306" duration="9836000" />
+      <workItem from="1608551516306" duration="10692000" />
+      <workItem from="1608632044553" duration="8815000" />
     </task>
     <task id="LOCAL-00001" summary="new assets, animation on main page">
       <created>1608558508862</created>
@@ -90,5 +109,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new assets, animation on main page" />
     <option name="LAST_COMMIT_MESSAGE" value="new assets, animation on main page" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/pages/clients/instacorner.tsx</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -8,13 +8,17 @@ import SectionTitile from "../../components/SectionTitle"
 
 import holoMain from '../../public/holo/holo-main.jpg'
 import ClientIntro from "../../components/clientIntro/ClientIntro"
-
+import main from  '../../public/protip/main-min.png';
+import nums from '../../public/protip/nums-min.png'
+import small from '../../public/protip/small-min.png'
+import {Header} from "../../components/Header/Header";
 export default function ProTip() {
 
     return (
         <>
+          <Header bgColor={"black"} />
                <div className="bg-black text-white">
-        <ClientHeader title={"ProTip Marketing"} img={holoMain} alt={""} />
+        <ClientHeader title={"ProTip"} img={main} alt={""} />
 
         <SectionTitile
           title="O PROJEKCIE"
@@ -77,7 +81,7 @@ export default function ProTip() {
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img
                 className="object-cover object-center w-full h-full"
-                src={holoMain}
+                src={nums}
                 alt="stats"
               />
             </div>
@@ -221,53 +225,57 @@ export default function ProTip() {
 </section> */}
 
 
+                 {/*<SectionTitile*/}
+                 {/*    title="GALERIA"*/}
+                 {/*    styleVaribles={"color:white; padding-bottom:40PX"}*/}
+                 {/*/>*/}
 
-        <section className="text-gray-700 body-font ">
-          <div className="container px-20  mx-auto">
-            <div className="flex flex-wrap -mx-4 -mb-10 text-center">
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={holoMain}
-                  />
-                </div>
-              </div>
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={holoMain}
-                  />
-                </div>
-              </div>
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={holoMain}
-                  />
-                </div>
-              </div>
-              <div className="sm:w-1/4 mb-10 px-4">
-                <div className="rounded-lg h-full overflow-hidden">
-                  <img
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src={holoMain}
-                  />
-                </div>
-              </div>
-            </div>
-            <p className="text-center pt-2">
-              {" "}
-              Wszystkie zdjęcia mojej produkcji{" "}
-            </p>
-          </div>
-        </section>
+        {/*<section className="text-gray-700 body-font ">*/}
+        {/*  <div className="container px-20  mx-auto">*/}
+        {/*    <div className="flex flex-wrap -mx-4 -mb-10 text-center">*/}
+        {/*      <div className="sm:w-1/4 mb-10 px-4">*/}
+        {/*        <div className="rounded-lg h-full overflow-hidden">*/}
+        {/*          <img*/}
+        {/*            alt="content"*/}
+        {/*            className="object-cover object-center h-full w-full"*/}
+        {/*            src={holoMain}*/}
+        {/*          />*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*      <div className="sm:w-1/4 mb-10 px-4">*/}
+        {/*        <div className="rounded-lg h-full overflow-hidden">*/}
+        {/*          <img*/}
+        {/*            alt="content"*/}
+        {/*            className="object-cover object-center h-full w-full"*/}
+        {/*            src={holoMain}*/}
+        {/*          />*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*      <div className="sm:w-1/4 mb-10 px-4">*/}
+        {/*        <div className="rounded-lg h-full overflow-hidden">*/}
+        {/*          <img*/}
+        {/*            alt="content"*/}
+        {/*            className="object-cover object-center h-full w-full"*/}
+        {/*            src={holoMain}*/}
+        {/*          />*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*      <div className="sm:w-1/4 mb-10 px-4">*/}
+        {/*        <div className="rounded-lg h-full overflow-hidden">*/}
+        {/*          <img*/}
+        {/*            alt="content"*/}
+        {/*            className="object-cover object-center h-full w-full"*/}
+        {/*            src={holoMain}*/}
+        {/*          />*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*    <p className="text-center pt-2">*/}
+        {/*      {" "}*/}
+        {/*      Wszystkie zdjęcia mojej produkcji{" "}*/}
+        {/*    </p>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
 
 
 

@@ -11,19 +11,23 @@ import gigMainTwo from "../../public/gigcity/gig-main2.jpg";
 import ClientIntro from '../../components/clientIntro/ClientIntro'
 import {css, keyframes} from "@emotion/core";
 import Slider from "../../components/Slider/Slider";
-
-
+import main from  '../../public/gigcity/main-min.png';
+import nums from '../../public/gigcity/nums-min.png'
+import small from '../../public/gigcity/small-min.png'
+import small2 from '../../public/gigcity/small-2-min.png'
+import small3 from '../../public/gigcity/small-3-min.png'
+import small4 from '../../public/gigcity/small-4-min.png'
+import {Header} from "../../components/Header/Header";
+import progSmall3 from "../../public/progresja/prog-small3.jpg";
 
 export default function gigCity() {
   const  imgs  = [gigSmallOne, gigMainTwo, gigMainTwo]
   return (
     <>
-<StyledGunwo>
-  AAAAAAAAAAAAAA
-</StyledGunwo>
+      <Header bgColor={"black"} />
 
       <StyledClient>
-        <ClientHeader title={"GIG City"} img={gigMain} alt={""} />
+        <ClientHeader title={"GIG City"} img={main} alt={""} />
       
       <ClientIntro 
         market="Streaming Online"
@@ -79,7 +83,7 @@ export default function gigCity() {
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img
                 className="object-cover object-center w-full h-full w-screen"
-                src={gigMainTwo}
+                src={nums}
                 alt="stats"
               />
             </div>
@@ -157,17 +161,55 @@ export default function gigCity() {
   </div>
 </section>
 
-<SectionTitile
-          title="GALERIA"
-          styleVaribles={"color:white; padding-bottom:1em; padding-top:0"}
+        <SectionTitile
+            title="GALERIA"
+            styleVaribles={"color:white; padding-bottom:20px"}
         />
-
-<section className="text-gray-700 body-font ">
-<Slider carouselItems={imgs}/>
+        <section className="text-gray-700 body-font pb-10">
+          <div className="container px-20  mx-auto">
+            <div className="flex flex-wrap -mx-4 -mb-10 text-center">
+              <div className="sm:w-1/4 mb-10 px-4">
+                <div className="rounded-lg h-full overflow-hidden">
+                  <img
+                      alt="content"
+                      className="object-cover object-center h-full w-full"
+                      src={small}
+                  />
+                </div>
+              </div>
+              <div className="sm:w-1/4 mb-10 px-4">
+                <div className="rounded-lg h-full overflow-hidden">
+                  <img
+                      alt="content"
+                      className="object-cover object-center h-full w-full"
+                      src={small2}
+                  />
+                </div>
+              </div>
+              <div className="sm:w-1/4 mb-10 px-4">
+                <div className="rounded-lg h-full overflow-hidden">
+                  <img
+                      alt="content"
+                      className="object-cover object-center h-full w-full"
+                      src={small3}
+                  />
+                </div>
+              </div>
+              <div className="sm:w-1/4 mb-10 px-4">
+                <div className="rounded-lg h-full overflow-hidden">
+                  <img
+                      alt="content"
+                      className="object-cover object-center h-full w-full"
+                      src={small4}
+                  />
+                </div>
+              </div>
+            </div>
             <p className="text-center pt-2">
-      
-              Więcej zdjęć na <a className="text-yellow-500 cursor-pointer"  href="#">Instagram</a>
+              {" "}
+              Wszystkie zdjęcia mojej produkcji{" "}
             </p>
+          </div>
         </section>
 
 

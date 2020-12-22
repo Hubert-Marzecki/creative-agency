@@ -8,18 +8,20 @@ import SectionTitile from "../../components/SectionTitle"
 
 
 
-
+import main from  '../../public/holo/main-min.png';
+import nums from '../../public/holo/nums-min.png'
+import small from '../../public/holo/small-min.png'
 import holoMain from '../../public/holo/holo-main.jpg'
 import holoMainTwo from '../../public/holo/holo-main2.jpg'
 import ClientIntro from "../../components/clientIntro/ClientIntro"
+import {Header} from "../../components/Header/Header";
 
 export default function Holodan3d (){
-    
-
     return (
         <>
+            <Header bgColor={"black"} />
         <StyledClient>
-         <ClientHeader title={"Holofan3d"} img={holoMain} alt={""} />
+         <ClientHeader title={"Holofan3d"} img={main} alt={""} />
 
 
         
@@ -78,7 +80,7 @@ export default function Holodan3d (){
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img
                 className="object-cover object-center w-full h-full w-screen"
-                src={holoMainTwo}
+                src={nums}
                 alt="stats"
               />
             </div>

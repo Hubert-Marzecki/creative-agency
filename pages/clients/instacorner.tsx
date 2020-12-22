@@ -4,17 +4,22 @@ import ClientHeader from '../../components/ClientHeader'
 import SectionTitile from '../../components/SectionTitle'
 import styled from '@emotion/styled'
 
+import main from  '../../public/instacorner/main-min.png';
+import nums from '../../public/instacorner/nums-min.png'
+import small from '../../public/instacorner/small-min.png'
 
 import instaSQR from '../../public/instacorner/insta-sqr.jpeg'
 import ClientIntro from '../../components/clientIntro/ClientIntro'
+import {Header} from "../../components/Header/Header";
 
 export default function Insta() {
 
 
     return (
         <>
+          <Header bgColor={"BLACK"} />
           <div className="bg-black text-white">
-        <ClientHeader title={"Instacorner"} img={instaSQR} alt={""} />
+        <ClientHeader title={"Instacorner"} img={main} alt={""} />
 
         <SectionTitile
           title="O PROJEKCIE"
@@ -52,38 +57,44 @@ export default function Insta() {
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
                 <h2 className="title-font font-bold text-3xl text-gray-100 ">
+                  1.
+                </h2>
+                <p className="leading-relaxed">Taki projekt</p>
+              </div>
+              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                <h2 className="title-font font-bold text-3xl text-gray-100">
+                  ∞
+                </h2>
+                <p className="leading-relaxed">Możliwości</p>
+              </div>
+              {/*<div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">*/}
+              {/*  <h2 className="title-font font-medium text-3xl text-gray-100">*/}
+              {/*    1*/}
+              {/*  </h2>*/}
+              {/*  <p className="leading-relaxed">Downloads</p>*/}
+              {/*</div>*/}
+              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                <h2 className="title-font font-medium text-3xl text-gray-100">
                   4
                 </h2>
                 <p className="leading-relaxed">Pokoje tematyczne</p>
               </div>
-              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                <h2 className="title-font font-bold text-3xl text-gray-100">
-                  3
-                </h2>
-                <p className="leading-relaxed">Ściany</p>
-              </div>
-              {/* <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                <h2 className="title-font font-medium text-3xl text-gray-100">
-                  35
-                </h2>
-                <p className="leading-relaxed">Downloads</p>
-              </div>
-              <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-                <h2 className="title-font font-medium text-3xl text-gray-100">
-                  4
-                </h2>
-                <p className="leading-relaxed">Products</p>
-              </div> */}
             </div>
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img
                 className="object-cover object-center w-full h-full"
-                src={instaSQR}
+                src={nums}
                 alt="stats"
               />
             </div>
           </div>
         </section>
+
+
+            <SectionTitile
+                title="GALERIA"
+                styleVaribles={"color:white; padding-bottom:40PX"}
+            />
 
         <section className="text-gray-700 body-font ">
           <div className="container px-20  mx-auto">
@@ -125,10 +136,7 @@ export default function Insta() {
                 </div>
               </div>
             </div>
-            <p className="text-center pt-2">
-              {" "}
-              Wszystkie zdjęcia mojej produkcji{" "}
-            </p>
+
           </div>
         </section>
 

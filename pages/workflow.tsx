@@ -2,12 +2,14 @@ import SectionTitile from "../components/SectionTitle";
 import WorkFlowStep from "../components/workflowSteps/WorkFlowStep";
 import { workflowStep } from "../elements/workflowStep";
 import progSmallOne from '../public/progresja/prog-small.jpg';
+import {Header} from "../components/Header/Header";
+import React from "react";
 
 export default function WorkFlow() {
 
     return (
             <>
-               
+              <Header bgColor={"black"} />
 <div className="bg-black">
 
 <SectionTitile 

@@ -1,11 +1,30 @@
 import jaOne from "../public/ja/ja1.jpg";
 import SectionTitile from "../components/SectionTitle";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import TabContent from "../components/tabContent/TabContent";
+import styled from "@emotion/styled";
 
 export default function oMnie(): JSX.Element {
   const [openTab, setOpenTab] = useState<number>(1);
+  const [bgColor, setBgColor] = useState("black")
 
+    // useEffect(() => {
+    //     document.body.style.backgroundColor = "black";
+    //     if(openTab === 1 ) {
+    //         document.body.style.backgroundColor = "black";
+    //         setBgColor("black")
+    //         document.body.style.transition ="background-color 0.4s ease-in-out";
+    //     } else if( openTab === 2 ) {
+    //         document.body.style.backgroundColor = "#000001";
+    //         setBgColor("red")
+    //
+    //         document.body.style.transition ="background-color 0.4s ease-in-out";
+    //     }
+    // },[openTab])
+
+    const StyledAbout  = styled.div`
+        background-color: ${bgColor};
+    `
 
   function displayTab(tabOpen: number) {
     switch (tabOpen) {
@@ -215,7 +234,7 @@ export default function oMnie(): JSX.Element {
 
   return (
     <>
-      <div className="bg-black">
+      <StyledAbout>
         <SectionTitile
           title="O mnie"
           styleVaribles="color:white; padding-bottom: 0; "
@@ -275,8 +294,7 @@ export default function oMnie(): JSX.Element {
             </div>
           </div>
         </section>
-
-        {/*     
+        {/*
 <section className="text-gray-700 body-font">
   <div className="container px-5 py-24 mx-auto flex flex-wrap flex-col">
     <div className="flex mx-auto flex-wrap mb-20">
@@ -469,7 +487,8 @@ export default function oMnie(): JSX.Element {
     title="W prau słowach o mnie"  
     styleVaribles="color:white; padding-bottom: 0; "
     /> */}
-      </div>
+      </StyledAbout>
+
     </>
   );
 }

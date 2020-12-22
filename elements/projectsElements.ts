@@ -140,7 +140,7 @@ export const projectsElements: ProjectsElementsInterface[] = [
         imgThree: krea,
         alt: "",
         color: "#fff968",
-        link: "/clients/columbus",
+        link: "/clients/kreatywnet",
     },
     {
         title: "Lomax",
@@ -149,6 +149,6 @@ export const projectsElements: ProjectsElementsInterface[] = [
         imgThree: lomax,
         alt: "",
         color: "#fff968",
-        link: "/clients/columbus",
+        link: "/clients/lomax",
     },
   ];

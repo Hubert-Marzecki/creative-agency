@@ -6,7 +6,10 @@ import SectionTitile from "../../components/SectionTitle"
 
 import holoMain from '../../public/holo/holo-main.jpg'
 import ClientIntro from "../../components/clientIntro/ClientIntro"
-
+import {Header} from "../../components/Header/Header";
+import main from  '../../public/ibwp/main-min.png';
+import nums from '../../public/ibwp/nums-min.png'
+import small from '../../public/ibwp/small-min.png'
 export default function Ibwp() {
 
 
@@ -14,8 +17,10 @@ export default function Ibwp() {
 
     return (
         <>
-           <div className="bg-black text-white">
-        <ClientHeader title={"IBWP"} img={holoMain} alt={""} />
+          <Header bgColor={"BLACK"} />
+
+          <div className="bg-black text-white">
+        <ClientHeader title={"IBWP"} img={main} alt={""} />
 
         <SectionTitile
           title="O PROJEKCIE"
@@ -78,7 +83,7 @@ export default function Ibwp() {
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img
                 className="object-cover object-center w-full h-full"
-                src={holoMain}
+                src={nums}
                 alt="stats"
               />
             </div>

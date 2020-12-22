@@ -43,7 +43,7 @@ const StyledClinetHeader = styled.div`
     display: block;
     z-index: 0;
     margin: 8em auto 0;
-    width: 70%;
+    width: 80%;
     max-width: 95vw;
     min-width: 55vw;
 

@@ -8,12 +8,22 @@ import holoMain from "../../public/holo/holo-main.jpg";
 import ClientIntro from "../../components/clientIntro/ClientIntro";
 
 import columbusThree from "../../public/columbus/columbus-2.jpg";
+import main from  '../../public/columbus/main-min.png';
+import nums from '../../public/columbus/nums-min.png'
+
+import small from '../../public/columbus/small-min.png'
+import small2 from '../../public/columbus/small-2-min.png'
+import small3 from '../../public/columbus/small-3-min.png'
+import small4 from '../../public/columbus/small-4-min.png'
+import {Header} from "../../components/Header/Header";
+
 
 export default function Columbus() {
   return (
     <>
+        <Header bgColor={"black"} />
       <div className="bg-black text-white">
-        <ClientHeader title={"Columbus"} img={columbusThree} alt={""} />
+        <ClientHeader title={"Columbus"} img={main} alt={""} />
 
         <SectionTitile
           title="O PROJEKCIE"
@@ -43,7 +53,7 @@ export default function Columbus() {
 Jedna z najbardziej popularnych kawiarni w Polsce
                 </h1>
                 <div className="leading-relaxed">
-          
+                        Kawiarnia prowadzona przez przemiłą parę, której nastrój jak i kawa podniosłyby umarłego na nogi.
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
@@ -74,12 +84,17 @@ Jedna z najbardziej popularnych kawiarni w Polsce
             <div className="lg:w-2/6 sm:w-1/3  rounded-lg overflow-hidden mt-12 sm:mt-6 sm:mt-0">
               <img
                 className="object-cover object-center w-full h-full"
-                src={holoMain}
+                src={nums}
                 alt="stats"
               />
             </div>
           </div>
         </section>
+
+          <SectionTitile
+              title="GALERIA"
+              styleVaribles={"color:white; padding-bottom:0"}
+          />
 
         <section className="text-gray-700 body-font ">
           <div className="container px-20  mx-auto">
@@ -89,7 +104,7 @@ Jedna z najbardziej popularnych kawiarni w Polsce
                   <img
                     alt="content"
                     className="object-cover object-center h-full w-full"
-                    src={holoMain}
+                    src={small}
                   />
                 </div>
               </div>
@@ -98,7 +113,7 @@ Jedna z najbardziej popularnych kawiarni w Polsce
                   <img
                     alt="content"
                     className="object-cover object-center h-full w-full"
-                    src={holoMain}
+                    src={small2}
                   />
                 </div>
               </div>
@@ -107,7 +122,7 @@ Jedna z najbardziej popularnych kawiarni w Polsce
                   <img
                     alt="content"
                     className="object-cover object-center h-full w-full"
-                    src={holoMain}
+                    src={small3}
                   />
                 </div>
               </div>
@@ -116,7 +131,7 @@ Jedna z najbardziej popularnych kawiarni w Polsce
                   <img
                     alt="content"
                     className="object-cover object-center h-full w-full"
-                    src={holoMain}
+                    src={small4}
                   />
                 </div>
               </div>

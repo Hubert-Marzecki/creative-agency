@@ -49,18 +49,18 @@ export default function Home(props: any): JSX.Element {
   }
 
   //ELEMENTS
-  function createTiles(): JSX.Element {
+  function createTiles(elements): JSX.Element {
     return (
         <>
-          {projectsElements.slice(0, state.itemLimit).map((item) => (
+          {elements.slice(0, state.itemLimit).map((item) => (
               <Link href={`${item.link}`} key={item.link}
               >
                 <div
-                    className="proj__tile sm:w-6/12  mb-10 px-4 transition duration-500 ease-in-out delay-150 transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
+                    className="proj__tile mx-6 sm:w-4/12  mb-10 px-4 transition duration-500 ease-in-out delay-150 transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
                   <div className=" h-auto overflow-hidden ">
                     <img
-                        onMouseEnter={(e) => { changeBgColor(item.color)} }
-                        onMouseLeave={(e) => { e.preventDefault() ,  setState(s =>  ({...s, bgColor: "black", isTileHovered: false}))}}
+                        // onMouseEnter={(e) => { changeBgColor(item.color)} }
+                        // onMouseLeave={(e) => { e.preventDefault() ,  setState(s =>  ({...s, bgColor: "black", isTileHovered: false}))}}
                          // onMouseOver={(e) => changeImage(e, item)}
 
                         alt="content"
@@ -79,15 +79,43 @@ export default function Home(props: any): JSX.Element {
         </>
     );
   }
+  function createNotMovingTiles(elements): JSX.Element {
+    return (
+        <>
+          {elements.slice(0, state.itemLimit).map((item) => (
+              <Link href={`${item.link}`} key={item.link}
+              >
+                <div
+                    className="proj__tile mx-6 sm:w-4/12  mb-10 px-4  cursor-pointer hover:text-yellow-500">
+                  <div className=" h-auto overflow-hidden ">
+                    <img
+                        // onMouseEnter={(e) => { changeBgColor(item.color)} }
+                        // onMouseLeave={(e) => { e.preventDefault() ,  setState(s =>  ({...s, bgColor: "black", isTileHovered: false}))}}
+                        // onMouseOver={(e) => changeImage(e, item)}
 
+                        alt="content"
+                        className="object-cover  object-center h-full w-full cursor-pointer"
+                        src={item.img}
+                    />
+                  </div>
+                  <h2 className="title-font text-2xl font-medium text-gray-300 mt-6 mb-3 ">
+                    {item.title}
+                  </h2>
+                  {/* <p className="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p> */}
+                  {/* ROUTE HERE */}
+                </div>
+              </Link>
+          ))}
+        </>
+    );
+  }
   return (
     <>
       <Header bgColor={state.bgColor}/>
       <StyledPage>
-        
         <section className="text-white body-font h-screen  ">
-          <div className="container  mx-auto flex px-5 pt-40 md:flex-row flex-col items-center">
-            <div className="  lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <div className="container  mx-auto flex px-5  pt-10 md:pt-0 md:flex-row flex-col items-center">
+            <div className="  lg:flex-grow md:w-1/2  lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="sm:text-6xl text-3xl mb-4 font-bold">
                 Hej, jestem Hubert
                 {/* <br class="hidden lg:inline-block" />readymade gluten */}
@@ -115,7 +143,7 @@ export default function Home(props: any): JSX.Element {
           {/*  </p>*/}
           {/*</div>*/}
         </section>
-        <div className="m-24 p-24 md:p-0">
+        <div className="m-24 p-24 md:p-0 md:m-0">
 
         </div>
 
@@ -130,9 +158,9 @@ export default function Home(props: any): JSX.Element {
         {/*/>*/}
 
         <section className="text-gray-700 body-font">
-          <div className="container px-5  mx-auto ">
-            <div className="flex flex-wrap  -mb-10 text-center justify-center lg:w-2/4 mx-auto ">
-              {createTiles()}
+          <div className="container   mx-auto lg:w-7/12 ">
+            <div className="flex flex-wrap  -mb-10 text-center justify-center  mx-auto ">
+              {createTiles(projectsElements)}
             </div>
           </div>
         </section>
@@ -156,16 +184,18 @@ export default function Home(props: any): JSX.Element {
           styleVaribles={"margin-top: 100px; color:white "}
         />
 
-        <ProjectTileFull
-          tile={myPhotos}
-          isButtonVisible={false}
-          ctaText="Poznajmy się"
-          isCtaBellow={false}
-          offset={state.itemLimit}
-        />
+
+
+        <section className="text-gray-700 body-font">
+          <div className="container  mx-auto lg:w-7/12 ">
+            <div className="flex flex-wrap md:flex-no-wrap -mb-10 text-center justify-center  mx-auto ">
+              {createNotMovingTiles(myPhotos)}
+            </div>
+          </div>
+        </section>
 
         <Link href="/omnie">
-          <button className="flex mx-auto  text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer ">
+          <button className="flex mx-auto mt-4 text-white bg-yellow-600 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-500 rounded text-lg transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer ">
             Poznajmy się
           </button>
         </Link>

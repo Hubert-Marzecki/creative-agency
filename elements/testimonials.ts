@@ -6,18 +6,18 @@ export const testimonials : TestimonialsModel[] = [
         img: martaG,
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         name: "Marta Górka",
-        position: "Marketing Manager"
+        position: "Marketing Manager - Progresja"
     },
     {
-        img: "",
+        img: martaG,
         text: "Cnim ad minim veniam, quis nostrud exercitation ullamco  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        name: "Marta>",
-        position: "SZEF"
+        name: "Wiktoria Orłowska",
+        position: "Event Manager - Bfriend"
     },
     {
-        img: "",
+        img: martaG,
         text: "Lorem ipsudidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        name: "Marta>",
-        position: "SZEF"
+        name: "Krzysztof X ",
+        position: "CEO IBWP"
     },
 ]

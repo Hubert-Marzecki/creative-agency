@@ -10,7 +10,7 @@ export default function ClientsTestimonials () {
           <div className="lg:w-1/3 lg:mb-0 mb-6 p-4" key={item.text}>
           <div className="h-full text-center">
             <img alt="testimonial" className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src={item.img}/>
-      <p className="leading-relaxed text-gray-400">{item.text}</p>
+      <p className="leading-relaxed text-gray-400 h-40">{item.text}</p>
             <span className="inline-block h-1 w-10 rounded bg-yellow-500 mt-6 mb-4"></span>
             <h2 className="text-gray-500 font-bold title-font tracking-wider text-sm">{item.name}</h2>
             <p className="text-gray-600">{item.position}</p>

@@ -7,6 +7,7 @@ import ClientIntro from "../../components/clientIntro/ClientIntro"
 
 import main from '../../public/bfriend/main.png'
 import nums from '../../public/bfriend/nums.png'
+import {Header} from "../../components/Header/Header";
 
 export default function BeFriend() {
 
@@ -14,7 +15,9 @@ export default function BeFriend() {
 
     return (
         <>
-               <div className="bg-black text-white">
+          <Header bgColor={"BLACK"} />
+
+          <div className="bg-black text-white">
         <ClientHeader title={"BeFriend"} img={main} alt={""} />
 
         <SectionTitile
