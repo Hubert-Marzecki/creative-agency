@@ -3,31 +3,36 @@ import imageOne from '../public/work-1.jpg'
 import imageTwo from '../public/work-2.png'
 import imageThree from '../public/work-3.jpg'
 import imageFour from '../public/work-4.jpg'
+import roseClean from  '../public/yellow-rose.png'
 
+import rose from  '../public/yellow-rose-1.png'
+import rose2 from  '../public/yellow-rose-2.png'
+import rose3 from  '../public/yellow-rose-3.png'
+import rose4 from  '../public/yellow-rose-4.png'
 
 export const workflowStep : WorkflowStepModel[] = [
     {
-        img:imageOne ,
+        img:rose4 ,
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         title: "POZNAJEMY SIĘ"
     },
     {
-        img:imageTwo ,
+        img:rose3 ,
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         title: "OMAWIAMY TWOJE CELE"
     },
     {
-        img:imageThree ,
+        img:rose2 ,
         text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         title: "PODPISUJEMY UMOWĘ NA OKRES PRÓBNY"
     },
     {
-        img:imageFour ,
+        img:rose ,
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         title: "OMAWIAMY NA BIERZĄCO POSUNIĘCIA"
     },
     {
-        img:imageFour ,
+        img:roseClean ,
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         title: "ANALIZUJEMY OSIĄGNIĘCIA"
     },

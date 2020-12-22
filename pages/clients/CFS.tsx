@@ -18,6 +18,7 @@ import small7 from '../../public/cfs/small-7.png';
 
 import ClientIntro from "../../components/clientIntro/ClientIntro";
 import Slider from "../../components/Slider/Slider";
+import {Header} from "../../components/Header/Header";
 
 
 export default  function CFSCase() {
@@ -26,7 +27,9 @@ export default  function CFSCase() {
 
     return (
         <>
-        <StyledClient>
+          <Header bgColor={"BLACK"} />
+
+          <StyledClient>
 
          <ClientHeader title={"CFS"} img={main} alt={""} />
 

@@ -31,14 +31,14 @@ export default function Home(props: any): JSX.Element {
   cursor: pointer;
 `;
 
-  useEffect(() => {
-    document.body.style.backgroundColor = state.bgColor;
-    document.body.style.transition ="background-color 0.4s ease-in-out";
-    // setTimeout(() => {
-    //
-    //   document.body.style.transition ="all 1s ease";
-    // },1000)
-  },[state.isTileHovered])
+  // useEffect(() => {
+  //   document.body.style.backgroundColor = state.bgColor;
+  //   document.body.style.transition ="background-color 0.4s ease-in-out";
+  //   // setTimeout(() => {
+  //   //
+  //   //   document.body.style.transition ="all 1s ease";
+  //   // },1000)
+  // },[state.isTileHovered])
 
   function changeBgColor(color: string) {
       setState(s =>  ({...s, bgColor: color, isTileHovered: true}))
@@ -112,7 +112,7 @@ export default function Home(props: any): JSX.Element {
   return (
     <>
       <Header bgColor={state.bgColor}/>
-      <StyledPage>
+      <StyledPage className={"bg-black"}>
         <section className="text-white body-font h-screen  ">
           <div className="container  mx-auto flex px-5  pt-10 md:pt-0 md:flex-row flex-col items-center">
             <div className="  lg:flex-grow md:w-1/2  lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">

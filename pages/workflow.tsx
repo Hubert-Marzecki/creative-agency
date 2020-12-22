@@ -5,6 +5,8 @@ import progSmallOne from '../public/progresja/prog-small.jpg';
 import {Header} from "../components/Header/Header";
 import React from "react";
 
+
+
 export default function WorkFlow() {
 
     return (

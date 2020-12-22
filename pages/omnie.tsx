@@ -1,8 +1,9 @@
 import jaOne from "../public/ja/ja1.jpg";
 import SectionTitile from "../components/SectionTitle";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import TabContent from "../components/tabContent/TabContent";
 import styled from "@emotion/styled";
+import {Header} from "../components/Header/Header";
 
 export default function oMnie(): JSX.Element {
   const [openTab, setOpenTab] = useState<number>(1);
@@ -234,7 +235,9 @@ export default function oMnie(): JSX.Element {
 
   return (
     <>
-      <StyledAbout>
+        <Header bgColor={"BLACK"} />
+
+        <StyledAbout>
         <SectionTitile
           title="O mnie"
           styleVaribles="color:white; padding-bottom: 0; "
