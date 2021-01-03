@@ -31,7 +31,7 @@ export default function WorkFlow() {
 <section className="text-gray-700 body-font">
   <div className="container px-5 py-24 mx-auto flex flex-wrap">
     <div className="flex flex-wrap w-full">
-      <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+      <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 sm:mx-auto">
         <div className="flex relative pb-12">
           <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
             <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -86,7 +86,7 @@ export default function WorkFlow() {
             </svg>
           </div>
           <div className="flex-grow pl-4">
-            <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 4</h2>
+            <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">ANALIZA DZIAŁAŃ</h2>
             <p className="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
           </div>
         </div>
@@ -98,13 +98,12 @@ export default function WorkFlow() {
             </svg>
           </div>
           <div className="flex-grow pl-4">
-            <h2 className="font-medium title-font text-sm text-white  mb-1 tracking-wider">FINISH</h2>
+            <h2 className="font-medium title-font text-sm text-white  mb-1 tracking-wider">KOLEJNE DECYZJE</h2>
             <p className="leading-relaxed">Pitchfork ugh tattooed scenester echo park gastropub whatever cold-pressed retro.</p>
           </div>
         </div>
       </div>
-      <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 " src={progSmallOne} alt="step" />
-      "https://dummyimage.com/1200x500"
+      <img className="lg:w-4/12 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 " src={progSmallOne} alt="step" />
     </div>
   </div>
 </section>

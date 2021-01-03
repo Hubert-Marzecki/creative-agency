@@ -142,13 +142,13 @@ export const projectsElements: ProjectsElementsInterface[] = [
         color: "#fff968",
         link: "/clients/kreatywnet",
     },
-    {
-        title: "Lomax",
-        img: lomax,
-        imgTwo: lomax,
-        imgThree: lomax,
-        alt: "",
-        color: "#fff968",
-        link: "/clients/lomax",
-    },
+    // {
+    //     title: "Lomax",
+    //     img: lomax,
+    //     imgTwo: lomax,
+    //     imgThree: lomax,
+    //     alt: "",
+    //     color: "#fff968",
+    //     link: "/clients/lomax",
+    // },
   ];

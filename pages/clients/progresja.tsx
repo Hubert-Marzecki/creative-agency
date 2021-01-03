@@ -38,7 +38,7 @@ export default function ProgresjaCase() {
           taskOne="Kompleksowa obsług social media"
           taskTwo="Fotografia"
           taskThree="Video"
-          text="Progresja to największy klub koncertowy w Warszawie i jedno z najbardziej rozpoznawalnych miejsc w muzycznym półświatku Polski. W samym zeszłym roku klub odpowedziły m.in. takie gwiazdy jak Zakk Sabbath, Alzemo (były wokaliza Pantery), MachineGun Kelly i Opeth. Podczas pracy dla klubu wielokrotnie wykonywałem zdjęcia z koncertów oraz prowadziłem płatne kampanie."
+          text="Progresja to największy klub koncertowy w Warszawie i jedno z najbardziej rozpoznawalnych miejsc w muzycznym półświatku Polski. W samym zeszłym roku klub odpowedziły m.in. takie gwiazdy jak Zakk Sabbath, Alzemo (były wokaliza Pantery), MachineGun Kelly i Opeth. Podczas pracy dla klubu zajmowałem się codzienną moderacją Social Media, prowadziłem płatbe kampaniie oraz wykonywałem zdjęcia z koncertów."
           isUrl={true}
           url="https://progresja.com/en/"
         />

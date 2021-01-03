@@ -33,7 +33,7 @@ export default function ProTip() {
           taskThree="Tworzenie stron www i video"
           text="Protip Marketing to zespół zaangażowanych i doświadczonych ekspertów, których naczelną wartością jest wsparcie biznesowe obsługiwanych partnerów oraz klientów. Specjalizujemy się w marketingu internetowym, ze szczególnym umiłowaniem do narzędzi i platform Social Media. "
           isUrl={true}
-          url="https://progresja.com/en/"
+          url="https://protipmarketing.pl/"
           />
 
 
@@ -50,7 +50,7 @@ export default function ProTip() {
                   Czym może pochwalić się agencja
                 </h1>
                 <div className="leading-relaxed">
-                Bardzo szybko rośniemy utrzymując średni wzrost na poziomie 10% w skali miesiąca. Każdego dnia ulepszamy technologie, rozwijamy zespół i dbamy monitorowanie algorytmów. Dzięki temu zawsze jesteśmy gotowi do działania!
+                Bardzo szybko rośnie utrzymując średni wzrost na poziomie 10% w skali miesiąca. Każdego dnia ulepsza technologię, rozwija zespół i dba o monitorowanie algorytmów. Dzięki temu zawsze jest gotowy do działania!
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">

@@ -10,6 +10,15 @@ import EmailForm from "../components/Form/EmailForm";
 import ClientsTestimonials from "../components/Testimonials/ClientsTestimonials";
 import { projectsElements } from "../elements/projectsElements";
 import { myPhotos } from "../elements/myPhotos";
+import prog from '../public/progresja/main.png'
+
+import lomax from '../public/lomax/main.png'
+import cfs from '../public/cfs/main.png'
+import gig from '../public/gigcity/main.png'
+import insta from '../public/instacorner/main.png'
+import krea from '../public/kreatywnet/main.png'
+import holo from '../public/holo/main.png'
+import ibwp from '../public/ibwp/main.png'
 
 
 //  TODO - add IBWP Section
@@ -18,6 +27,8 @@ import { myPhotos } from "../elements/myPhotos";
 import ProjectTileFull from "../components/ProjectTileGallery/ProjectTileFull";
 import jaImg from '../public/ja/ja3.jpg';
 import {Header} from "../components/Header/Header";
+import Slider from "../components/Slider/Slider";
+
 
 
 export default function Home(props: any): JSX.Element {
@@ -30,6 +41,37 @@ export default function Home(props: any): JSX.Element {
   transition: background-color 2s ease;
   cursor: pointer;
 `;
+
+  const galleryItems = [
+    {
+      img: prog,
+      alt: "dupa"
+    },
+    {
+      img: lomax,
+      alt: "dupa"
+    },
+    {
+      img: krea,
+      alt: "dupa"
+    },
+    {
+      img: gig,
+      alt: "dupa"
+    },
+    {
+      img: insta,
+      alt: "dupa"
+    },
+    {
+      img: holo,
+      alt: "dupa"
+    },
+    {
+      img: ibwp,
+      alt: "dupa"
+    }
+  ]
 
   // useEffect(() => {
   //   document.body.style.backgroundColor = state.bgColor;
@@ -201,14 +243,22 @@ export default function Home(props: any): JSX.Element {
         </Link>
 
 
+        {/*<SectionTitile*/}
+        {/*  title=" KLIENCI O MNIE "*/}
+        {/*  styleVaribles={*/}
+        {/*    "margin-top: 50px;  margin-bottom: 0px; padding-bottom: 0px; color:white ; font-size: 3em"*/}
+        {/*  }*/}
+        {/*/>*/}
+        {/*<ClientsTestimonials />*/}
+
         <SectionTitile
-          title=" KLIENCI O MNIE "
+          title=" GLAERIA "
           styleVaribles={
-            "margin-top: 50px;  margin-bottom: 0px; padding-bottom: 0px; color:white ; font-size: 3em"
+            "margin-top: 50px;  margin-bottom: 0px; padding-bottom: 0px; color:white ;"
           }
         />
-        <ClientsTestimonials />
 
+        <Slider carouselItems={galleryItems}/>
 
         <SectionTitile
           title=" KONTAKT "

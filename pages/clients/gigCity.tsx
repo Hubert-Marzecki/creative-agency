@@ -34,7 +34,7 @@ export default function gigCity() {
         taskOne="Strategia promocji"
         taskTwo= "Social Media"
         taskThree="Fotografia"
-        text= "Nowoczesna platforma streamingowa, której podstawowym zadaniem było odświerzyć muzyczną scenę w dobie pandemii! Uzytkownik, miał do dostęp do streamingu, w którym mógł swobodnie zarządzać obrazem z aż 8 kamer. Odwiedzili nas tacy artyści jak Mazolweski Kwintent czy VoVo."
+        text= "Nowoczesna platforma streamingowa, której zadaniem było odświerzyć muzyczną scenę w dobie pandemii! Uzytkownik, miał dostęp do platformy, w któej mógł swobodnie zarządzać obrazem z aż 8 kamer relacjonujących koncert na żywo. W tym nowoczesnym przedsięwzięciu wieli udział tacy artysći jak VooVoo i Mazolewski quenitent."
         isUrl={false}
         url="string"
         />
@@ -51,8 +51,7 @@ export default function gigCity() {
                   Nowoczesna platforma streamingowa, pozwalająca na zmianę widoku między kamerami.
                 </h1>
                 <div className="leading-relaxed">
-                  Pour-over craft beer pug drinking vinegar live-edge gastropub,
-                  keytar neutra sustainable fingerstache kickstarter.
+
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
@@ -63,7 +62,7 @@ export default function gigCity() {
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2">
                 <h2 className="title-font font-medium text-3xl text-gray-100">
-                3
+                2
                 </h2>
                 <p className="leading-relaxed">Realizowane koncerty</p>
               </div>

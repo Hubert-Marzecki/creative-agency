@@ -10,7 +10,7 @@ export default function Slider({carouselItems}) {
                {carouselItems.map(item => {
                    return (
                        <div className="carousel__item">
-                           <img className={""} src={item} alt={item.alt} />
+                           <img className={""} src={item.img} alt={item.alt} />
                        </div>
                        )
 
@@ -21,11 +21,14 @@ export default function Slider({carouselItems}) {
 }
 
 const SliderElement = styled.div`
+        img{
+          padding: 2em;
+        }
   .rec-dot{
     background-color: white;
     &_active{
       background-color: white;
-      box-shadow:  0 0 1px 3px yellow;
+      box-shadow:  0 0 1px 3px white
     }
   }
   
