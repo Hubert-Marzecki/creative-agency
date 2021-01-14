@@ -8,6 +8,7 @@ export default function ClientIntro(props: ClientIntroModel) {
             return (
                 <a className="cursor-pointer text-yellow-500 inline-flex items-center"
                 href={props.url}
+                   target="_blank" rel="noopener noreferrer"
                 >
                   Zobacz stonę
                   <svg

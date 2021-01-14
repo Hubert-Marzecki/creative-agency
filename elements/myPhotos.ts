@@ -12,14 +12,14 @@ export const myPhotos = [
   // },
   {
     title: "",
-    img: jaTwo,
+    img: jaOne,
     imgTwo: jaTwo,
     alt: "",
     link: ""
   },
   {
     title: "",
-    img: jaThree,
+    img: jaTwo,
     imgTwo: jaOne,
     alt: "",
     link: ""

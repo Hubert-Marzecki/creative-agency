@@ -40,7 +40,7 @@ export default function WorkFlow() {
 <section className="text-gray-700 body-font">
   <div className="container px-5 py-24 mx-auto flex flex-wrap">
     <div className="flex flex-wrap w-full">
-      <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 sm:mx-auto">
+      <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 sm:mx-auto" data-aos="fade-right">
         <div className="flex relative pb-12">
           <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
             <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -52,7 +52,7 @@ export default function WorkFlow() {
           </div>
           <div className="flex-grow pl-4">
             <h2 className="font-medium title-font text-sm text-gray-200 mb-1 tracking-wider">OMAWIANIE CELÓW</h2>
-            <p className="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+            <p className="leading-relaxed">Spisujemy założenia projektu i nadajemy im priorytety.  </p>
           </div>
         </div>
         <div className="flex relative pb-12">
@@ -66,7 +66,7 @@ export default function WorkFlow() {
           </div>
           <div className="flex-grow pl-4">
             <h2 className="font-medium title-font text-sm text-gray-200 mb-1 tracking-wider">PODPISANIE UMOWY</h2>
-            <p className="leading-relaxed">Vice migas literally kitsch +1 pok pok. Truffaut hot chicken slow-carb health goth, vape typewriter.</p>
+            <p className="leading-relaxed">Podpisujemy, krótką umowę (zazwyczaj na zlecenie). W razie nowych projektów mogę obniżyć standardową stawkę.</p>
           </div>
         </div>
         <div className="flex relative pb-12">
@@ -81,7 +81,7 @@ export default function WorkFlow() {
           </div>
           <div className="flex-grow pl-4">
             <h2 className="font-medium title-font text-sm text-gray-200 mb-1 tracking-wider">WSPÓŁPRACA</h2>
-            <p className="leading-relaxed">Coloring book nar whal glossier master cleanse umami. Salvia +1 master cleanse blog taiyaki.</p>
+            <p className="leading-relaxed">Kiedy wykonuje zadania stale jesteśmy w kontakcie i na bierząco informuje o postępach.</p>
           </div>
         </div>
         <div className="flex relative pb-12">
@@ -96,7 +96,7 @@ export default function WorkFlow() {
           </div>
           <div className="flex-grow pl-4">
             <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">ANALIZA DZIAŁAŃ</h2>
-            <p className="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+            <p className="leading-relaxed">Analizujemy wykonaną pracę i wprowadzamy ewentualne poprawki.</p>
           </div>
         </div>
         <div className="flex relative">
@@ -108,11 +108,11 @@ export default function WorkFlow() {
           </div>
           <div className="flex-grow pl-4">
             <h2 className="font-medium title-font text-sm text-white  mb-1 tracking-wider">KOLEJNE DECYZJE</h2>
-            <p className="leading-relaxed">Pitchfork ugh tattooed scenester echo park gastropub whatever cold-pressed retro.</p>
+            <p className="leading-relaxed">Decydujemy czy kontynuujemy współpracę, albo co należy usprawnić w naszej kooperacji</p>
           </div>
         </div>
       </div>
-      <img className="lg:w-4/12 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 " src={progSmallOne} alt="step" />
+      <img className="lg:w-4/12 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 " src={progSmallOne} alt="step" data-aos="fade-left"/>
     </div>
   </div>
 </section>

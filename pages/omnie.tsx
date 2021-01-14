@@ -175,7 +175,10 @@ export default function oMnie(): JSX.Element {
               {/* <span class="ml-auto text-gray-700">2+</span> */}
             </div>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start" data-aos="zoom-in">
-              <a className="text-gray-500">
+              <a className="text-gray-500 hover:text-yellow-500 cursor-pointer"
+              href={"https://www.facebook.com/hubert.marzecki.5"}
+                 target="_blank" rel="noopener noreferrer"
+              >
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -187,19 +190,11 @@ export default function oMnie(): JSX.Element {
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500">
-                <svg
-                  fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a className="ml-3 text-gray-500">
+
+              <a className="ml-3 text-gray-500 hover:text-yellow-500 cursor-pointer"
+                 href={"https://www.instagram.com/jamarzec/"}
+                 target="_blank" rel="noopener noreferrer"
+              >
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -213,11 +208,14 @@ export default function oMnie(): JSX.Element {
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500">
+              <a className="ml-3 text-gray-500 hover:text-yellow-500 cursor-pointer"
+                 href={"https://www.linkedin.com/in/hubert-marzecki-98139016b/"}
+                 target="_blank" rel="noopener noreferrer"
+              >
                 <svg
                   fill="currentColor"
                   stroke="currentColor"
-                  stroke-linecap="round"
+                  strokeLinecap="round"
                   stroke-linejoin="round"
                   stroke-width="0"
                   className="w-5 h-5"
@@ -279,8 +277,8 @@ export default function oMnie(): JSX.Element {
                     onClick={() => setOpenTab(1)}
                     className={
                       openTab === 1
-                        ? "underline cursor-pointer flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1"
-                        : "cursor-pointer flex-grow text-gray-300 border-b-2 border-yellow-500 py-2 text-lg px-1"
+                        ? "font-bold cursor-pointer flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1"
+                        : "font-bold cursor-pointer flex-grow text-gray-300 border-b-2 border-yellow-500 py-2 text-lg px-1"
                     }
                   >
                     Wykształcenie
@@ -289,8 +287,8 @@ export default function oMnie(): JSX.Element {
                     onClick={() => setOpenTab(2)}
                     className={
                       openTab === 2
-                        ? "underline cursor-pointer flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1"
-                        : "cursor-pointer flex-grow text-gray-300 border-b-2 border-yellow-500 py-2 text-lg px-1"
+                        ? "font-bold cursor-pointer flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1"
+                        : "font-bold cursor-pointer flex-grow text-gray-300 border-b-2 border-yellow-500 py-2 text-lg px-1"
                     }
                   >
                     Misja
@@ -299,8 +297,8 @@ export default function oMnie(): JSX.Element {
                     onClick={() => setOpenTab(3)}
                     className={
                       openTab === 3
-                        ? "underline cursor-pointer flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1"
-                        : "cursor-pointer  flex-grow text-gray-300 border-b-2 border-yellow-500 py-2 text-lg px-1"
+                        ? "font-bold cursor-pointer flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1"
+                        : " font-bold cursor-pointer  flex-grow text-gray-300 border-b-2 border-yellow-500 py-2 text-lg px-1"
                     }
                   >
                     Hobby
@@ -312,59 +310,58 @@ export default function oMnie(): JSX.Element {
             </div>
           </div>
         </section>
-        {/*
-<section className="text-gray-700 body-font">
-  <div className="container px-5 py-24 mx-auto flex flex-wrap flex-col">
-    <div className="flex mx-auto flex-wrap mb-20">
 
-      <a 
-      onClick={() => setOpenTab(1)}
-      className={openTab === 1 ? 
-        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider " 
-      :
-      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}
-      >        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-        </svg> WYKSZTAŁCENIE
-      </a>
-      <a 
-       onClick={() => setOpenTab(2)}
-      className={openTab === 2 ? 
-        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider " 
-      :
-      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}
-      >
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">    
-          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-        </svg> MISJA
-      </a>
-      <a 
-       onClick={() => setOpenTab(3)}
-       className={openTab === 3 ? 
-        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider " 
-      :
-      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}
-      >        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">
-          <circle cx="12" cy="5" r="3"></circle>
-          <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-        </svg> CZEGO NIE LUBIĘ
-      </a>
-      <a 
-       onClick={() => setOpenTab(4)}
-       className={openTab === 4 ? 
-        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider " 
-      :
-      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}
-      >        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">
-          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-          <circle cx="12" cy="7" r="4"></circle>
-        </svg>HOBBY
-      </a>
-    
-    </div>
-    {tabContent(openTab)}
-  </div>
-</section> */}
+{/*<section className="text-gray-700 body-font">*/}
+{/*  <div className="container px-5 py-24 mx-auto flex flex-wrap flex-col">*/}
+{/*    <div className="flex mx-auto flex-wrap mb-20">*/}
+
+{/*      <a*/}
+{/*      onClick={() => setOpenTab(1)}*/}
+{/*      className={openTab === 1 ?*/}
+{/*        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider "*/}
+{/*      :*/}
+{/*      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}*/}
+{/*      >        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">*/}
+{/*          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>*/}
+{/*        </svg> WYKSZTAŁCENIE*/}
+{/*      </a>*/}
+{/*      <a*/}
+{/*       onClick={() => setOpenTab(2)}*/}
+{/*      className={openTab === 2 ?*/}
+{/*        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider "*/}
+{/*      :*/}
+{/*      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}*/}
+{/*      >*/}
+{/*        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">*/}
+{/*          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>*/}
+{/*        </svg> MISJA*/}
+{/*      </a>*/}
+{/*      <a*/}
+{/*       onClick={() => setOpenTab(3)}*/}
+{/*       className={openTab === 3 ?*/}
+{/*        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider "*/}
+{/*      :*/}
+{/*      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}*/}
+{/*      >        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">*/}
+{/*          <circle cx="12" cy="5" r="3"></circle>*/}
+{/*          <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>*/}
+{/*        </svg> CZEGO NIE LUBIĘ*/}
+{/*      </a>*/}
+{/*      <a*/}
+{/*       onClick={() => setOpenTab(4)}*/}
+{/*       className={openTab === 4 ?*/}
+{/*        "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-yellow-500 inline-flex items-center leading-none border-yellow-500 text-gray-800 tracking-wider "*/}
+{/*      :*/}
+{/*      "cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-100 tracking-wider"}*/}
+{/*      >        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 mr-3" viewBox="0 0 24 24">*/}
+{/*          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>*/}
+{/*          <circle cx="12" cy="7" r="4"></circle>*/}
+{/*        </svg>HOBBY*/}
+{/*      </a>*/}
+
+{/*    </div>*/}
+{/*  </div>*/}
+{/*</section>*/}
 
         {/*  */}
         {/* <section className="text-gray-700 body-font">

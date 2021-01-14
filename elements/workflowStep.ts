@@ -13,27 +13,27 @@ import rose4 from  '../public/yellow-rose-4.png'
 export const workflowStep : WorkflowStepModel[] = [
     {
         img:rose4 ,
-        text: "",
+        text: "Chętnie odpowiem na wszystkie pytania i na pewno wypytam o szczegóły projektu. Chciałbym wiedzieć na co zwrócić szczególną uwagę przy projektowaniu rozwiązań i w jaki sposób będzie przebiegać między nami komunikacja.",
         title: "POZNAJEMY SIĘ"
     },
     {
         img:rose3 ,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        text: "Na tym etapie spisujemy wszyskie założenia współpracy i omawiamy priorytety. Pozwoli nam to szybko ocenić ile zajmie praca przy projekcie i jakiego efektu końcowego oczekujemy.",
         title: "OMAWIAMY TWOJE CELE"
     },
     {
         img:rose2 ,
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        text: "Zawsze oferuje, któtkie umowy, które dają klientowi elastyczność na wypadek gdybyśmy się nie dogadali. Czasem obniżam stawkę projektu, dzięki czemu możesz poczuć się bezpieczniej, jeśli jeszcze nie zbudowaliśmy zaufania do siebie.",
         title: "PODPISUJEMY UMOWĘ NA OKRES PRÓBNY"
     },
     {
         img:rose ,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        text: "Staram się być w stałym kontakcie z klientami, dzięki temu praca przebiega szybko, przyjemnie i bez zbędnych nieporozumień . Zachęcam do zadawania pytań na temat pracy jak i bierzącej oceny posunięć.",
         title: "OMAWIAMY NA BIERZĄCO POSUNIĘCIA"
     },
     {
         img:roseClean ,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        text: "Wprowadzamy ewenentualne poprawki do projektu. Zamykając projekt zawsze lubię poświęcić chwilę na analizę współpracy. W ten sposób stale się uczę i polepszam jakość rozwiązań. ",
         title: "ANALIZUJEMY OSIĄGNIĘCIA"
     },
 

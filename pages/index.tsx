@@ -40,7 +40,6 @@ export default function Home(props: any): JSX.Element {
     isTileHovered: false,
   });
   const StyledPage = styled.div`
-  transition: background-color 2s ease;
   cursor: pointer;
 `;
   useEffect(() => {
