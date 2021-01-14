@@ -96,7 +96,7 @@ export default function Insta() {
 
 
             <SectionTitile
-                title="GALERIA"
+                title="GRAFIKI"
                 styleVaribles={"color:white; padding-bottom:40PX"}
             />
 

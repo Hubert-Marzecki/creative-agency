@@ -92,7 +92,7 @@ Jedna z najbardziej popularnych kawiarni w Polsce
         </section>
 
           <SectionTitile
-              title="GALERIA"
+              title="FOTO"
               styleVaribles={"color:white; padding-bottom:0"}
           />
 

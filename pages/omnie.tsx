@@ -4,11 +4,20 @@ import React, {useEffect, useState} from "react";
 import TabContent from "../components/tabContent/TabContent";
 import styled from "@emotion/styled";
 import {Header} from "../components/Header/Header";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function oMnie(): JSX.Element {
   const [openTab, setOpenTab] = useState<number>(1);
-  const [bgColor, setBgColor] = useState("black")
+  const [bgColor, setBgColor] = useState("black");
 
+    useEffect(() => {
+        AOS.init({
+            easing: "ease-out-cubic",
+            once: true,
+            offset: 50,
+        });
+    }, []);
     // useEffect(() => {
     //     document.body.style.backgroundColor = "black";
     //     if(openTab === 1 ) {
@@ -32,34 +41,36 @@ export default function oMnie(): JSX.Element {
       case 1:
         return (
           <>
-            <p className="leading-relaxed text-gray-600 mb-4">
+            <p className="leading-relaxed text-gray-600 mb-4"
+               data-aos="zoom-in"
+            >
               Na studiach nauczyłem się racjonalnie przeprowadzać analizy klientów i działalności biznesowej. Na codzienń korzystam z tej wiedzy
               i na jej podstawie dokonuje decyzji a nie podstawie aktualnego przecucia. Swoje umiejętności rozwijałem przy przeszło 20 projektach.
               Programuje strony w nowoczesnych techologiach (Next.js, React), ale w razie potrzeby jestem w stanie szybko i skutecznie stworzyć stronę w WordPress.
             </p>
-            <div className="flex border-t border-gray-300 py-2">
+            <div className="flex border-t border-gray-300 py-2"  data-aos="zoom-in">
               <span className="text-gray-500">Studia </span>
               <span className="ml-auto text-gray-600">
                 Koźmiński - Marketing
               </span>
             </div>
 
-            <div className="flex border-t border-gray-300 py-2">
+            <div className="flex border-t border-gray-300 py-2"   data-aos="zoom-in">
               <span className="text-gray-500">Przeprowadzone projekty</span>
               <span className="ml-auto text-gray-700">30</span>
             </div>
 
-            <div className="flex border-t border-gray-300 py-2">
+            <div className="flex border-t border-gray-300 py-2"  data-aos="zoom-in">
               <span className="text-gray-500">Szkolenia marketingowe</span>
               <span className="ml-auto text-gray-700">4</span>
             </div>
 
-            <div className="flex border-t border-gray-300 py-2">
+            <div className="flex border-t border-gray-300 py-2"   data-aos="zoom-in">
               <span className="text-gray-500">Szkolenia Front-end</span>
               <span className="ml-auto text-gray-700">3</span>
             </div>
 
-            <div className="flex border-t border-b mb-6 border-gray-300 py-2">
+            <div className="flex border-t border-b mb-6 border-gray-300 py-2"  data-aos="zoom-in">
               <span className="text-gray-500">Lat doświadczenia </span>
               <span className="ml-auto text-gray-700">2+</span>
             </div>
@@ -80,7 +91,10 @@ export default function oMnie(): JSX.Element {
       case 2:
         return (
           <>
-            <p className="leading-relaxed text-gray-600 mb-4">
+            <p className="leading-relaxed text-gray-600 mb-4"
+               data-aos="zoom-in"
+
+            >
              Lubię małą przedsiębiorczość i dużo bardziej odnajduję się w spieraniu takich projektów niż pracy korporacyjnej.
              Preferuje omawianie działań bezpośrednio z osobami, którym zależy na swojej działalności tak jak mi na mojej a nie jest to dla nich po prostu praca. 
             </p>
@@ -131,36 +145,36 @@ export default function oMnie(): JSX.Element {
       case 3:
         return (
           <>
-            <p className="leading-relaxed text-gray-600 mb-4">
+            <p className="leading-relaxed text-gray-600 mb-4" data-aos="zoom-in">
            Bez problemu mogę tu umieścić programowanie, fotografię i marketing. Staram się łączyć pasje z życiem zawodowym, dzięki czemu nie wypalam się zawodowo a wykazywanie 
            inicjatywy jest prostrze niż kiedykolwiek. 
            Kiedy nie pracuję maluje, trochę piszę i odkładam na campera. Wiele lat jeździłem autostopem i jestem szczerze zakochany w róznorodności jaką oferuję nam cały świat.
             </p>
-            <div className="flex border-t border-gray-300 py-2">
+            <div className="flex border-t border-gray-300 py-2" data-aos="zoom-in">
               <span className="text-gray-500"> Fotografia </span>
               {/* <span className="ml-auto text-gray-600">Koźmiński - Marketing</span> */}
             </div>
 
-            <div className="flex border-t border-gray-300 py-2">
+            <div className="flex border-t border-gray-300 py-2" data-aos="zoom-in">
               <span className="text-gray-500"> Malarstwo </span>
               {/* <span className="ml-auto text-gray-700">30</span> */}
             </div>
 
-            <div className="flex border-t border-gray-300 py-2">
+            <div className="flex border-t border-gray-300 py-2" data-aos="zoom-in">
               <span className="text-gray-500">Front-end</span>
               {/* <span className="ml-auto text-gray-700">4</span> */}
             </div>
 
-            <div className="flex border-t border-gray-300 py-2">
+            <div className="flex border-t border-gray-300 py-2" data-aos="zoom-in">
               <span className="text-gray-500">Pozdróże autostopowe</span>
               {/* <span className="ml-auto text-gray-700">3</span> */}
             </div>
 
-            <div className="flex border-t border-b mb-6 border-gray-300 py-2">
+            <div className="flex border-t border-b mb-6 border-gray-300 py-2" data-aos="zoom-in">
               <span className="text-gray-500"> Wspinaczka </span>
               {/* <span class="ml-auto text-gray-700">2+</span> */}
             </div>
-            <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start" data-aos="zoom-in">
               <a className="text-gray-500">
                 <svg
                   fill="currentColor"
@@ -235,7 +249,7 @@ export default function oMnie(): JSX.Element {
 
   return (
     <>
-        <Header bgColor={"BLACK"} />
+        <Header bgColor={"BLACK"}/>
 
         <StyledAbout>
         <SectionTitile
@@ -247,6 +261,7 @@ export default function oMnie(): JSX.Element {
           <div className="container px-5 md:py-24 py-3 mx-auto pl-">
             <div className="lg:w-4/5 mx-auto flex flex-wrap ">
               <img
+
                 alt="ecommerce"
                 className="lg:w-1/2 w-full lg:h-auto lg:h-64 object-cover object-center rounded sm:pr-8"
                 src={jaOne}

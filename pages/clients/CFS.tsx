@@ -169,7 +169,7 @@ export default  function CFSCase() {
   </div>
 </section>
               <SectionTitile
-                  title="GALERIA"
+                  title="FOTO"
                   styleVaribles={"color:white; padding-bottom:20px"}
               />
               <section className="text-gray-700 body-font pb-10">

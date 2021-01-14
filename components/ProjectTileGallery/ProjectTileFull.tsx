@@ -1,7 +1,9 @@
 import Link from "next/link";
-import React from "react";
+import React, {useEffect} from "react";
 import { ProjectsElementsInterface, ProjectTileModel } from "../../Model";
 const { v4: uuidv4 } = require('uuid');
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function ProjectTileFull(props: {
   tile: ProjectsElementsInterface[] | ProjectTileModel[];
@@ -33,13 +35,21 @@ export default function ProjectTileFull(props: {
     e.currentTarget.src = item.imgTwo;
   }
 
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
+  }, []);
+
   function createTiles(): JSX.Element {
     return (
       <>
         {props.tile.slice(0, props.offset).map((item) => (
           <Link href={`${item.link}`} key={uuidv4()}>
-            <div className="sm:w-2/6 lg:w-1/4 mb-10 px-4 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
-              <div className=" h-auto overflow-hidden">
+            <div data-aos="zoom-in-up" className="sm:w-2/6 lg:w-1/4 mb-10 px-4  cursor-pointer hover:text-yellow-500">
+              <div className=" h-auto overflow-hidden transition duration-300 ease-in-out  transform hover:-translate-y-1 hover:scale-110">
                 <img
                   alt="content"
                   className="object-cover object-center h-full w-full cursor-pointer"

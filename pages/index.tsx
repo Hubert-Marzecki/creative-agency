@@ -19,6 +19,8 @@ import insta from '../public/instacorner/main.png'
 import krea from '../public/kreatywnet/main.png'
 import holo from '../public/holo/main.png'
 import ibwp from '../public/ibwp/main.png'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 //  TODO - add IBWP Section
@@ -41,6 +43,13 @@ export default function Home(props: any): JSX.Element {
   transition: background-color 2s ease;
   cursor: pointer;
 `;
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
+  }, []);
 
   const galleryItems = [
     {
@@ -98,8 +107,8 @@ export default function Home(props: any): JSX.Element {
               <Link href={`${item.link}`} key={item.link}
               >
                 <div
-                    className="proj__tile mx-6 sm:w-4/12  mb-10 px-4 transition duration-500 ease-in-out delay-150 transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
-                  <div className=" h-auto overflow-hidden ">
+                    className="proj__tile mx-6 sm:w-4/12  mb-10 px-4 transition duration-300 ease-in-out  transform hover:-translate-y-1 hover:scale-105 cursor-pointer hover:text-yellow-500">
+                  <div className=" h-auto overflow-hidden transition duration-300 ease-in-out  transform hover:-translate-y-1 hover:scale-105">
                     <img
                         // onMouseEnter={(e) => { changeBgColor(item.color)} }
                         // onMouseLeave={(e) => { e.preventDefault() ,  setState(s =>  ({...s, bgColor: "black", isTileHovered: false}))}}
@@ -113,8 +122,7 @@ export default function Home(props: any): JSX.Element {
                   <h2 className="title-font text-2xl font-medium text-gray-300 mt-6 mb-3 ">
                     {item.title}
                   </h2>
-                  {/* <p className="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p> */}
-                  {/* ROUTE HERE */}
+
                 </div>
               </Link>
           ))}
@@ -128,9 +136,11 @@ export default function Home(props: any): JSX.Element {
               <Link href={`${item.link}`} key={item.link}
               >
                 <div
+
                     className="proj__tile mx-6 sm:w-4/12  mb-10 px-4  cursor-pointer hover:text-yellow-500">
                   <div className=" h-auto overflow-hidden ">
                     <img
+
                         // onMouseEnter={(e) => { changeBgColor(item.color)} }
                         // onMouseLeave={(e) => { e.preventDefault() ,  setState(s =>  ({...s, bgColor: "black", isTileHovered: false}))}}
                         // onMouseOver={(e) => changeImage(e, item)}
@@ -143,8 +153,7 @@ export default function Home(props: any): JSX.Element {
                   <h2 className="title-font text-2xl font-medium text-gray-300 mt-6 mb-3 ">
                     {item.title}
                   </h2>
-                  {/* <p className="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p> */}
-                  {/* ROUTE HERE */}
+
                 </div>
               </Link>
           ))}
@@ -158,32 +167,31 @@ export default function Home(props: any): JSX.Element {
         <section className="text-white body-font h-screen  ">
           <div className="container  mx-auto flex px-5  pt-10 md:pt-0 md:flex-row flex-col items-center">
             <div className="  lg:flex-grow md:w-1/2  lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="sm:text-6xl text-3xl mb-4 font-bold">
+              <h1 className="sm:text-6xl text-3xl mb-4 font-bold"
+                  data-aos="fade-down"
+              >
                 Hej, jestem Hubert
                 {/* <br class="hidden lg:inline-block" />readymade gluten */}
               </h1>
-              <p className="mb-8 sm:text-3xl text-3xl leading-relaxed">
+              <p className="mb-8 sm:text-3xl text-3xl leading-relaxed"
+                 data-aos="fade-right"
+              >
                 {" "}
                 Zajmuję się tworzeniem stron internetowych, fotografią i komunikacją marketingową.
               </p>
               <div className="flex justify-center">
-                {/* <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> */}
-                {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Button</button> */}
               </div>
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 w-full">
               <img
+                  data-aos="fade-left"
                 className="object-cover object-center rounded"
                 alt="hero"
                 src={jaImg}
               />
             </div>
           </div>
-          {/*<div className="container -mt-64 mx-auto flex px-5 pt-40 md:flex-row flex-col items-center">*/}
-          {/*  <p className="hidden md:block">*/}
-          {/*    {props.weather.name} , {props.weather.main.temp.toFixed() - 273}°C*/}
-          {/*  </p>*/}
-          {/*</div>*/}
+
         </section>
         <div className="m-24 p-24 md:p-0 md:m-0">
 

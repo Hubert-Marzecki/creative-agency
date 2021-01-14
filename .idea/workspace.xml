@@ -3,7 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="e1c4c928-452d-4634-8837-b27ba7fb0eab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/kontakt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/kontakt.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTileFull.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTileFull.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/CFS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/CFS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/columbus.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/columbus.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/gigCity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/gigCity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/instacorner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/instacorner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/progresja.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/progresja.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/omnie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/omnie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/workflow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/workflow.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +70,8 @@
       <workItem from="1609001403015" duration="72000" />
       <workItem from="1609590213348" duration="1110000" />
       <workItem from="1609691747007" duration="4127000" />
-      <workItem from="1609754329699" duration="1593000" />
+      <workItem from="1609754329699" duration="1899000" />
+      <workItem from="1610620411448" duration="3500000" />
     </task>
     <task id="LOCAL-00001" summary="new assets, animation on main page">
       <created>1608558508862</created>
