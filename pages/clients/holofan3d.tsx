@@ -30,7 +30,7 @@ export default function Holodan3d (){
         taskOne="Stworzenie strony www"
         taskTwo= "Obróbka grafik"
         taskThree=""
-        text= "Podczas pracy przy stronie internetowej byłem odpowiedzialny za zaprojektowanie UI całej strony, odpowiedniego przygotowania grafik oraz zaprogramowania platformy z zachowaniem najwyższej starannoście kontekście optymalizacji  i SEO."
+        text= "Podczas pracy przy stronie internetowej byłem odpowiedzialny za zaprojektowanie UI całej platformy, odpowiedniego przygotowania grafik oraz zaprogramowania serwisu z zachowaniem najwyższej starannoście kontekście optymalizacji  i SEO."
         isUrl={false}
         url="string"
         />

@@ -32,7 +32,7 @@ export default function Kreatywnet() {
                     taskOne="Stworzenie strony www"
                     taskTwo= "Obróbka grafik"
                     taskThree=""
-                    text= "Firma powstałą w 10/10/2010 roku aby w dobie dzisiejszych dynamicznych zmian wyróżniać marki, które poszukują profesjonalnego partnera biznesowego oraz wsparcia i fachowego doradztwa w zakresie digital marketingu. Z pewnością dobiorą dla Ciebie odpowiednie działania."
+                    text= "Firma powstałą w 10/10/2010 roku aby w dobie dzisiejszych dynamicznych zmian wyróżniać marki, które poszukują profesjonalnego partnera biznesowego oraz wsparcia i fachowego doradztwa w zakresie digital marketingu. "
                     isUrl={true}
                     url="https://kreatywnet.marketing/"
                 />
@@ -51,8 +51,8 @@ export default function Kreatywnet() {
                                    Kreatywnet - nowoczesna agencja marketingowa
                                 </h1>
                                 <div className="leading-relaxed">
-                                    Jest nie tylko zachwycający, ale prosty w montażu.
-                                    Konstrukcja składa się z kilku wytrzymałych paneli dzięki temu jest stabilna, prosta do złożenia i z łatwością będzie można ją przenieść.
+                                    {/*Jest nie tylko zachwycający, ale prosty w montażu.*/}
+                                    {/*Konstrukcja składa się z kilku wytrzymałych paneli dzięki temu jest stabilna, prosta do złożenia i z łatwością będzie można ją przenieść.*/}
                                 </div>
                             </div>
                             <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">

@@ -44,8 +44,8 @@ export default function oMnie(): JSX.Element {
             <p className="leading-relaxed text-gray-600 mb-4"
                data-aos="zoom-in"
             >
-              Na studiach nauczyłem się racjonalnie przeprowadzać analizy klientów i działalności biznesowej. Na codzienń korzystam z tej wiedzy
-              i na jej podstawie dokonuje decyzji a nie podstawie aktualnego przecucia. Swoje umiejętności rozwijałem przy przeszło 20 projektach.
+              Na studiach nauczyłem się racjonalnie przeprowadzać analizy rynkowe i działalności biznesowej. Na codzienń korzystam z tej wiedzy
+              i na jej podstawie dokonuje decyzji wgledem design-u i komunikacji marketingowej. Swoje umiejętności rozwijałem przy przeszło współpracując z 20. firmami z różnych branż.
               Programuje strony w nowoczesnych techologiach (Next.js, React), ale w razie potrzeby jestem w stanie szybko i skutecznie stworzyć stronę w WordPress.
             </p>
             <div className="flex border-t border-gray-300 py-2"  data-aos="zoom-in">
@@ -95,8 +95,16 @@ export default function oMnie(): JSX.Element {
                data-aos="zoom-in"
 
             >
-             Lubię małą przedsiębiorczość i dużo bardziej odnajduję się w spieraniu takich projektów niż pracy korporacyjnej.
-             Preferuje omawianie działań bezpośrednio z osobami, którym zależy na swojej działalności tak jak mi na mojej a nie jest to dla nich po prostu praca. 
+                    Tworzyć ciekawe projekty.
+                <br/>
+                Przedewszystkim działać na korzyść klienta.
+                <br/>
+                Terminowo wykonywać powierzone działania.
+                <br/>
+                Podchodzić do projektów z zachowaniem etyki zawodowej.
+                <br/>
+                Rozwijać siebie i działalność klienta.
+                <br/>
             </p>
 
             <p className="leading-relaxed text-gray-600 mb-4">
@@ -146,9 +154,8 @@ export default function oMnie(): JSX.Element {
         return (
           <>
             <p className="leading-relaxed text-gray-600 mb-4" data-aos="zoom-in">
-           Bez problemu mogę tu umieścić programowanie, fotografię i marketing. Staram się łączyć pasje z życiem zawodowym, dzięki czemu nie wypalam się zawodowo a wykazywanie 
-           inicjatywy jest prostrze niż kiedykolwiek. 
-           Kiedy nie pracuję maluje, trochę piszę i odkładam na campera. Wiele lat jeździłem autostopem i jestem szczerze zakochany w róznorodności jaką oferuję nam cały świat.
+           Bez problemu mogę stwierdzić, że moim hobby jest programowanie, fotografia i biznes. Ciężko znaleźć miejsce pracy, które wymaga tych kwalifikacji, dlatego jestem zdecydowany rozwijać działalność jako freelancer.
+          <br/> Kiedy nie pracuję maluje, trochę piszę i odkładam na campera. Wiele lat jeździłem autostopem i jestem szczerze zakochany w róznorodności jaką oferuję nam cały świat.
             </p>
             <div className="flex border-t border-gray-300 py-2" data-aos="zoom-in">
               <span className="text-gray-500"> Fotografia </span>

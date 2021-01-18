@@ -200,11 +200,6 @@ export default function Home(props: any): JSX.Element {
       ...prev,
       [e.target.id]: e.target.value,
     }));
-    setFormStatus({
-      submitted: false,
-      submitting: false,
-      info: { error: false, msg: null },
-    });
   };
 
   const handleOnSubmit = async (e) => {
@@ -322,98 +317,15 @@ export default function Home(props: any): JSX.Element {
         {/*/>*/}
         {/*<ClientsTestimonials />*/}
 
-        <SectionTitile
-          title=" GLAERIA "
-          styleVaribles={
-            "margin-top: 50px;  margin-bottom: 0px; padding-bottom: 0px; color:white ;"
-          }
-        />
-
         <Slider carouselItems={galleryItems}/>
 
-        <SectionTitile
-          title=" KONTAKT "
-          styleVaribles={"margin-top: 100px; color:white; padding-bottom: 0px"}
-        />
+        {/*<SectionTitile*/}
+        {/*  title=" KONTAKT "*/}
+        {/*  styleVaribles={"margin-top: 100px; color:white; padding-bottom: 0px"}*/}
+        {/*/>*/}
       {/*EMAIL*/}
+<div className="pb-16"></div>
 
-
-        <div className="pb-40">
-          <h1 className="font-bold text-5xl text-black text-center  ">
-            Kontakt
-          </h1>
-          <section className={`flex flex-wrap  px-10 container mx-auto justify-center`}>
-
-
-            <div className="w-screen sm:w-1/2 sm:pr-20 pb-20 sm:pl-20 ">
-              <form
-                  className=" flex flex-row justify-center flex-wrap w-full mt-10"
-                  onSubmit={handleOnSubmit}
-              >
-                <div className="flex flex-col mr-auto mt-4 w-full ">
-                  <input
-                      id="name"
-                      className="px-2  border-b  w-full py-3 rounded  text-gray-700"
-                      type="text"
-                      onChange={handleOnChange}
-                      required
-                      value={inputs.name}
-                  />
-                  <label className="label mt-2 text-white " htmlFor="name">
-                    Imię
-                  </label>
-                </div>
-                <div className="flex flex-col mr-auto mt-4 w-full ">
-                  <input
-                      id="email"
-                      className="px-2 border-b  w-full py-3 rounded  text-gray-700"
-                      type="email"
-                      onChange={handleOnChange}
-                      required
-                      value={inputs.email}
-                  />
-                  <label className="label mt-2 text-white " htmlFor="email">
-                    E-mail
-                  </label>
-                </div>
-                <div className="w-full flex flex-col mt-10">
-                <textarea
-                    className=" text-gray-700 w-full border rounded  p-2 h-40 focus:outline-none focus:border-gray-500"
-                    id="message"
-                    onChange={handleOnChange}
-                    value={inputs.message}
-                    required
-                />
-                  <label className="mt-2 text-white " htmlFor="message">
-                    Wiadomość
-                  </label>
-                </div>
-                <div className="">
-                  <button
-                      className=" mr-1 bg-yellow-600 hover:bg-yellow-500 mt-8 py-3 px-8 text-lg rounded-full font-bold uppercase text-white tracking-widest"
-                      type="submit"
-                      value="Wyślij"
-                      disabled={formStatus.submitting}
-                  >
-                    {" "}
-                    {!formStatus.submitting
-                        ? !formStatus.submitted
-                            ? "Wyślij"
-                            : "Wysłano"
-                        : "Wysyłanie..."}{" "}
-                  </button>
-                </div>
-              </form>
-              {formStatus.info.error && (
-                  <div className="error">Error: {formStatus.info.msg}</div>
-              )}
-              {!formStatus.info.error && formStatus.info.msg && (
-                  <div className="success">{formStatus.info.msg}</div>
-              )}
-
-            </div>
-          </section>
-        </div>
 
       </StyledPage>
     </>

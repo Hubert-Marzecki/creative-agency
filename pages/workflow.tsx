@@ -38,7 +38,7 @@ export default function WorkFlow() {
 
 {/* SUMMARY */}
 <section className="text-gray-700 body-font">
-  <div className="container px-5 py-24 mx-auto flex flex-wrap">
+  <div className="sm:container px-5 py-24 mx-auto flex flex-wrap">
     <div className="flex flex-wrap w-full">
       <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 sm:mx-auto" data-aos="fade-right">
         <div className="flex relative pb-12">

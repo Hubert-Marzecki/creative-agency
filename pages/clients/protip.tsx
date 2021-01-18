@@ -31,7 +31,7 @@ export default function ProTip() {
           taskOne="Kordynacja pracy 6 specjalistów"
           taskTwo= "Opieka klienta"
           taskThree="Tworzenie stron www i video"
-          text="Protip Marketing to zespół zaangażowanych i doświadczonych ekspertów, których naczelną wartością jest wsparcie biznesowe obsługiwanych partnerów oraz klientów. Specjalizujemy się w marketingu internetowym, ze szczególnym umiłowaniem do narzędzi i platform Social Media. "
+          text="Protip Marketing to zespół zaangażowanych i doświadczonych ekspertów, których naczelną wartością jest wsparcie biznesowe obsługiwanych partnerów oraz klientów. Specjalizuje się w marketingu internetowym, ze szczególnym umiłowaniem do narzędzi i platform Social Media. "
           isUrl={true}
           url="https://protipmarketing.pl/"
           />

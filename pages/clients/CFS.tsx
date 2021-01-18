@@ -41,7 +41,7 @@ export default  function CFSCase() {
         taskOne="Promocja w Sociel Media"
         taskTwo= "Fotografia"
         taskThree="Kontakt z Influencerami"
-        text= "Jedno z największych wydarzeń przyblirzających kulturę dalekiego zachodu. Prosto z Chin przyjechało do Warszawy blisko 40 konstrukcji przedstawiających bliskie kulturze figury - ptaki, pandy itp. Teren wydarzenia zajął prawie całą przestrzeń Fortów Bema."
+        text= "Jedno z największych wydarzeń przybliżających kulturę dalekiego zachodu. Prosto z Chin przyjechało do Warszawy blisko 40 konstrukcji przedstawiających wspaniałe formy - ptaki, pandy itp. Teren wydarzenia zajął prawie całą przestrzeń Fortów Bema."
         isUrl={false}
         url="string"
         />
@@ -57,10 +57,10 @@ export default  function CFSCase() {
             <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-4/6 sm:w-2/3 content-start sm:pr-10">
               <div className="w-full sm:p-4 mb-6">
                 <h1 className="title-font font-medium text-xl mb-2 text-gray-100 font-bold">
-                 Wystawca zagranicznych 
+                 Działania social media
                 </h1>
                 <div className="leading-relaxed">
-                  Podczas pracy na terenie wydarzenia, regualrnie zapraszałem influencerów, robiłem zdjęcia terenu i nagrywałem występy na naszej scenie.
+                  Podczas pracy na terenie wydarzenia, regualrnie zapraszałem influencerów, robiłem zdjęcia terenu i nagrywałem występy kuglarzy.
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">
@@ -108,7 +108,7 @@ export default  function CFSCase() {
   <div className="container  pt-10 mx-auto">
     <div className="text-center mb-20">
       {/* <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-200 mb-4">Zadania w ramach zlecenia</h1> */}
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Przez blisko 4 miesiace byłem odpowiedzialny za </p>
+      {/*<p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Przez blisko 4 miesiace byłem odpowiedzialny za </p>*/}
     </div>
     <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
       <div className="p-2 sm:w-1/2 w-full">

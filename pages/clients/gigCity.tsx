@@ -34,7 +34,7 @@ export default function gigCity() {
         taskOne="Strategia promocji"
         taskTwo= "Social Media"
         taskThree="Fotografia"
-        text= "Nowoczesna platforma streamingowa, której zadaniem było odświerzyć muzyczną scenę w dobie pandemii! Uzytkownik, miał dostęp do platformy, w któej mógł swobodnie zarządzać obrazem z aż 8 kamer relacjonujących koncert na żywo. W tym nowoczesnym przedsięwzięciu wieli udział tacy artysći jak VooVoo i Mazolewski quenitent."
+        text= "Nowoczesna platforma streamingowa, której zadaniem było odświeżyć muzyczną scenę w dobie pandemii! Uzytkownik, miał dostęp do platformy, w któej mógł swobodnie zarządzać obrazem z aż 8 kamer relacjonujących koncert na żywo. W tym nowoczesnym przedsięwzięciu wieli udział tacy artysći jak VooVoo i Mazolewski quintet."
         isUrl={false}
         url="string"
         />
@@ -48,7 +48,7 @@ export default function gigCity() {
             <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-4/6 sm:w-2/3 content-start sm:pr-10">
               <div className="w-full sm:p-4 mb-6">
                 <h1 className="title-font font-medium text-xl mb-2 text-gray-100 font-bold">
-                  Nowoczesna platforma streamingowa, pozwalająca na zmianę widoku między kamerami.
+                  Nowoczesna platforma streamingowa pozwalająca na zmianę widoku między kamerami.
                 </h1>
                 <div className="leading-relaxed">
 

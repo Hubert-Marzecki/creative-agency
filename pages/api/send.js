@@ -2,7 +2,6 @@ const sgMail = require("@sendgrid/mail");
 
 export default async function (req, res) {
     sgMail.setApiKey(process.env.SENGRIND_API_KEY_2);
-    console.error(process.env.SENGRIND_API_KEY_2);
     const { email, message } = req.body;
 
     const content = {
