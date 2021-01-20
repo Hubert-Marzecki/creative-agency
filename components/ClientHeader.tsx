@@ -11,7 +11,10 @@ export default function ClientHeader(props: {
       <StyledClinetHeader>
         <div>
           <h2 className="title">{props.title}</h2>
+          <div className="img__wrapper">
           <img className="client__main__img" src={props.img} alt={props.alt} />
+          </div>
+
         </div>
       </StyledClinetHeader>
     </>
@@ -39,6 +42,18 @@ const StyledClinetHeader = styled.div`
       position: absolute;
     }
   }
+  
+  .img__wrapper{
+    //background-image: url("https://via.placeholder.com/150/0000FF/808080");
+    //background-position: center;
+    //background-size: cover;
+    //width: 80%;
+    //margin: 8em auto 0;
+    //display: block;
+    //max-width: 95vw;
+    //min-width: 55vw;
+    //height: 100vw;
+  }
   .client__main__img {
     display: block;
     z-index: 0;
@@ -46,6 +61,7 @@ const StyledClinetHeader = styled.div`
     width: 80%;
     max-width: 95vw;
     min-width: 55vw;
+    
 
     @media (max-width: 700px) {
       width: 95vw;

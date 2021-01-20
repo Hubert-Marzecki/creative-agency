@@ -5,7 +5,7 @@ export default function WorkFlowStep(props: {items: WorkflowStepModel[]}) : JSX.
     return (
 <>
         {props.items.map((item:WorkflowStepModel) => (
-            <section className="text-gray-200 body-font mt-32">
+            <section className="text-gray-200 body-font mt-32 w-full ">
                 <div className="container px-5  mx-auto "  data-aos="zoom-in-up">
                     <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
                     <h2 className="text-3xl text-gray-100 font-medium title-font tracking-wider text-sm font-bold mt-6 mb-12">{item.title}</h2>

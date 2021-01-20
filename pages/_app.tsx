@@ -50,5 +50,6 @@ function MyApp({ Component, pageProps, router }) : JSX.Element {
 }
 const StyledWrapper = styled.div`
 background-color: black;
+  width: 100vw;
 `
 export default MyApp
