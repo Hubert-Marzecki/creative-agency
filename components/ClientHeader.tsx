@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import * as React from "react";
+import Image from "next/image";
 
 export default function ClientHeader(props: {
   title: string;
@@ -13,6 +14,7 @@ export default function ClientHeader(props: {
           <h2 className="title">{props.title}</h2>
           <div className="img__wrapper">
           <img className="client__main__img" src={props.img} alt={props.alt} />
+
           </div>
 
         </div>

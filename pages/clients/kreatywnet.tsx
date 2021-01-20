@@ -157,10 +157,6 @@ export default function Kreatywnet() {
                         </div>
                     </div>
                 </section>
-
-
-
-
             </div>
 
         </>

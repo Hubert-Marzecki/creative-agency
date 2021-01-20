@@ -4,6 +4,7 @@ import { ProjectsElementsInterface, ProjectTileModel } from "../../Model";
 const { v4: uuidv4 } = require('uuid');
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 export default function ProjectTileFull(props: {
   tile: ProjectsElementsInterface[] | ProjectTileModel[];
@@ -50,12 +51,12 @@ export default function ProjectTileFull(props: {
           <Link href={`${item.link}`} key={uuidv4()}>
             <div data-aos="zoom-in-up" className="sm:w-2/6 lg:w-1/4 mb-10 px-4  cursor-pointer hover:text-yellow-500">
               <div className=" h-auto overflow-hidden transition duration-300 ease-in-out  transform hover:-translate-y-1 hover:scale-110">
-                <img
-                  alt="content"
-                  className="object-cover object-center h-full w-full cursor-pointer"
-                  src={item.img}
-                  // onMouseOver={(e) => replaceImg(e, item)}
-                />
+                <Image
+                    alt="content"
+                    className="object-cover  object-center h-full w-full cursor-pointer"
+                    src={item.img}
+                    width={350}
+                    height={500} loading={"eager"}/>
               </div>
               <h2 className="title-font text-2xl font-medium text-gray-200 mt-6 mb-3">
                 {item.title}

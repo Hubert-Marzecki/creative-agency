@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { ProjectsElementsInterface, ProjectTileModel } from "../../Model";
+import Image from "next/image";
+import * as React from "react";
 
 export default function ProjectTile(props: {
   tile: any[];
@@ -38,12 +40,12 @@ export default function ProjectTile(props: {
             <Link href={`${item.link}`} key={item.link}>
               <div className="sm:w-6/12  mb-10 px-4 transition duration-300 ease-in-out  transform hover:-translate-y-1 hover:scale-110 cursor-pointer hover:text-yellow-500">
                 <div className=" h-auto overflow-hidden ">
-                  <img
+                  <Image
                     alt="content"
                     className="object-cover  object-center h-full w-full cursor-pointer"
                     src={item.img}
-                    // onMouseOver={(e) => replaceImg(e, item)}
-                  />
+                    width={250}
+                    height={250} loading={"eager"}/>
                 </div>
                 <h2 className="title-font text-2xl font-medium text-gray-300 mt-6 mb-3 ">
                   {item.title}
