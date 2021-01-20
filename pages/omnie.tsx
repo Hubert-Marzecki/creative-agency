@@ -41,7 +41,7 @@ export default function oMnie(): JSX.Element {
       case 1:
         return (
           <>
-            <p className="leading-relaxed text-gray-600 mb-4"
+            <p className="leading-relaxed text-gray-100 mb-4"
                data-aos="zoom-in"
             >
               Na studiach nauczyłem się racjonalnie przeprowadzać analizy rynkowe i działalności biznesowej. Na codzienń korzystam z tej wiedzy
@@ -91,7 +91,7 @@ export default function oMnie(): JSX.Element {
       case 2:
         return (
           <>
-            <p className="leading-relaxed text-gray-600 mb-4"
+            <p className="leading-relaxed text-gray-100 mb-4"
                data-aos="zoom-in"
 
             >
@@ -153,7 +153,7 @@ export default function oMnie(): JSX.Element {
       case 3:
         return (
           <>
-            <p className="leading-relaxed text-gray-600 mb-4" data-aos="zoom-in">
+            <p className="leading-relaxed text-gray-100 mb-4" data-aos="zoom-in">
            Bez problemu mogę stwierdzić, że moim hobby jest programowanie, fotografia i biznes. Ciężko znaleźć miejsce pracy, które wymaga tych kwalifikacji, dlatego jestem zdecydowany rozwijać działalność jako freelancer.
           <br/> Kiedy nie pracuję maluje, trochę piszę i odkładam na campera. Wiele lat jeździłem autostopem i jestem szczerze zakochany w róznorodności jaką oferuję nam cały świat.
             </p>

@@ -41,6 +41,7 @@ export default function Home(props: any): JSX.Element {
   });
   const StyledPage = styled.div`
   cursor: pointer;
+    width: 100vw;
 `;
   useEffect(() => {
     AOS.init({

@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e1c4c928-452d-4634-8837-b27ba7fb0eab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Slider/Slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Slider/Slider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/send.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/send.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/clients/CFS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/CFS.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/clients/gigCity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/gigCity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/clients/holofan3d.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/holofan3d.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/clients/kreatywnet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/kreatywnet.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/clients/progresja.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/progresja.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/clients/protip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/protip.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/workflowSteps/WorkFlowStep.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/workflowSteps/WorkFlowStep.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/omnie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/omnie.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/workflow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/workflow.tsx" afterDir="false" />
@@ -75,6 +71,9 @@
       <workItem from="1610877005775" duration="564000" />
       <workItem from="1610914573817" duration="646000" />
       <workItem from="1610985973948" duration="3563000" />
+      <workItem from="1611048124956" duration="154000" />
+      <workItem from="1611171396939" duration="1517000" />
+      <workItem from="1611174590996" duration="556000" />
     </task>
     <task id="LOCAL-00001" summary="new assets, animation on main page">
       <created>1608558508862</created>
