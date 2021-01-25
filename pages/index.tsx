@@ -223,7 +223,7 @@ export default function Home(props: any): JSX.Element {
     <>
       <Header bgColor={state.bgColor}/>
       <StyledPage className={"bg-black"}>
-        <section className="text-white body-font h-screen  ">
+        <section className="text-white body-font h-screen  w-screen ">
           <div className="container  mx-auto flex px-5  pt-10 md:pt-0 md:flex-row flex-col items-center">
             <div className="  lg:flex-grow md:w-1/2  lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="sm:text-6xl text-3xl mb-4 font-bold"

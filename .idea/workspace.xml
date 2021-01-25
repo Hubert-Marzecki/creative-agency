@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e1c4c928-452d-4634-8837-b27ba7fb0eab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ClientHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ClientHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTileFull.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProjectTileGallery/ProjectTileFull.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/workflowSteps/WorkFlowStep.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/workflowSteps/WorkFlowStep.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/clients/kreatywnet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/kreatywnet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/workflow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/workflow.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +69,9 @@
       <workItem from="1610985973948" duration="3563000" />
       <workItem from="1611048124956" duration="154000" />
       <workItem from="1611171396939" duration="1517000" />
-      <workItem from="1611174590996" duration="2230000" />
+      <workItem from="1611174590996" duration="2368000" />
+      <workItem from="1611310531918" duration="627000" />
+      <workItem from="1611568868449" duration="1347000" />
     </task>
     <task id="LOCAL-00001" summary="new assets, animation on main page">
       <created>1608558508862</created>

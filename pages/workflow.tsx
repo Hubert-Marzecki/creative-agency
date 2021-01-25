@@ -21,7 +21,7 @@ export default function WorkFlow() {
     return (
             <>
               <Header bgColor={"black"} />
-<div className="bg-black w-full">
+<div className="bg-black w-screen">
 
 <SectionTitile 
         title="JAK PRACUJE" 
@@ -112,7 +112,7 @@ export default function WorkFlow() {
           </div>
         </div>
       </div>
-      <img className="lg:w-4/12 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 " src={progSmallOne} alt="step" data-aos="fade-left"/>
+      <img className="lg:w-3/12 md:w-1/2 mr-auto rounded-lg md:mt-0 mt-12 " src={progSmallOne} alt="step" data-aos="fade-left"/>
     </div>
   </div>
 </section>
