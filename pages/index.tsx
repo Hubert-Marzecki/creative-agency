@@ -48,6 +48,8 @@ export default function Home(props: any): JSX.Element {
       easing: "ease-out-cubic",
       once: true,
       offset: 50,
+      disable: 'mobile'
+
     });
   }, []);
 

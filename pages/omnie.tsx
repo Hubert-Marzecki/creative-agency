@@ -16,6 +16,8 @@ export default function oMnie(): JSX.Element {
             easing: "ease-out-cubic",
             once: true,
             offset: 50,
+            disable: 'mobile'
+
         });
     }, []);
     // useEffect(() => {

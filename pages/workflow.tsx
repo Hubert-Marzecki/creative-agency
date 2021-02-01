@@ -15,6 +15,7 @@ export default function WorkFlow() {
       easing: "ease-out-cubic",
       once: true,
       offset: 50,
+      disable: 'mobile'
     });
   }, []);
 
