@@ -33,11 +33,11 @@ export default function Insta() {
 
 
 <ClientIntro 
-        market="Wyposarzenie Eventowe"
+        market="Wyposażenie Eventowe"
         taskOne="Stworzenie strony www"
         taskTwo= "Obróbka grafik"
         taskThree=""
-        text= "Instacorner to nieograniczone możliwości tworzenia wyjątkowych wspomnień z udziałem Twojej marki. Jednym słowem kwintesencja Brand expirience. Zainspirowani najlepszymi światowymi instamuzeami — Instacorner towrzy przestrzenie aby służyły Tobie i Twojej marce. Bez ograniczeń, bez sztampy — tak jak sobie wymarzysz. Spróbuj nowego podejścia do promocji — zaistniej dzięki milionom sharów na Insta czy Facebook swoich klientów."
+        text= "Instacorner to nieograniczone możliwości tworzenia wyjątkowych wspomnień z udziałem Twojej marki. Jednym słowem kwintesencja Brand Experience. Zainspirowani najlepszymi światowymi instamuzeami — Instacorner tworzy przestrzenie, aby służyły Tobie i Twojej marce. Bez ograniczeń, bez sztampy — tak, jak sobie wymarzysz. Spróbuj nowego podejścia do promocji — zaistniej dzięki milionom share’ów na Insta czy Facebook’u swoich klientów."
         isUrl={true}
         url="http://instacorner.pl/"
         />
@@ -53,10 +53,10 @@ export default function Insta() {
             <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-4/6 sm:w-2/3 content-start sm:pr-10">
               <div className="w-full sm:p-4 mb-6">
                 <h1 className="title-font font-medium text-xl mb-2 text-gray-100 font-bold">
-                 Instacorner - nowoczesna przestrzeń eventowa.
+                 Instacorner - nowoczesna przestrzeń eventowa
                 </h1>
                 <div className="leading-relaxed">
-                Konstrukcja składa się z kilku wytrzymałych paneli dzięki temu jest stabilna, mobilna i łatwa w montarzu. Instacorner zajmuje się dopasowaniem jest w 100% do potrzeb Twojej marki.
+                Konstrukcja składa się z kilku wytrzymałych paneli. Dzięki temu jest stabilna, mobilna i łatwa w montażu. Instacorner zajmuje się dopasowaniem jest w 100% do potrzeb Twojej marki.
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">

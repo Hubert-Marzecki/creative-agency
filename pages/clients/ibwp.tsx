@@ -33,7 +33,7 @@ export default function Ibwp() {
           taskOne="Napisanie strony w nowoczesnej technologii Next.js"
           taskTwo= ""
           taskThree=""
-          text="Instytut powstał z myślą o połączeniu praktyki i nauki w zakresie szeroko pojętej wartości przedsiębiorstw. Instytut skupia specjalistów z dziedziny restrukturyzacji, wycen, prawa, zarządzania, ekonomii i finansów. Nasi współpracownicy posiadają wieloletnie doświadczenia jako biegli sądowy z zakresu organizacji i zarządzania, analizy i wycen przedsiębiorstw, biegli skarbowi z zakresu szacowania przedsiębiorstw i udziałów w podmiotach gospodarczych, doradcy restrukturyzacyjni. Pozwala to na wszechstronną ocenę stanu przedsiębiorstwa i opracowanie optymalnej strategii jego rozwoju lub wyjścia z kryzysu. Pomagamy przedsiębiorcom i osobom zarządzającym w prowadzonych z ich udziałem procesach sądowych lub negocjacyjnych. Dotyczy to wszelkich zagadnień ekonomicznych w postępowaniach gospodarczych, karnych, upadłościowych, restrukturyzacyjnych oraz o zakaz prowadzenia działalności gospodarczej. Dokonujemy wycen przedsiębiorstw, udziałów/ akcji w podmiotach gospodarczych, zorganizowanych części przedsiębiorstw."
+          text="Instytut powstał z myślą o połączeniu praktyki i nauki w zakresie szeroko pojętej wartości przedsiębiorstw. Instytut skupia specjalistów z dziedziny restrukturyzacji, wycen, prawa, zarządzania, ekonomii i finansów. Nasi współpracownicy posiadają wieloletnie doświadczenia jako biegli sądowy z zakresu organizacji i zarządzania, analizy i wycen przedsiębiorstw, biegli skarbowi z zakresu szacowania przedsiębiorstw i udziałów w podmiotach gospodarczych, doradcy restrukturyzacyjni."
           isUrl={true}
           url="https://www.ibwp.pl"
           />
@@ -52,7 +52,7 @@ export default function Ibwp() {
                 Instytut Badań Wartości Przedsiębiorstw
                 </h1>
                 <div className="leading-relaxed">
-                Instytut powstał z myślą o połączeniu praktyki i nauki w zakresie szeroko pojętej wartości przedsiębiorstw. Instytut skupia specjalistów z dziedziny restrukturyzacji, wycen, prawa, zarządzania, ekonomii i finansów..
+                Instytut powstał z myślą o połączeniu praktyki i nauki w zakresie szeroko pojętej wartości przedsiębiorstw. Instytut skupia specjalistów z dziedziny restrukturyzacji, wycen, prawa, zarządzania, ekonomii i finansów.
                 </div>
               </div>
               {/* <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">

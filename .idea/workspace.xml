@@ -3,9 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="e1c4c928-452d-4634-8837-b27ba7fb0eab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/workflowSteps/WorkFlowStep.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/workflowSteps/WorkFlowStep.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/workflowStep.ts" beforeDir="false" afterPath="$PROJECT_DIR$/elements/workflowStep.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/CFS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/CFS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/beFriend.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/beFriend.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/columbus.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/columbus.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/gigCity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/gigCity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/holofan3d.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/holofan3d.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/ibwp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/ibwp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/instacorner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/instacorner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/kreatywnet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/kreatywnet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/progresja.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/progresja.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/clients/protip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/clients/protip.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/omnie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/omnie.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/workflow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/workflow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ja/ja1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/ja/ja1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ja/ja2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/ja/ja2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ja/ja3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/ja/ja3.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +51,7 @@
       <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\instacorner" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\ja" />
       <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\progresja" />
       <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public" />
       <recent name="C:\Users\huber\OneDrive\Pulpit\Moje\web\creative-agency\public\cfs" />
@@ -71,7 +85,9 @@
       <workItem from="1611171396939" duration="1517000" />
       <workItem from="1611174590996" duration="2368000" />
       <workItem from="1611310531918" duration="627000" />
-      <workItem from="1611568868449" duration="1347000" />
+      <workItem from="1611568868449" duration="2937000" />
+      <workItem from="1612167819214" duration="1695000" />
+      <workItem from="1612187410277" duration="1548000" />
     </task>
     <task id="LOCAL-00001" summary="new assets, animation on main page">
       <created>1608558508862</created>

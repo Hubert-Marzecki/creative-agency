@@ -26,15 +26,14 @@ export default function Holodan3d (){
 
         
          <ClientIntro 
-        market="Wyposarzenie Eventowe"
+        market="Wyposażenie Eventowe"
         taskOne="Stworzenie strony www"
         taskTwo= "Obróbka grafik"
         taskThree=""
-        text= "Podczas pracy przy stronie internetowej byłem odpowiedzialny za zaprojektowanie UI całej platformy, odpowiedniego przygotowania grafik oraz zaprogramowania serwisu z zachowaniem najwyższej starannoście kontekście optymalizacji  i SEO."
+        text= "Podczas pracy przy stronie internetowej byłem odpowiedzialny za zaprojektowanie UI całej platformy, odpowiedniego przygotowania grafik oraz optymalizacji strony pod kątem SEO."
         isUrl={false}
         url="string"
         />
-
 
         <SectionTitile
           title="O PROJEKCIE"
@@ -95,7 +94,7 @@ export default function Holodan3d (){
  <section className="text-gray-300 body-font pb-32">
   <div className="container  pt-10 mx-auto">
     <div className="text-center mb-20">
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Przygotowanie strony zostało podzielone na 3 etapy - analiza istotnych informacji - przygotowanie szkicu strony - programowanie projektu</p>
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Przygotowanie strony zostało podzielone na 3 etapy - analiza istotnych informacji - przygotowanie szkicu strony - programowanie projektu.</p>
     </div>
     <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
       <div className="p-2 sm:w-1/2 w-full">

@@ -35,10 +35,10 @@ export default function ProgresjaCase() {
 
         <ClientIntro
           market="Koncerty"
-          taskOne="Kompleksowa obsług social media"
+          taskOne="Kompleksowa obsługa social media"
           taskTwo="Fotografia"
           taskThree="Video"
-          text="Progresja to największy klub koncertowy w Warszawie i jedno z najbardziej rozpoznawalnych miejsc w muzycznym półświatku Polski. W samym zeszłym roku klub odpowedziły m.in. takie gwiazdy jak Zakk Sabbath, Anselmo (były wokaliza Pantery), MachineGun Kelly i Opeth. Podczas pracy dla klubu zajmowałem się codzienną moderacją Social Media, prowadziłem płatne kampanie oraz wykonywałem zdjęcia z koncertów."
+          text="Progresja to największy klub koncertowy w Warszawie i jedno z najbardziej rozpoznawalnych miejsc w muzycznym półświatku Polski. W samym zeszłym roku klub odwiedziły m.in. takie gwiazdy jak Zakk Sabbath, Anselmo (były wokaliza Pantery), MachineGun Kelly i Opeth. Podczas pracy dla klubu zajmowałem się codzienną moderacją Social Media, prowadziłem płatne kampanie oraz wykonywałem zdjęcia z koncertów."
           isUrl={true}
           url="https://progresja.com/en/"
         />

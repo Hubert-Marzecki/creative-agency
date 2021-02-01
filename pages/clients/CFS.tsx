@@ -38,7 +38,7 @@ export default  function CFSCase() {
 
          <ClientIntro 
         market="Wydarzenie publiczne"
-        taskOne="Promocja w Sociel Media"
+        taskOne="Promocja w Social Media"
         taskTwo= "Fotografia"
         taskThree="Kontakt z Influencerami"
         text= "Jedno z największych wydarzeń przybliżających kulturę dalekiego zachodu. Prosto z Chin przyjechało do Warszawy blisko 40 konstrukcji przedstawiających wspaniałe formy - ptaki, pandy itp. Teren wydarzenia zajął prawie całą przestrzeń Fortów Bema."
@@ -60,7 +60,7 @@ export default  function CFSCase() {
                  Działania social media
                 </h1>
                 <div className="leading-relaxed">
-                  Podczas pracy na terenie wydarzenia, regualrnie zapraszałem influencerów, robiłem zdjęcia terenu i nagrywałem występy kuglarzy.
+                  Podczas pracy na terenie wydarzenia, regularnie zapraszałem influencerów, robiłem zdjęcia terenu i nagrywałem występy kuglarzy.
                 </div>
               </div>
               <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">

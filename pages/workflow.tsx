@@ -66,7 +66,7 @@ export default function WorkFlow() {
           </div>
           <div className="flex-grow pl-4">
             <h2 className="font-medium title-font text-sm text-gray-200 mb-1 tracking-wider">PODPISANIE UMOWY</h2>
-            <p className="leading-relaxed">Podpisujemy, krótką umowę (zazwyczaj na zlecenie). W razie nowych projektów mogę obniżyć standardową stawkę.</p>
+            <p className="leading-relaxed">Podpisujemy krótką umowę (zazwyczaj na zlecenie). W razie nowych projektów mogę obniżyć standardową stawkę.</p>
           </div>
         </div>
         <div className="flex relative pb-12">
@@ -81,7 +81,7 @@ export default function WorkFlow() {
           </div>
           <div className="flex-grow pl-4">
             <h2 className="font-medium title-font text-sm text-gray-200 mb-1 tracking-wider">WSPÓŁPRACA</h2>
-            <p className="leading-relaxed">Kiedy wykonuje zadania stale jesteśmy w kontakcie i na bierząco informuje o postępach.</p>
+            <p className="leading-relaxed">Kiedy wykonuje zadania, stale jesteśmy w kontakcie i na bieżąco informuje o postępach.</p>
           </div>
         </div>
         <div className="flex relative pb-12">
@@ -108,11 +108,11 @@ export default function WorkFlow() {
           </div>
           <div className="flex-grow pl-4">
             <h2 className="font-medium title-font text-sm text-white  mb-1 tracking-wider">KOLEJNE DECYZJE</h2>
-            <p className="leading-relaxed">Decydujemy czy kontynuujemy współpracę, albo co należy usprawnić w naszej kooperacji</p>
+            <p className="leading-relaxed">Decydujemy, czy kontynuujemy współpracę, albo co należy usprawnić w naszej kooperacji</p>
           </div>
         </div>
       </div>
-      <img className="lg:w-3/12 md:w-1/2 mr-auto rounded-lg md:mt-0 mt-12 " src={progSmallOne} alt="step" data-aos="fade-left"/>
+      <img className="lg:w-3/12 md:w-1/2 mr-auto rounded-lg md:mt-0 mt-12 " src={progSmallOne} alt="step" />
     </div>
   </div>
 </section>

@@ -31,11 +31,11 @@ export default function Columbus() {
         />
 
         <ClientIntro
-          market="Kawirnia"
+          market="Kawiarnia"
           taskOne="Kompleksowa sejsa zdjęciowa"
           taskTwo=""
           taskThree=""
-          text="Sesja zdjęciowa została przeprowadzona dla lokalu nalerzącego do pokaźnej sieci Columbus Caffe. Przez 4 godziny wraz z Tadeuszem Lesieckim fotogrofrafowaliśmy większość produktów oferowanych prze kawiarnię."
+          text="Sesja zdjęciowa została przeprowadzona dla lokalu należącego do pokaźnej sieci Columbus Caffe. Przez 4 godziny wraz z Tadeuszem Leskim fotogrofrafowaliśmy większość produktów oferowanych przez kawiarnię."
           isUrl={true}
           url="https://www.columbuscoffee.pl/"
         />

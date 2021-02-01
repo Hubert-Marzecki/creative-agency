@@ -31,7 +31,7 @@ export default function BeFriend() {
           taskOne="Przygotowanie stron www dla projektów"
           taskTwo= "Przygotowanie grafik"
           taskThree="Organizacja sesji zdjęciowych"
-          text=" Wspaniała agencja z biurem na Warszawskim Wawrzyszewie. Dostarcza najnowszych i najwyższej jakości rozwiązań, równocześnie optymalizujących koszty.
+          text=" Wspaniała agencja z biurem na Warszawskim Wawrzyszewie. Dostarcza najnowszych i najwyższej jakości rozwiązań, równocześnie optymalizując koszty.
           Dzięki ścisłej i stałej współpracy nasze szeregi zasilają najlepsi specjaliści z branży. Równocześnie nie ponosimy wysokich kosztów on house, a klient płaci tylko za zamówione usługi i produkty."
           isUrl={true}
           url="http://www.bfriend.pl/"
@@ -51,7 +51,7 @@ export default function BeFriend() {
                   Agencja eventowa 
                 </h1>
                 <div className="leading-relaxed">
-                Za każdym razem nowe i zachwycające. Zapewnimy Ci nie tylko kreatywne rozwiązania, ale i zagwarantuje wielkie WOW. Akcje, imprezy, konferencje, targi. Masz mniejszy budget - nie masz się czym przejmować. BeFriebd da radę!
+                Za każdym razem nowe i zachwycające. Zapewnimy Ci nie tylko kreatywne rozwiązania, ale i zagwarantujemy wielkie WOW. Akcje, imprezy, konferencje, targi. Masz mniejszy budżet - nie masz się czym przejmować. BeFriend da radę!
                 </div>
               </div>
               {/* <div className="sm:p-4 sm:w-1/2 lg:w-1/4 w-1/2 ">

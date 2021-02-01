@@ -13,7 +13,7 @@ import rose4 from  '../public/yellow-rose-4.png'
 export const workflowStep : WorkflowStepModel[] = [
     {
         img:rose4 ,
-        text: "Chętnie odpowiem na wszystkie pytania i na pewno wypytam o szczegóły projektu. Chciałbym wiedzieć na co zwrócić szczególną uwagę przy projektowaniu rozwiązań i w jaki sposób będzie przebiegać między nami komunikacja.",
+        text: "Chętnie odpowiem na wszystkie pytania i na pewno wypytam o szczegóły projektu. Chciałbym wiedzieć, na co zwrócić szczególną uwagę przy projektowaniu rozwiązań i w jaki sposób będzie przebiegać między nami komunikacja.",
         title: "POZNAJEMY SIĘ"
     },
     {
@@ -23,17 +23,17 @@ export const workflowStep : WorkflowStepModel[] = [
     },
     {
         img:rose2 ,
-        text: "Zawsze oferuje, któtkie umowy, które dają klientowi elastyczność na wypadek gdybyśmy się nie dogadali. Czasem obniżam stawkę projektu, dzięki czemu możesz poczuć się bezpieczniej, jeśli jeszcze nie zbudowaliśmy zaufania do siebie.",
+        text: "Zawsze oferuje, krótkie umowy, które dają klientowi elastyczność, na wypadek gdybyśmy się nie dogadali. Czasem obniżam stawkę projektu, dzięki czemu możesz poczuć się bezpieczniej, jeśli jeszcze nie zbudowaliśmy zaufania do siebie.",
         title: "PODPISUJEMY UMOWĘ NA OKRES PRÓBNY"
     },
     {
         img:rose ,
-        text: "Staram się być w stałym kontakcie z klientami, dzięki temu praca przebiega szybko, przyjemnie i bez zbędnych nieporozumień . Zachęcam do zadawania pytań na temat pracy jak i bierzącej oceny posunięć.",
-        title: "OMAWIAMY NA BIERZĄCO POSUNIĘCIA"
+        text: "Staram się być w stałym kontakcie z klientami, dzięki temu praca przebiega szybko, przyjemnie i bez zbędnych nieporozumień. Zachęcam do zadawania pytań na temat pracy, jak i bieżącej oceny posunięć.",
+        title: "OMAWIAMY NA BIEŻĄCO POSUNIĘCIA"
     },
     {
         img:roseClean ,
-        text: "Wprowadzamy ewenentualne poprawki do projektu. Zamykając projekt zawsze lubię poświęcić chwilę na analizę współpracy. W ten sposób stale się uczę i polepszam jakość rozwiązań. ",
+        text: "Wprowadzamy ewenentualne poprawki do projektu. Zamykając projekt, zawsze lubię poświęcić chwilę na analizę współpracy. W ten sposób stale się uczę i polepszam jakość rozwiązań. ",
         title: "ANALIZUJEMY OSIĄGNIĘCIA"
     },
 

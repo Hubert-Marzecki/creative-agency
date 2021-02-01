@@ -28,11 +28,11 @@ export default function Kreatywnet() {
 
 
                 <ClientIntro
-                    market="Wyposarzenie Eventowe"
+                    market="Wyposażenie Eventowe"
                     taskOne="Stworzenie strony www"
                     taskTwo= "Obróbka grafik"
                     taskThree=""
-                    text= "Firma powstałą w 10/10/2010 roku aby w dobie dzisiejszych dynamicznych zmian wyróżniać marki, które poszukują profesjonalnego partnera biznesowego oraz wsparcia i fachowego doradztwa w zakresie digital marketingu. "
+                    text= "Firma powstałą w 10 października 2010 roku aby w dobie dzisiejszych dynamicznych zmian wyróżniać marki, które poszukują profesjonalnego partnera biznesowego oraz wsparcia i fachowego doradztwa w zakresie digital marketingu. "
                     isUrl={true}
                     url="https://kreatywnet.marketing/"
                 />
